@@ -1,0 +1,34 @@
+# Зависимости
+/vendor/
+/node_modules/
+
+# Логи
+/logs/
+*.log
+
+# Переменные окружения
+.env
+.env.local
+.env.*.local
+
+# Загрузки пользователей
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# Временные файлы
+*.tmp
+*.cache
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Системные файлы
+*.bak
+*.backup
+

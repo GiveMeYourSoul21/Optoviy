@@ -1,0 +1,17 @@
+{
+  "name": "your-project",
+  "version": "1.0.0",
+  "description": "Frontend application",
+  "main": "src/frontend/index.html",
+  "scripts": {
+    "start": "npx http-server src/frontend -p 3000",
+    "dev": "npx http-server src/frontend -p 3000 -o",
+    "backend": "php -S localhost:3002 src/backend/index.php",
+    "server": "php -S localhost:3002 src/backend/index.php"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}
+
