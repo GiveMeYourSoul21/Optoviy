@@ -47,11 +47,11 @@
         <g fill="#f3a6b2" stroke-width="3.07087" stroke="#232323" stroke-linejoin="bevel" fill-opacity="1"
             stroke-linecap="square" font-style="normal" font-weight="400" font-size="34.5833" stroke-opacity="1"
             transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)" font-family="MS Shell Dlg 2">
-            <path vector-effect="none" fill-rule="evenodd"
+            <path id="sector1" vector-effect="none" fill-rule="evenodd"
                 d="M884.444,1616.57 L886.061,1548.9 L1000.09,1549.73 L998.9,1617.7 L884.444,1616.57" />
-            <path vector-effect="none" fill-rule="evenodd"
+            <path id="sector2" vector-effect="none" fill-rule="evenodd"
                 d="M662.164,1901.18 L656.374,1773.5 L687.093,1771.83 L691.518,1900.52 L662.164,1901.18" />
-            <path vector-effect="none" fill-rule="evenodd"
+            <path id="sector3" vector-effect="none" fill-rule="evenodd"
                 d="M660.953,1755.79 L647.934,1545.89 L808.917,1545.04 L810.533,1751.54 L660.953,1755.79" />
             <path vector-effect="none" fill-rule="evenodd"
                 d="M794.482,1906.28 L794.789,1875.1 L1244.87,1875.63 L1245.32,1892.9 L1291.41,1894.18 L1292.06,1923.93 L1231.88,1923.61 L1232.55,1904.94 L794.482,1906.28" />

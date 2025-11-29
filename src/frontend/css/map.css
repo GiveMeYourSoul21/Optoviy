@@ -1,0 +1,356 @@
+#sector1 {
+    fill: red;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector2 {
+    fill: #f3a6b2;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector3 {
+    fill: green;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector4 {
+    fill: #f3a6b2;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector5 {
+    fill: #f3a6b2;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector6 {
+    fill: #53ceec;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector7 {
+    fill: #72303a;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector8 {
+    fill: #72303a;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector9 {
+    fill: #72303a;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector10 {
+    fill: #72303a;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector11 {
+    fill: #64d497;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector12 {
+    fill: #64d497;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector13 {
+    fill: #64d497;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector14 {
+    fill: #64d497;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector15 {
+    fill: #64d497;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector16 {
+    fill: #895dcf;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector17 {
+    fill: #895dcf;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector18 {
+    fill: #895dcf;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector19 {
+    fill: #895dcf;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector20 {
+    fill: #895dcf;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector21 {
+    fill: #895dcf;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector22 {
+    fill: #895dcf;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector23 {
+    fill: #72303a;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector24 {
+    fill: #72303a;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector25 {
+    fill: #72303a;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector26 {
+    fill: #72303a;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector27 {
+    fill: #e68830;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector28 {
+    fill: #e68830;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector29 {
+    fill: #e68830;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector30 {
+    fill: #53ceec;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector31 {
+    fill: #53ceec;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector32 {
+    fill: #e68830;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector33 {
+    fill: #d7f722;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector-park1 {
+    fill: #837e7f;
+
+    stroke: #232323;
+    stroke-width: 1px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#sector-park2 {
+    fill: #50230e;
+    /* базовый цвет — как у тебя */
+    stroke: #232323;
+    stroke-width: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+/* Tooltip Styles */
+.pochatok-im-tooltip {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    max-width: 300px;
+    min-width: 250px;
+    pointer-events: auto;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.pochatok-im-tooltip__title {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #29332D;
+    line-height: 1.3;
+}
+
+.pochatok-im-tooltip__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #29332D;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 0;
+    transition: color 0.2s ease;
+}
+
+#map-tooltip .pochatok-im-button {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+#map-tooltip .pochatok-im-button:hover {
+    background: transparent !important;
+}
