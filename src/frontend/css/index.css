@@ -2427,6 +2427,8 @@ p {
 
 .content-header--narrow {
     max-width: 100%;
+    max-width: 890px;
+    margin-bottom: 0;
 }
 
 .top-margin-80 {

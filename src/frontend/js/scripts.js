@@ -4,7 +4,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Ініціалізація сторінки
     console.log('Сайт СОЮЗ завантажено');
-    
+
     // Очищаємо старе збереження теми (якщо було)
     if (localStorage.getItem('theme')) {
         localStorage.removeItem('theme');
