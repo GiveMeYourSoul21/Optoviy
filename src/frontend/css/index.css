@@ -697,7 +697,7 @@ html {
 /* Cards */
 .card--numbers {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 9px;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -705,7 +705,19 @@ html {
 }
 
 .card--numbers h2 {
-    text-align: center;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.small-text {
+    color: #888;
+    margin-bottom: 0;
+    padding-top: 4px;
+    font-size: 12px;
 }
 
 .card--numbers:hover {
