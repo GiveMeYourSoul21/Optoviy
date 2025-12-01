@@ -79,25 +79,23 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main-content">
-
-        <article id="News">
+    <main style="flex: 1; display: flex; flex-direction: column;">
+        <div class="section-light">
             <div class="container">
-                <h1>Новини</h1>
+                <h2 class="h2">Новини</h2>
                 <hr>
                 <br>
+                <article id="News">
+                    <div id="news-container" class="news-grid-page">
+                        <!-- News items will be loaded here -->
+                    </div>
 
-                <div id="news-container" class="news-grid-page">
-                    <!-- News items will be loaded here -->
-                </div>
-
-                <div id="pagination-container" class="pagination-wrapper">
-                    <!-- Pagination will be loaded here -->
-                </div>
+                    <div id="pagination-container" class="pagination-wrapper">
+                        <!-- Pagination will be loaded here -->
+                    </div>
+                </article>
             </div>
-        </article>
-
-
+        </div>
     </main>
 
     <!-- Footer -->
