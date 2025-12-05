@@ -6,11 +6,8 @@
         "image": "assets/img/news/news1.jpg",
         "link": "#",
         "description": "Натисніть щоб дізнатися більше",
-        "fullContent": "ыфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфвфв",
-        "gallery": [
-            "assets/img/news1.jpg",
-            "assets/img/news2.jpg"
-        ]
+        "contentFile": "assets/news/news1.html",
+        "fullContent": ""
     },
     {
         "id": 2,
@@ -18,7 +15,9 @@
         "title": "Новина",
         "image": "assets/img/news/news2.jpg",
         "link": "#",
-        "description": ""
+        "description": "Натисніть щоб дізнатися більше",
+        "contentFile": "assets/news/news2.html",
+        "fullContent": ""
     },
     {
         "id": 3,
@@ -26,7 +25,9 @@
         "title": "Вітання з новим роком",
         "image": "assets/img/news/news3.jpg",
         "link": "#",
-        "description": "Натисніть щоб дізнатися більше"
+        "description": "Натисніть щоб дізнатися більше",
+        "contentFile": "assets/news/news3.html",
+        "fullContent": ""
     },
     {
         "id": 4,

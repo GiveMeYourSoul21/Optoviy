@@ -1,9 +1,9 @@
-// JavaScript для сайту СОЮЗ
+// JavaScript для сайту Оптовий ринок
 // Тут можна додати потрібний функціонал
 
 document.addEventListener('DOMContentLoaded', () => {
     // Ініціалізація сторінки
-    console.log('Сайт СОЮЗ завантажено');
+    console.log('Сайт Оптовий ринок завантажено');
 
     // Очищаємо старе збереження теми (якщо було)
     if (localStorage.getItem('theme')) {

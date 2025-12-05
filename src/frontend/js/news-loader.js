@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return new Date(parts[2], parts[1] - 1, parts[0]);
     }
 
-    // НОВА ФУНКЦІЯ: Показати детальну сторінку однієї новини
+    //  Показати детальну сторінку однієї новини
     function renderSingleNews(id) {
         if (!newsContainer) return;
 
@@ -58,6 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!newsItem) {
             newsContainer.innerHTML = '<p>Новину не знайдено</p>';
             return;
+        }
+
+        // Показати кнопку "Назад до новин"
+        const backButton = document.getElementById('back-to-news-btn');
+        if (backButton) {
+            backButton.style.display = 'inline-flex';
         }
 
         // Змінити заголовок сторінки
@@ -75,40 +81,51 @@ document.addEventListener('DOMContentLoaded', () => {
         // Створити детальну розмітку
         newsContainer.className = 'news-detail-container';
         newsContainer.innerHTML = `
-            <button class="back-button" onclick="window.location.href='news.html'">
-                ← Назад до новин
-            </button>
-            <article class="news-detail">
-        <img src="${newsItem.image}" alt="${newsItem.title}">
-        
-        <h1>${newsItem.title}</h1>
-        <p class="author">Автор: ${newsItem.author}</p>
-        <div class="tags">
-            ${newsItem.tags.map(tag => `<span>${tag}</span>`).join('')}
-        </div>
-        
-        <div class="content">
-            ${newsItem.fullContent}
-        </div>
-        
-        <div class="gallery">
-            ${newsItem.gallery.map(img => `<img src="${img}">`).join('')}
-        </div>
-    </article>
             <article class="news-detail">
                 ${newsItem.image ? `<img src="${newsItem.image}" alt="${newsItem.title}" class="news-detail-image">` : ''}
                 
                 <div class="news-detail-header">
                     <div class="news-date">${newsItem.date}</div>
-                    <h1 class="news-detail-title">${newsItem.title}</h1>
+                    <h2 class="h2">${newsItem.title}</h2>
+                </div>
+
+                
+                <div class="news-detail-content" id="news-content-area">
+                    <p>Завантаження...</p>
                 </div>
                 
-                <div class="news-detail-content">
-                    <p>${newsItem.description || 'Детальна інформація про новину...'}</p>
-                    <!-- Тут можна додати більше контенту -->
-                </div>
             </article>
         `;
+
+        // Завантажити контент з окремого файлу (якщо є)
+        if (newsItem.contentFile) {
+            loadExternalContent(newsItem.contentFile);
+        } else if (newsItem.fullContent) {
+            // Або використати fullContent з JSON
+            document.getElementById('news-content-area').innerHTML = `<p>${newsItem.fullContent}</p>`;
+        } else {
+            document.getElementById('news-content-area').innerHTML = '<p>Контент недоступний</p>';
+        }
+    }
+
+    // НОВА ФУНКЦІЯ: Завантажити HTML контент з окремого файлу
+    function loadExternalContent(filePath) {
+        const contentArea = document.getElementById('news-content-area');
+
+        fetch(filePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Файл не знайдено');
+                }
+                return response.text();
+            })
+            .then(html => {
+                contentArea.innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Помилка завантаження контенту:', error);
+                contentArea.innerHTML = '<p>Не вдалося завантажити контент новини</p>';
+            });
     }
 
     function renderNews() {
@@ -165,11 +182,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const paginationContainer = document.getElementById('pagination-container');
         if (!paginationContainer) return;
 
-        paginationContainer.innerHTML = '';
-        paginationContainer.style.display = 'block'; // Показати пагінацію
         const totalPages = Math.ceil(allNews.length / ITEMS_PER_PAGE);
 
-        if (totalPages <= 1) return;
+        // Якщо сторінок <= 1, сховати пагінацію
+        if (totalPages <= 1) {
+            paginationContainer.style.display = 'none';
+            paginationContainer.innerHTML = '';
+            return;
+        }
+
+        // Показати пагінацію тільки якщо є кілька сторінок
+        paginationContainer.style.display = 'flex';
+        paginationContainer.innerHTML = '';
 
         for (let i = 1; i <= totalPages; i++) {
             const btn = document.createElement('button');

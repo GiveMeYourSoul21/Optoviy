@@ -205,7 +205,9 @@
 
 /* Заголовок деталей */
 .news-detail-header {
-    padding: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-bottom: 1px solid #e0e0e0;
 }
 
