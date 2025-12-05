@@ -2767,6 +2767,74 @@ body {
     }
 }
 */
+/* Базові стилі для col-text-img */
+.col-text-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Зображення зліва, картки справа */
+    gap: 40px;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.territory-cards {
+    width: 100%;
+}
+
+.img-territory {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* ========================================
+   ПЛАНШЕТИ (екрани до 900px)
+   ======================================== */
+@media screen and (max-width: 900px) {
+    .col-text-img {
+        gap: 30px;
+        /* Менший відступ */
+    }
+}
+
+/* ========================================
+   МОБІЛЬНІ (екрани до 768px)
+   Зображення зверху, картки знизу
+   ======================================== */
+@media screen and (max-width: 768px) {
+    .col-text-img {
+        grid-template-columns: 1fr;
+        /* ОДНА КОЛОНКА - все вертикально */
+        gap: 24px;
+    }
+
+    /* Зображення на всю ширину */
+    .img-territory {
+        width: 100%;
+        max-width: 500px;
+        /* Обмежити максимальну ширину */
+        margin: 0 auto;
+        /* Центрувати */
+    }
+}
+
+/* ========================================
+   ДУЖЕ МАЛЕНЬКІ ЕКРАНИ (до 480px)
+   ======================================== */
+@media screen and (max-width: 480px) {
+    .col-text-img {
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    .img-territory {
+        max-width: 100%;
+        border-radius: 12px;
+        /* Менший радіус на маленьких екранах */
+    }
+}
+
 
 .card--benefit {
     background-color: #F1FAD4;

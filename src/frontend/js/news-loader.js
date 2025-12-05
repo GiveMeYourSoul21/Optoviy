@@ -1,7 +1,13 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const newsContainer = document.getElementById('news-container');
-    const isHomePage = document.body.classList.contains('home-page') || window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+    const isHomePage = document.body.classList.contains('home-page') ||
+        window.location.pathname.endsWith('index.html') ||
+        window.location.pathname === '/';
+
+    // Отримати news_id з URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const newsId = urlParams.get('news_id');
 
     // Configuration
     const NEWS_JSON_PATH = 'js/news.json';
@@ -19,14 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(data => {
             allNews = data;
-            // Sort by date descending (assuming date format DD.MM.YYYY)
+            // Sort by date descending
             allNews.sort((a, b) => {
                 const dateA = parseDate(a.date);
                 const dateB = parseDate(b.date);
                 return dateB - dateA;
             });
 
-            renderNews();
+            // Перевірити чи є news_id в URL
+            if (newsId) {
+                // Показати детальну сторінку новини
+                renderSingleNews(parseInt(newsId));
+            } else {
+                // Показати список новин
+                renderNews();
+            }
         })
         .catch(error => console.error('Error loading news:', error));
 
@@ -35,21 +48,80 @@ document.addEventListener('DOMContentLoaded', () => {
         return new Date(parts[2], parts[1] - 1, parts[0]);
     }
 
+    // НОВА ФУНКЦІЯ: Показати детальну сторінку однієї новини
+    function renderSingleNews(id) {
+        if (!newsContainer) return;
+
+        // Знайти новину по ID
+        const newsItem = allNews.find(item => item.id === id);
+
+        if (!newsItem) {
+            newsContainer.innerHTML = '<p>Новину не знайдено</p>';
+            return;
+        }
+
+        // Змінити заголовок сторінки
+        const pageTitle = document.querySelector('.h2');
+        if (pageTitle) {
+            pageTitle.textContent = newsItem.title;
+        }
+
+        // Сховати пагінацію
+        const paginationContainer = document.getElementById('pagination-container');
+        if (paginationContainer) {
+            paginationContainer.style.display = 'none';
+        }
+
+        // Створити детальну розмітку
+        newsContainer.className = 'news-detail-container';
+        newsContainer.innerHTML = `
+            <button class="back-button" onclick="window.location.href='news.html'">
+                ← Назад до новин
+            </button>
+            <article class="news-detail">
+        <img src="${newsItem.image}" alt="${newsItem.title}">
+        
+        <h1>${newsItem.title}</h1>
+        <p class="author">Автор: ${newsItem.author}</p>
+        <div class="tags">
+            ${newsItem.tags.map(tag => `<span>${tag}</span>`).join('')}
+        </div>
+        
+        <div class="content">
+            ${newsItem.fullContent}
+        </div>
+        
+        <div class="gallery">
+            ${newsItem.gallery.map(img => `<img src="${img}">`).join('')}
+        </div>
+    </article>
+            <article class="news-detail">
+                ${newsItem.image ? `<img src="${newsItem.image}" alt="${newsItem.title}" class="news-detail-image">` : ''}
+                
+                <div class="news-detail-header">
+                    <div class="news-date">${newsItem.date}</div>
+                    <h1 class="news-detail-title">${newsItem.title}</h1>
+                </div>
+                
+                <div class="news-detail-content">
+                    <p>${newsItem.description || 'Детальна інформація про новину...'}</p>
+                    <!-- Тут можна додати більше контенту -->
+                </div>
+            </article>
+        `;
+    }
+
     function renderNews() {
         if (!newsContainer) return;
 
         newsContainer.innerHTML = '';
+        newsContainer.className = 'news-grid-page'; // Повернути клас для сітки
 
         let newsToDisplay = [];
 
         if (isHomePage) {
-            // On homepage, show only latest 3 items
             newsToDisplay = allNews.slice(0, 3);
         } else {
-            // On news page, show items based on pagination
-            // For now, let's just show all or implement simple load more if needed
-            // But user asked for "pagination" style in screenshot (numbers)
-            // Let's implement simple pagination
             const start = (currentPage - 1) * ITEMS_PER_PAGE;
             const end = start + ITEMS_PER_PAGE;
             newsToDisplay = allNews.slice(start, end);
@@ -67,7 +139,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = document.createElement('div');
         card.className = 'news-card';
 
-        // Use a placeholder if image is missing or broken
+        // ВАЖЛИВО: Додати курсор pointer та обробник кліку
+        card.style.cursor = 'pointer';
+        card.onclick = () => {
+            // Перенаправити на news.html з параметром news_id
+            window.location.href = `news.html?news_id=${item.id}`;
+        };
+
         const imageUrl = item.image || '';
 
         card.innerHTML = `
@@ -88,6 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!paginationContainer) return;
 
         paginationContainer.innerHTML = '';
+        paginationContainer.style.display = 'block'; // Показати пагінацію
         const totalPages = Math.ceil(allNews.length / ITEMS_PER_PAGE);
 
         if (totalPages <= 1) return;

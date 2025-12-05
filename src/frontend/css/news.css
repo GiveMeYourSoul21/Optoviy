@@ -147,3 +147,172 @@
     border-color: #FFD700;
     color: #333;
 }
+
+
+
+
+/* ========================================
+   CSS СТИЛІ ДЛЯ ДЕТАЛЬНОЇ СТОРІНКИ НОВИНИ
+   Додати до news.css
+   ======================================== */
+
+/* Контейнер для детальної новини */
+.news-detail-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Кнопка "Назад" */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.back-button:hover {
+    background-color: #e8e8e8;
+    border-color: #d0d0d0;
+    transform: translateX(-5px);
+}
+
+/* Стаття з деталями новини */
+.news-detail {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Зображення новини */
+.news-detail-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Заголовок деталей */
+.news-detail-header {
+    padding: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.news-detail-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin: 16px 0 0 0;
+    line-height: 1.3;
+}
+
+/* Дата новини (переви́користання із news.css) */
+.news-detail .news-date {
+    font-size: 14px;
+    color: #888;
+    font-weight: 500;
+}
+
+/* Контент новини */
+.news-detail-content {
+    padding: 30px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.news-detail-content p {
+    margin-bottom: 20px;
+}
+
+.news-detail-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Адаптив для планшетів */
+@media screen and (max-width: 768px) {
+    .news-detail-container {
+        padding: 15px;
+    }
+
+    .news-detail-title {
+        font-size: 26px;
+    }
+
+    .news-detail-header {
+        padding: 20px;
+    }
+
+    .news-detail-content {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .back-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Адаптив для мобільних */
+@media screen and (max-width: 480px) {
+    .news-detail-title {
+        font-size: 22px;
+    }
+
+    .news-detail-header {
+        padding: 15px;
+    }
+
+    .news-detail-content {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .news-detail-image {
+        max-height: 300px;
+    }
+}
+
+/* Додатково: Hover ефект для карток новин у списку */
+.news-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ========================================
+   ПІДСУМОК
+   ======================================== */
+
+/*
+ЩО ДОДАЄ ЦЕЙ CSS:
+
+1. .news-detail-container - обгортка для всієї детальної сторінки
+2. .back-button - кнопка "Назад до новин"
+3. .news-detail - контейнер статті з тінню та заокругленнями
+4. .news-detail-image - зображення на всю ширину
+5. .news-detail-header - заголовок + дата
+6. .news-detail-content - текстовий контент новини
+7. Hover ефекти для карток у списку
+8. Responsive для планшетів та мобільних
+
+ВИКОРИСТАННЯ:
+- Додати ці стилі до src/frontend/css/news.css
+- Або створити окремий файл news-detail.css та підключити його
+*/
