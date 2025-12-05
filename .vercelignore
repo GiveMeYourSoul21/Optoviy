@@ -1,0 +1,14 @@
+node_modules
+vendor
+logs
+tests
+.git
+.vscode
+.env
+composer.json
+composer.lock
+src/backend
+public
+*.md
+.gitignore
+package-lock.json

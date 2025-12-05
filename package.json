@@ -1,17 +1,22 @@
 {
-  "name": "your-project",
+  "name": "optovyi-market",
   "version": "1.0.0",
-  "description": "Frontend application",
+  "description": "Оптовий ринок - офіційний сайт",
   "main": "src/frontend/index.html",
   "scripts": {
     "start": "npx http-server src/frontend -p 3000",
     "dev": "npx http-server src/frontend -p 3000 -o",
+    "build": "echo 'Static site - no build needed'",
     "backend": "php -S localhost:3002 src/backend/index.php",
     "server": "php -S localhost:3002 src/backend/index.php"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "market",
+    "optovyi",
+    "odesa",
+    "ukraine"
+  ],
+  "author": "Optovyi Market",
   "license": "ISC",
   "devDependencies": {}
 }
-
