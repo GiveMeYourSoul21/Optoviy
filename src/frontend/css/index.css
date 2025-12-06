@@ -686,7 +686,7 @@ html {
 
 /* Grid Layout */
 .grid-3col {
-    grid-column-gap: 30px;
+    grid-column-gap: 50px;
     grid-row-gap: 30px;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
@@ -697,9 +697,9 @@ html {
 /* Cards */
 .card--numbers {
     background-color: #ffffff;
-    padding: 9px;
+    padding: 18px;
     border-radius: 12px;
-    text-align: center;
+    /*  text-align: center;*/
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1578,6 +1578,13 @@ html {
     padding: 16px 24px;
     border-top: 1px solid #DAE5DF;
     flex-shrink: 0;
+}
+
+.icon-back-arrow {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) saturate(100%);
+    /* Чорний колір */
 }
 
 .optovyi-filter__footer-buttons .optovyi-button {
