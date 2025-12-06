@@ -1,0 +1,258 @@
+/* ========================================
+   КОД ДЛЯ СТИЛІЗАЦІЇ PNG КАРТИ
+   ======================================== */
+
+/* ========================================
+   1. HTML КОД (index.html)
+   ======================================== */
+
+<!-- БУЛО (SVG через object): -->
+<div class="map-wrapper">
+    <object type="image/svg+xml" data="assets/img/op_map_horizontal.svg"></object>
+</div>
+
+<!-- СТАЛО (PNG через img): -->
+<div class="map-wrapper">
+    <img src="assets/img/op_map_horizontal.png" 
+         alt="Карта ринку Оптовий" 
+         class="map-image">
+</div>
+
+
+/* ========================================
+   2. CSS КОД (додати в index.css)
+   ======================================== */
+
+/* Стилі для PNG карти */
+.map-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-wrapper .map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    /* Забезпечує чіткість PNG */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* Адаптивність для планшетів */
+@media (max-width: 968px) {
+    .map-wrapper {
+        border-radius: 8px;
+    }
+    
+    .map-wrapper .map-image {
+        max-width: 100%;
+    }
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 600px) {
+    .map-wrapper {
+        border-radius: 6px;
+        background: #fff;
+    }
+    
+    .map-wrapper .map-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* ========================================
+   3. АЛЬТЕРНАТИВНИЙ ВАРІАНТ (якщо потрібно)
+   ======================================== */
+
+/* Якщо потрібен zoom при hover */
+.map-wrapper .map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.map-wrapper .map-image:hover {
+    transform: scale(1.05);
+}
+
+/* Або з тінню */
+.map-wrapper {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ========================================
+   4. ЯКЩО КАРТА ЗАНАДТО ВЕЛИКА
+   ======================================== */
+
+/* Обмежити максимальну висоту */
+.map-wrapper .map-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+
+/* ========================================
+   5. ПОВНИЙ CSS ДЛЯ ЗАМІНИ
+   ======================================== */
+
+/* Замінити існуючий .map-wrapper object на: */
+
+.map-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Видалити або закоментувати старі стилі для object */
+/* .map-wrapper object {
+    width: 100%;
+    height: auto;
+} */
+
+/* Додати нові стилі для img */
+.map-wrapper .map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+
+/* ========================================
+   6. МЕДІА-ЗАПИТИ (якщо є)
+   ======================================== */
+
+/* Знайти всі медіа-запити з .map-wrapper object */
+/* Замінити на .map-wrapper .map-image */
+
+/* Приклад: */
+@media (max-width: 968px) {
+    .map-wrapper {
+        border-radius: 8px;
+    }
+    
+    /* БУЛО */
+    /* .map-wrapper object {
+        width: 100%;
+    } */
+    
+    /* СТАНЕ */
+    .map-wrapper .map-image {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .map-wrapper {
+        border-radius: 6px;
+    }
+    
+    .map-wrapper .map-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* ========================================
+   ПІДСУМОК ЗМІН
+   ======================================== */
+
+/*
+ЩО ЗРОБИТИ:
+
+1. HTML (index.html):
+   - Замінити <object> на <img>
+   - Додати клас "map-image"
+   - Додати alt текст
+
+2. CSS (index.css):
+   - Знайти всі .map-wrapper object
+   - Замінити на .map-wrapper .map-image
+   - Додати image-rendering для чіткості PNG
+   - Перевірити медіа-запити
+
+3. Перевірити в браузері:
+   - Карта відображається
+   - Адаптивність працює
+   - Якість зображення нормальна
+*/
+
+
+/* ========================================
+   ПРИКЛАД ПОВНОЇ ЗАМІНИ В index.css
+   ======================================== */
+
+/* ЗНАЙТИ (приблизно рядок 937-945): */
+/*
+.map-wrapper {
+    width: 100%;
+    max-width: 100%;
+}
+
+.map-wrapper object {
+    width: 100%;
+    height: auto;
+}
+*/
+
+/* ЗАМІНИТИ НА: */
+.map-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-wrapper .map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+
+/* ========================================
+   ТАКОЖ ПЕРЕВІРИТИ ІНШІ МІСЦЯ
+   ======================================== */
+
+/*
+Знайдено 5 місць з .map-wrapper в index.css:
+- Рядок 937  - основні стилі
+- Рядок 1163 - медіа-запит
+- Рядок 1370 - медіа-запит
+- Рядок 1975 - медіа-запит
+- Рядок 2221 - медіа-запит
+
+Потрібно перевірити кожне місце та замінити:
+.map-wrapper object → .map-wrapper .map-image
+*/
