@@ -925,6 +925,7 @@ html {
 
 /* Map Card Styles - Left Column */
 .map-card {
+    border-radius: 12px;
     background: #ffffff;
     padding: 20px;
     /* Border radius handled by container now, or specific corners */
@@ -3124,6 +3125,27 @@ body {
     object-fit: cover;
     display: block;
     border-radius: 12px;
+}
+
+.map-horizontal {
+    display: block !important;
+}
+
+.map-vertical {
+    display: none !important;
+}
+
+@media (max-width: 900px) {
+    .map-horizontal {
+        display: none !important;
+    }
+
+    .map-vertical {
+        display: block !important;
+        max-height: 800px;
+        width: auto;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 991px) {
