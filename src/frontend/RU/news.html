@@ -7,7 +7,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Контакти ринку "Оптовий"</title>
+    <title>Новини ринку "Оптовий"</title>
     <link rel="stylesheet" href="../css/index.css?v=6.0.0">
     <link rel="stylesheet" href="../css/news.css">
     <link rel="stylesheet" href="../css/mobile-menu.css">
@@ -17,7 +17,7 @@
     <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Оптовий ринок" />
+    <meta name="apple-mobile-web-app-title" content="Оптовий" />
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
 </head>
 
@@ -71,81 +71,36 @@
 
 
                 <ul class="menu-language">
-                    <li><a href="contact.html" class="lang-active">UA</a></li>
-                    <li><a href="RU/contact.html">RU</a></li>
+                    <li><a href="news.html" class="lang-active">UA</a></li>
+                    <li><a href="RU/news.html">RU</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <!-- Main Content -->
     <main style="flex: 1; display: flex; flex-direction: column;">
         <div class="section-light">
             <div class="container">
-                <h2 class="h2">Контакти</h2>
-
-                <div class="contacts-cards">
-                    <div class="card-contact">
-                        <div class="icon-container">
-                            <img src="assets/svg_icons/marker1.svg" loading="lazy" alt="" class="icon-wrapper">
-                        </div>
-                        <div class="contact-li">
-                            <div class="li-heading">Адреса</div>
-                            <a href="https://www.google.com.ua/maps/place/%D0%A1%D0%BE%D1%8E%D0%B7/@46.588853,30.805476,186m/data=!3m1!1e3!4m12!1m5!3m4!2zNDbCsDM1JzE5LjIiTiAzMMKwNDgnMjAuMSJF!8m2!3d46.58867!4d30.805571!3m5!1s0x40c63b2d58f3280f:0xf12557db5efb4eca!8m2!3d46.5886096!4d30.8055425!16s%2Fg%2F11xbkws44!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D"
-                                class="contact-link" target="_blank">вул. Семена
-                                Палія, 125а, Одеська обл.</a>
-                        </div>
-                    </div>
-
-                    <div class="card-contact">
-                        <div class="icon-container">
-                            <img src="assets/svg_icons/phone.svg" loading="lazy" alt="" class="icon-wrapper">
-                        </div>
-                        <div class="contact-li">
-                            <div class="li-heading">Приймальна</div>
-                            <div class="phonenumbers-stacked">
-                                <a href="tel:+380 970 365 447" class="contact-link">+380 970 365 447</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-contact">
-                        <div class="icon-container">
-                            <img src="assets/svg_icons/mail.svg" loading="lazy" alt="" class="icon-wrapper">
-                        </div>
-                        <div class="contact-li">
-                            <div class="li-heading">ПОШТА АДМІНІСТРАТОРА САЙТУ</div>
-                            <div class="phonenumbers-stacked">
-                                <a href="mailto:yaroslavppi27@gmail.com"
-                                    class="contact-link">yaroslavppi27@gmail.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-contact">
-                        <div class="icon-container">
-                            <img src="assets/svg_icons/mail.svg" loading="lazy" alt="" class="icon-wrapper">
-                        </div>
-                        <div class="contact-li">
-                            <div class="li-heading">електрона Пошта</div>
-                            <a href="mailto:optovyymarket@gmail.com" class="contact-link">optovyymarket@gmail.com</a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <H2>Місцезнаходження</H2>
-
+                <h2 class="h2">Новини</h2>
+                <hr>
                 <br>
+                <a href="news.html" class="button--back" id="back-to-news-btn" style="display: none;">
+                    <img src="assets/svg_icons/left.svg" class="icon-back-arrow" alt="Назад">
+                    <div class="button">Назад до новин</div>
+                </a>
+                <article id="News">
+                    <div id="news-container" class="news-grid-page">
+                        <!-- News items will be loaded here -->
+                    </div>
 
-                <div class="map-wrapper">
-                    <iframe class="map-contact"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25883.97523301918!2d30.778280168567438!3d46.582694803451695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63b2d58f3280f%3A0xf12557db5efb4eca!2z0KHQvtGO0Lc!5e0!3m2!1sru!2sus!4v1763899996358!5m2!1sru!2sus"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
+                    <div id="pagination-container" class="pagination-wrapper">
+                        <!-- Pagination will be loaded here -->
+                    </div>
+                </article>
             </div>
         </div>
     </main>
-
 
     <!-- Footer -->
     <footer class="main-footer">
@@ -217,6 +172,7 @@
             <p class="small-text">© 2025-2026 Ринок «Оптовий». Всі права захищені.</p>
         </div>
     </footer>
+
     <div class="modal" id="feedback-modal" aria-hidden="true" role="dialog" aria-modal="true">
         <div class="modal-overlay" data-modal-close=""></div>
         <div class="modal-dialog" role="document">
@@ -284,9 +240,10 @@
         </ul>
     </div>
 
+    <script src="../js/mobile-menu.js"></script>
     <script src="../js/news-loader.js"></script>
     <script src="../js/scripts.js"></script>
-    <script src="../js/mobile-menu.js"></script>
+
 </body>
 
 </html>

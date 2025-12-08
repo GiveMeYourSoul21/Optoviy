@@ -424,7 +424,7 @@ html {
 
 @media (max-width: 968px) {
     .map-wrapper .map-image {
-        width: 100%;
+        width: 00%;
     }
 }
 
@@ -1431,6 +1431,22 @@ html {
     font-weight: 700;
 }
 
+.optovyi-filter__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 50px;
+}
+
+.optovyi-filter__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #29332D;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
 .h4.margin-24 {
     margin-bottom: 24px;
 }
@@ -1447,6 +1463,9 @@ html {
     border-radius: 12px;
     font-size: 12px;
     font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .optovyi-caption {
@@ -1457,7 +1476,7 @@ html {
     flex: 1;
     overflow-y: auto;
     /* Enable vertical scrolling */
-    padding: 16px 24px;
+    padding: 4px 12px;
 }
 
 /* Custom Scrollbar */
@@ -1678,12 +1697,6 @@ html {
     margin-bottom: 0 !important;
 }
 
-.optovyi-filter__title {
-    font-size: 18px;
-    font-weight: 700;
-    color: #29332D;
-    margin: 0;
-}
 
 .legend-marker {
     width: 24px;
@@ -1878,6 +1891,8 @@ html {
     font-weight: 700;
     color: #29332D;
     margin: 0;
+    padding: 8px;
+    text-align: center;
 }
 
 .legend-marker {
@@ -2119,13 +2134,6 @@ p {
     margin-bottom: 0 !important;
 }
 
-.optovyi-filter__title {
-    font-size: 18px;
-    font-weight: 700;
-    color: #29332D;
-    margin: 0;
-}
-
 .legend-marker {
     width: 24px;
     height: 24px;
@@ -2254,7 +2262,7 @@ p {
 /* Contact Page Map Styles */
 .map-wrapper {
     width: 100%;
-    max-width: 1200px;
+    max-width: 950px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
