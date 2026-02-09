@@ -8,7 +8,8 @@
     "dev": "npx http-server src/frontend -p 3000 -o",
     "build": "echo 'Static site - no build needed'",
     "backend": "php -S localhost:3002 src/backend/index.php",
-    "server": "php -S localhost:3002 src/backend/index.php"
+    "server": "php -S localhost:3002 src/backend/index.php",
+    "test:unit": "jest"
   },
   "keywords": [
     "market",
@@ -18,5 +19,7 @@
   ],
   "author": "Optovyi Market",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
 }
