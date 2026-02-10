@@ -60,3 +60,39 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-up').forEach(el => {
     observer.observe(el);
 });
+
+
+// Анимация появления + подсчет
+const observer2 = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add('show');
+
+            // Запуск счетчика для чисел внутри блока
+            const numbers = entry.target.querySelectorAll('.card-number');
+            numbers.forEach(num => {
+                const target = +num.getAttribute('data-target');
+                let count = 0;
+                const duration = 1900; // миллисекунд до достижения числа
+                const stepTime = Math.max(10, duration / target);
+                const increment = target / (duration / stepTime);
+
+                const timer = setInterval(() => {
+                    count += increment;
+                    if (count >= target) {
+                        num.textContent = target; // точное число в конце
+                        clearInterval(timer);
+                    } else {
+                        num.textContent = Math.floor(count);
+                    }
+                }, stepTime);
+            });
+
+            obs.unobserve(entry.target); // один раз
+        }
+    });
+}, { threshold: 0.2 }); // когда 20% блока видно
+
+// наблюдаем все fade-up элементы
+document.querySelectorAll('.fade-up').forEach(el => observer2.observe(el));
