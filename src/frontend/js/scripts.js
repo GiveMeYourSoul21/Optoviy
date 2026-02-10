@@ -42,3 +42,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// АНІМАЦІЯ ПРИ ПРОКРУТЦІ
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+
+            // чтобы анимация сработала только 1 раз
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.15 // запуск когда 15% элемента видно
+});
+
+document.querySelectorAll('.fade-up').forEach(el => {
+    observer.observe(el);
+});

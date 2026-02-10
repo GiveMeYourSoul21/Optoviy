@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk-UA">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+
     <title>Адміністрація ринку "Оптовий"</title>
     <link rel="stylesheet" href="../css/index.css?v=6.0.0">
     <link rel="stylesheet" href="../css/news.css">
     <link rel="stylesheet" href="../css/mobile-menu.css">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
@@ -19,7 +18,29 @@
     <meta name="apple-mobile-web-app-title" content="Оптовий ринок">
     <link rel="manifest" href="../assets/favicon/site.webmanifest">
 
+    <!-- SEO -->
+    <meta name="description"
+        content="Детальна карта території ринку Оптовий. Розташування павільйонів, в'їзди, парковки та інфраструктура.">
+    <link rel="canonical" href="https://optovoy.vercel.app/pages/administration.html">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:site_name" content="Оптовий ринок">
+    <meta property="og:title" content="Карта території — Оптовий ринок Одеса">
+    <meta property="og:description"
+        content="Детальна карта території ринку Оптовий. Розташування павільйонів, в'їзди, парковки та інфраструктура.">
+    <meta property="og:url" content="https://optovoy.vercel.app/pages/administration.html">
+    <meta property="og:image" content="https://optovoy.vercel.app/assets/img/OP.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="https://optovoy.vercel.app/assets/img/OP.png">
+    <meta name="twitter:title" content="Карта території — Оптовий ринок Одеса">
+    <meta name="twitter:description"
+        content="Детальна карта території ринку Оптовий. Розташування павільйонів, в'їзди, парковки та інфраструктура.">
+    <meta name="twitter:image" content="https://optovoy.vercel.app/assets/img/OP.png">
 
 
 </head>
@@ -39,11 +60,6 @@
             <!-- Burger Menu Button (Mobile) -->
             <button class="burger-menu-btn" aria-label="Відкрити меню">
                 <img src="../assets/img/horizontal_menu_burger.svg" alt="Меню" class="burger-icon">
-                <svg class="close-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
             </button>
 
             <!-- Navigation -->
@@ -99,7 +115,7 @@
 
                 <!-- Кнопка назад -->
                 <a href="/map" class="button--back w-inline-block">
-                    <img src=../assets/svg_icons/left.svg" class="icon-back-arrow" alt="Назад">
+                    <img src="../assets/svg_icons/left.svg" class="icon-back-arrow" alt="Назад">
                     <div class="button">Карта ринку</div>
                 </a>
 
@@ -230,6 +246,15 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu-overlay"></div>
     <div class="mobile-menu">
+        <!-- Close Button -->
+        <button class="mobile-menu-close" aria-label="Закрити меню">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+
         <ul class="mobile-nav-menu">
             <li><a href="../index.html">Головна</a></li>
             <li><a href="../about.html">Про нас</a></li>
