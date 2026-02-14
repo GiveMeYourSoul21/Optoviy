@@ -576,12 +576,6 @@ html {
     background: rgba(0, 0, 0, 0.06);
 }
 
-
-
-
-
-
-
 /* Banner Section */
 .banner {
     position: relative;
@@ -992,15 +986,6 @@ html {
     color: #333;
 }
 
-.filter-list::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 4px;
-}
-
-.filter-list::-webkit-scrollbar-thumb:hover {
-    background: #bbb;
-}
-
 .admin-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1016,45 +1001,6 @@ html {
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.filter-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    color: #333;
-}
-
-.filter-item input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    accent-color: #FFD700;
-}
-
-.clear-filter-btn {
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-    transition: all 0.3s;
-}
-
-.clear-filter-btn:hover {
-    background: #f5f5f5;
-    border-color: #ccc;
-}
-
-.map-button-wrapper {
-    text-align: center;
-    margin-top: 20px;
 }
 
 .button--back {
@@ -1074,25 +1020,6 @@ html {
     text-decoration: none !important;
 }
 
-
-
-.map-button-wrapper button {
-    background-color: #FFD700;
-    color: #333333;
-    border: none;
-    padding: 14px 32px;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.map-button-wrapper button:hover {
-    background-color: #FFC107;
-    transform: scale(1.05);
-}
-
 @media (max-width: 968px) {
     .map-page-container {
         grid-template-columns: 1fr;
@@ -1134,24 +1061,6 @@ html {
     /* Border radius handled by container now, or specific corners */
     border-right: 1px solid #eee;
     /* Separator between map and filters */
-}
-
-/* Map Controls (Tabs only now) */
-.map-controls {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 24px;
-}
-
-.map-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.map-wrapper {
-    width: 100%;
 }
 
 .section-white {
@@ -1165,94 +1074,10 @@ html {
     padding-bottom: 40px;
 }
 
-.map-wrapper .map-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.legend-wrapper {
-    width: 100%;
-    border-top: 1px solid #eee;
-    padding-top: 20px;
-}
-
-.legend-title {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.filter-list::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 4px;
-}
-
-.filter-list::-webkit-scrollbar-thumb:hover {
-    background: #bbb;
-}
-
-.filter-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    color: #333;
-}
-
 .section-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.filter-item input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    accent-color: #FFD700;
-}
-
-.clear-filter-btn {
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-    transition: all 0.3s;
-}
-
-.clear-filter-btn:hover {
-    background: #f5f5f5;
-    border-color: #ccc;
-}
-
-.map-button-wrapper {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.map-button-wrapper button {
-    background-color: #FFD700;
-    color: #333333;
-    border: none;
-    padding: 14px 32px;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.map-button-wrapper button:hover {
-    background-color: #FFC107;
-    transform: scale(1.05);
 }
 
 @media (max-width: 968px) {
@@ -1270,69 +1095,6 @@ html {
     .map-card {
         padding: 20px;
     }
-}
-
-/* Map Page Layout - Two Columns */
-.map-page-layout {
-    display: grid;
-    grid-template-columns: 1fr 320px;
-    /* Map takes remaining space, Filters take 320px */
-    gap: 0;
-    /* No gap if they are touching, or small gap if separated. User image suggests touching or very close. */
-    align-items: stretch;
-    margin-bottom: 20px;
-    /* Reduced from 40px to reduce space before footer */
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    /* To clip content to rounded corners */
-}
-
-/* Map Card Styles - Left Column */
-.map-card {
-    background: #ffffff;
-    padding: 20px;
-    /* Border radius handled by container now, or specific corners */
-    border-right: 1px solid #eee;
-    /* Separator between map and filters */
-}
-
-/* Map Controls (Tabs only now) */
-.map-controls {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 24px;
-}
-
-.map-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.map-wrapper {
-    width: 100%;
-}
-
-.map-wrapper .map-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.legend-wrapper {
-    width: 100%;
-    border-top: 1px solid #eee;
-    padding-top: 20px;
-}
-
-.legend-title {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #333;
 }
 
 .legend-marker {
@@ -1352,15 +1114,6 @@ html {
     align-items: center;
     gap: 12px;
     padding: 8px 50px;
-}
-
-.optovyi-filter__title {
-    font-size: 18px;
-    font-weight: 700;
-    color: #29332D;
-    margin: 0;
-    padding: 0;
-    text-align: left;
 }
 
 .h4.margin-24 {
@@ -1703,80 +1456,6 @@ html {
     gap: 4px;
 }
 
-.optovyi-options__checkbox:checked+.optovyi-options__indicator {
-    background: #47594F;
-    border-color: #47594F;
-}
-
-.optovyi-options__checkbox:checked+.optovyi-options__indicator::after {
-    content: '';
-    width: 5px;
-    height: 8px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    margin-top: -2px;
-}
-
-.optovyi-filter__footer {
-    padding: 16px 24px;
-    border-top: 1px solid #DAE5DF;
-    flex-shrink: 0;
-}
-
-.optovyi-filter__footer-buttons .optovyi-button {
-    width: 100%;
-    padding: 10px 20px;
-    background: #ffffff;
-    border: 1px solid #DAE5DF;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 500;
-    color: #29332D;
-    transition: all 0.2s ease;
-    justify-content: center;
-    /* Center the text */
-}
-
-.optovyi-filter__footer-buttons .optovyi-button:hover {
-    background: #F0F5F2;
-    border-color: #47594F;
-}
-
-/* Button styles that were shared */
-.optovyi-button {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    padding: 8px 16px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-    transition: all 0.3s ease;
-}
-
-.optovyi-button:hover {
-    background: #f9f9f9;
-    border-color: #d0d0d0;
-}
-
-.optovyi-button.selected {
-    background: #ffffff;
-    border-color: #FFD700;
-    color: #333;
-    box-shadow: 0 0 0 1px #FFD700;
-}
-
-.optovyi-button svg {
-    width: 20px;
-    height: 20px;
-}
-
 /* Responsive adjustments */
 
 @media (max-width: 1024px) {
@@ -1807,7 +1486,7 @@ html {
     font-weight: 700;
     color: #29332D;
     margin: 0;
-    padding: 8px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -1864,42 +1543,6 @@ html {
     margin: 0;
 }
 
-.contact-li {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.li-heading {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #47594F;
-    /* Dark green/gray */
-    margin-bottom: 4px;
-}
-
-.contact-link {
-    font-size: 16px;
-    font-weight: 500;
-    color: #29332D;
-    text-decoration: none;
-    line-height: 1.5;
-    transition: color 0.2s ease;
-}
-
-.contact-link:hover {
-    color: #4CAF50;
-    /* Primary green */
-}
-
-.phonenumbers-stacked {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
 .phonenumbers-stacked .contact-link {
     display: block;
 }
@@ -1936,27 +1579,7 @@ html {
     /* Center the text */
 }
 
-.optovyi-filter__footer-buttons .optovyi-button:hover {
-    background: #F0F5F2;
-    border-color: #47594F;
-}
-
 /* Button styles that were shared */
-.optovyi-button {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    padding: 8px 16px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-    transition: all 0.3s ease;
-}
-
 h1 {
     margin-top: 0;
     margin-bottom: 0;
@@ -2005,24 +1628,6 @@ h5 {
 p {
     margin-bottom: 10px;
     line-height: 24px;
-}
-
-
-.optovyi-button:hover {
-    background: #f9f9f9;
-    border-color: #d0d0d0;
-}
-
-.optovyi-button.selected {
-    background: #ffffff;
-    border-color: #FFD700;
-    color: #333;
-    box-shadow: 0 0 0 1px #FFD700;
-}
-
-.optovyi-button svg {
-    width: 20px;
-    height: 20px;
 }
 
 /* Responsive adjustments */
@@ -2122,46 +1727,6 @@ p {
     /* Чіткість PNG */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
-}
-
-.contact-li {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.li-heading {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #47594F;
-    /* Dark green/gray */
-    margin-bottom: 4px;
-}
-
-.contact-link {
-    font-size: 16px;
-    font-weight: 500;
-    color: #29332D;
-    text-decoration: none;
-    line-height: 1.5;
-    transition: color 0.2s ease;
-}
-
-.contact-link:hover {
-    color: #4CAF50;
-    /* Primary green */
-}
-
-.phonenumbers-stacked {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.phonenumbers-stacked .contact-link {
-    display: block;
 }
 
 /* Responsive */
