@@ -96,3 +96,27 @@ const observer2 = new IntersectionObserver((entries, obs) => {
 
 // наблюдаем все fade-up элементы
 document.querySelectorAll('.fade-up').forEach(el => observer2.observe(el));
+
+
+// ПОШУК ПО ФІЛЬТРАХ (Search functionality for filter items)
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.querySelector('.optovyi-search__input');
+    const filterItems = document.querySelectorAll('.optovyi-options__item');
+
+    if (searchInput && filterItems.length > 0) {
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase().trim();
+
+            filterItems.forEach(item => {
+                const label = item.querySelector('.optovyi-options__label');
+                const text = label ? label.textContent.toLowerCase() : '';
+
+                if (text.includes(searchTerm)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    }
+});

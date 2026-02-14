@@ -1309,26 +1309,6 @@ body {
     height: 20px;
 }
 
-/* Responsive adjustments */
-
-@media (max-width: 1024px) {
-    .map-page-layout {
-        grid-template-columns: 1fr;
-        /* Stack on smaller screens */
-    }
-
-    .map-card {
-        border-right: none;
-        border-bottom: 1px solid #eee;
-    }
-
-    .filters-sidebar-static {
-        height: auto;
-        max-height: 500px;
-        /* Limit height on mobile if needed */
-    }
-}
-
 .legend-marker {
     width: 24px;
     height: 24px;
@@ -1544,27 +1524,6 @@ p {
     margin-bottom: 10px;
     line-height: 24px;
 }
-
-/* Responsive adjustments */
-
-@media (max-width: 1024px) {
-    .map-page-layout {
-        grid-template-columns: 1fr;
-        /* Stack on smaller screens */
-    }
-
-    .map-card {
-        border-right: none;
-        border-bottom: 1px solid #eee;
-    }
-
-    .filters-sidebar-static {
-        height: auto;
-        max-height: 500px;
-        /* Limit height on mobile if needed */
-    }
-}
-
 
 .card-contact:hover {
     transform: translateY(-2px);
@@ -2138,37 +2097,6 @@ body {
     overflow: hidden;
 }
 
-/* Адаптивні стилі для .grid-3col */
-
-/* Додати після базових стилів .grid-3col (після рядка 695 в index.css) */
-
-/* Планшети (середні екрани) - 2 колонки */
-@media screen and (max-width: 900px) {
-    .grid-3col {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-    }
-
-    .grid-2col {
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .grid-3col {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 12px;
-        grid-row-gap: 12px;
-    }
-
-    .grid-2col {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-}
-
 /* Мобільні пристрої - 1 колонка 
 @media screen and (max-width: 600px) {
     .grid-3col {
@@ -2267,7 +2195,7 @@ body {
 /* Адаптивні стилі для .grid-3col */
 @media screen and (max-width: 900px) {
     .grid-3col {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
@@ -2280,8 +2208,8 @@ body {
 
 @media screen and (max-width: 600px) {
     .grid-3col {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 12px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
         grid-row-gap: 12px;
     }
 
