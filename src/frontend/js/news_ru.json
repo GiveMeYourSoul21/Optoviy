@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "date": "10.11.2025",
+        "title": "Создание сайта рынка «Оптовый»",
+        "image": "assets/img/news/news1.jpg",
+        "link": "#",
+        "description": "Нажмите, чтобы узнать больше",
+        "contentFile": "assets/news/news1_ru.html",
+        "fullContent": ""
+    },
+    {
+        "id": 2,
+        "date": "20.11.2025",
+        "title": "Новость",
+        "image": "assets/img/news/news2.jpg",
+        "link": "#",
+        "description": "Нажмите, чтобы узнать больше",
+        "contentFile": "assets/news/news2_ru.html",
+        "fullContent": ""
+    },
+    {
+        "id": 3,
+        "date": "30.12.2025",
+        "title": "Поздравление с Новым годом",
+        "image": "assets/img/news/news3.jpg",
+        "link": "#",
+        "description": "Нажмите, чтобы узнать больше",
+        "contentFile": "assets/news/news3_ru.html",
+        "fullContent": ""
+    },
+    {
+        "id": 4,
+        "date": "06.11.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 5,
+        "date": "30.10.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 6,
+        "date": "23.10.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 7,
+        "date": "16.10.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 8,
+        "date": "29.09.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 9,
+        "date": "22.09.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 10,
+        "date": "22.09.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 11,
+        "date": "22.09.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 12,
+        "date": "22.09.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 13,
+        "date": "22.09.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 14,
+        "date": "22.09.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 15,
+        "date": "22.09.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 16,
+        "date": "22.09.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 17,
+        "date": "22.09.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    },
+    {
+        "id": 18,
+        "date": "22.09.2025",
+        "title": "Тестовая новость",
+        "image": "assets/img/news/test-news.png",
+        "link": "#",
+        "description": ""
+    }
+]

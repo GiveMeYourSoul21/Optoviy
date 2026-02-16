@@ -4,21 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <title>Карта ринку "Оптовий"</title>
-    <link rel="stylesheet" href="../css/index.css?v=6.0.0">
+
+    <title>Карта территории — Оптовый рынок Одесса</title>
+    <link rel="stylesheet" href="../css/index.css?v=6.0.3">
     <link rel="stylesheet" href="../css/news.css">
     <link rel="stylesheet" href="../css/mobile-menu.css">
     <link rel="stylesheet" href="../css/map.css">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Оптовий ринок" />
-    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Оптовий ринок">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" crossorigin="use-credentials">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/web-app-manifest-192x192.png">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Подробная карта территории рынка Оптовый. Расположение павильонов, въезды, парковки и инфраструктура.">
+    <link rel="canonical" href="https://optovoy.vercel.app/map.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_UA">
+    <meta property="og:site_name" content="Оптовый рынок">
+    <meta property="og:title" content="Карта территории — Оптовый рынок Одесса">
+    <meta property="og:description"
+        content="Подробная карта территории рынка Оптовый. Расположение павильонов, въезды, парковки и инфраструктура.">
+    <meta property="og:url" content="https://optovoy.vercel.app/map.html">
+    <meta property="og:image" content="https://optovoy.vercel.app/assets/img/OP.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="https://optovoy.vercel.app/assets/img/OP.png">
+    <meta name="twitter:title" content="Карта территории — Оптовий ринок Одеса">
+    <meta name="twitter:description"
+        content="Подробная карта территории рынка Оптовый. Расположение павильонов, въезды, парковки и инфраструктура.">
+    <meta name="twitter:image" content="https://optovoy.vercel.app/assets/img/OP.png">
+
 </head>
 
 <body>
@@ -28,22 +55,22 @@
             <!-- Logo -->
             <div class="logo">
                 <div class="logo-icon">
-                    <a href="index.html"><img src="assets/img/OP.png" alt="Оптовий ринок"></a>
+                    <a href="ruMain.html"><img src="../assets/img/OP.png" alt="Оптовый рынок"></a>
                 </div>
             </div>
             <!-- Burger Menu Button (Mobile) -->
             <button class="burger-menu-btn" aria-label="Відкрити меню">
-                <img src="assets/img/horizontal_menu_burger.svg" alt="Меню" class="burger-icon">
+                <img src="../assets/img/horizontal_menu_burger.svg" alt="Меню" class="burger-icon">
             </button>
 
             <!-- Navigation -->
             <nav class="main-nav">
                 <ul class="nav-menu">
-                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="about.html">О нас</a></li>
                     <li><a href="map.html">Карта</a></li>
-                    <li><a href="services.html">Послуги</a></li>
-                    <li><a href="news.html">Новини</a></li>
-                    <li><a href="contact.html">Контакти</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
                 </ul>
 
                 <!-- Social Icons -->
@@ -65,11 +92,11 @@
                 </div>
 
                 <!-- Feedback Button -->
-                <button class="feedback-btn" type="button">Зворотний зв'язок</button>
+                <button class="feedback-btn" type="button">Обратная связь</button>
 
                 <ul class="menu-language">
-                    <li><a href="map.html" class="lang-active">UA</a></li>
-                    <li><a href="RU/map.html">RU</a></li>
+                    <li><a href="../map.html">UA</a></li>
+                    <li><a href="map.html" class="lang-active">RU</a></li>
                 </ul>
             </nav>
         </div>
@@ -78,18 +105,25 @@
     <!-- Main Content -->
     <main style="flex: 1; display: flex; flex-direction: column;">
         <div class="section-light">
-            <div class="container">
-                <h2 class="h2">Карта ринку</h2>
+            <div class="container-for-map">
+                <h1 class="h2">Карта рынка</h1>
                 <br>
 
-                <div class="container">
+                <div class="container-for-map">
                     <div class="map-page-layout">
                         <!-- Left Column: Map Card -->
                         <div class="map-card">
                             <!-- Tabs (only tabs now, button removed) -->
                             <div class="map-controls">
+                                <!-- Back Button (hidden by default) -->
+                                <a href="#" id="back-to-main" class="button--back w-inline-block"
+                                    style="display: none;">
+                                    <img src="../assets/svg_icons/left.svg" class="icon-back-arrow no_exif_metadata"
+                                        alt="Назад">
+                                    <div class="button">Карта рынка</div>
+                                </a>
                                 <div class="map-tabs-top">
-                                    <button class="optovyi-button selected">
+                                    <button class="optovyi-button selected" id="btn-scheme">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1 6V22L8 18L16 22L23 18V2L16 6L8 2L1 6Z" stroke="#47594F"
@@ -101,7 +135,7 @@
                                         </svg>
                                         <span>Схема</span>
                                     </button>
-                                    <button class="optovyi-button">
+                                    <button class="optovyi-button" id="btn-photo">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -135,7 +169,7 @@
                                                 stroke-linejoin="round">
                                             </path>
                                         </svg>
-                                        <span>Вертикальна карта</span>
+                                        <span>Вертикальная карта</span>
                                     </button>
                                 </div>
                             </div>
@@ -143,8 +177,8 @@
                             <!-- Map and Legend -->
                             <div class="map-layout">
                                 <div class="map-wrapper">
-
-                                    <?xml version="1.0" encoding="utf-8"?>
+                                    <img src="../assets/img/map-3D.png" id="map-photo-image"
+                                        style="display: none; width: 100%; height: auto;" alt="Фото рынка">
                                     <svg baseProfile="tiny" width="2773.984px" height="626.986px"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="564 1408 2774 627" version="1.2">
                                         <defs>
@@ -189,267 +223,231 @@
                                                 font-family="MS Shell Dlg 2" />
                                         </g>
                                         <g fill="none" stroke-width="1" stroke="black" fill-rule="evenodd"
-                                            stroke-linejoin="bevel" stroke-linecap="square" id="Карта 1: building">
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="#000000" stroke="none" fill-opacity="0" font-style="normal"
-                                                font-weight="400" font-size="34.5833"
-                                                transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="#f3a6b2" stroke-width="3.07087" stroke="#232323"
-                                                stroke-linejoin="bevel" fill-opacity="1" stroke-linecap="square"
-                                                font-style="normal" font-weight="400" font-size="34.5833"
-                                                stroke-opacity="1"
-                                                transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2">
-                                                <path id="sector1" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M884.444 1548.9 L1000.249 1548.9 L1000.249 1616.492 L884.444 1616.492 Z" />
-                                                <path id="sector2" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M 670 1905 L 670 1770 L 700 1770 L 700 1875 L 728 1875 L 728 1905 L 671 1905 Z" />
-                                                <path id="sector4" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M 795 1905 L 795 1875 L 1245 1875 L 1245 1890 L 1290 1890 L 1290 1925 L 1230 1925 L 1230 1905 Z" />
-                                                <path id="sector5" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M771.343 1808.07 L1302.202 1808.07 L1302.202 1839.116 L771.343 1839.116 Z" />
-                                                <path id="sector6" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M1381.52 1862.62 L2170.68 1862.62 L2170.68 1900.473 L1381.52 1900.473 Z" />
-                                                <path id="sector7" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M3194.36,1898.27 L3172.18,1838.41 L3196.5,1828.06 L3219.19,1888.69 L3194.36,1898.27" />
-                                                <path id="sector8" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M3080.879 1700.423 L3134.196 1700.423 L3134.196 1827.744 L3080.879 1827.744 Z" />
-                                                <path id="sector9" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M3081.17 1600.398 L3134.377 1600.398 L3134.377 1686.717 L3081.17 1686.717 Z" />
-                                                <path id="sector10" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M3006.315 1600.398 L3061.203 1600.398 L3061.203 1686.86 L3006.315 1686.86 Z" />
-                                                <path id="sector11" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M2867.636 1600.398 L2991.12 1600.398 L2991.12 1659.068 L2867.636 1659.068 Z" />
-                                                <path id="sector12" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M2452.15 1600.398 L2852.631 1600.398 L2852.631 1659.568 L2452.15 1659.568 Z" />
-                                                <path id="sector13" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M2200.24 1600.398 L2412.51 1600.398 L2412.51 1662.114 L2200.24 1662.114 Z" />
-                                                <path id="sector14" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M1976.048 1600.398 L2165.03 1600.398 L2165.03 1658.28 L1976.048 1658.28 Z" />
-                                                <path id="sector15" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M1675.395 1629.452 L1950.58 1629.452 L1950.58 1657.0 L1675.395 1657.0 Z" />
-                                                <path id="sector16" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M1500.374 1716.221 L1700.367 1716.221 L1700.367 1745.354 L1500.374 1745.354 Z" />
-                                                <path id="sector17" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M 1718.02 1715.35 L 1953.13 1715.35 L 1953.13 1744.99 L 1718.02 1744.99 L 1718.02 1715.35 Z" />
-                                                <path id="sector18" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M1972.34 1692.526 L2170.207 1692.526 L2170.207 1750.404 L1972.34 1750.404 Z" />
-                                                <path id="sector19" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M2194.77 1693.82 L2426.79 1693.82 L2426.79 1751.885 L2194.77 1751.885 Z" />
-                                                <path id="sector20" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M2446.97 1693.666 L2654.7 1693.666 L2654.7 1749.06 L2446.97 1749.06 Z" />
-                                                <path id="sector21" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M2665.46 1693.987 L2852.651 1693.987 L2852.651 1748.424 L2665.46 1748.424 Z" />
-                                                <path id="sector22" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M2865.4 1693.27 L2988.97 1693.27 L2988.97 1748.918 L2865.4 1748.918 Z" />
-                                                <path id="sector23" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M3005.748 1700.423 L3062.061 1700.423 L3062.061 1790.981 L3005.748 1790.981 Z" />
-                                                <path id="sector24" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M3155.11 1600.398 L3200.797 1600.398 L3200.797 1782.64 L3155.11 1782.64 Z" />
-                                                <path id="sector25" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M 3224.26 1544.27 L 3253.78 1544.27 L 3253.78 1891.47 L 3224.26 1891.47 L 3224.26 1544.27 Z" />
-                                                <path id="sector26" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M3213,1918.85 L3209.03,1904.37 L3227.77,1900.23 L3231.61,1914.84 L3213,1918.85" />
-                                                <path id="sector27" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M 1403 1846 L 1403 1811 L 1466 1811 L 1466 1783 L 1704 1783 L 1704 1847 L 1405 1847 Z" />
-                                                <path id="sector28" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M1718.19 1782.441 L2175.24 1782.441 L2175.24 1846.054 L1718.19 1846.054 Z" />
-                                                <path id="sector29" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M2191.91 1777.16 L2420.96 1777.16 L2420.96 1849.28 L2191.91 1849.28 Z" />
-                                                <path id="sector30" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M2187.139 1862.683 L2400.598 1862.683 L2400.598 1900.473 L2187.139 1900.473 Z" />
-                                                <path id="sector31" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M2418.78 1862.744 L3157.57 1862.744 L3157.57 1899.17 L2418.78 1899.17 Z" />
-                                                <path id="sector32" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M 3071 1846 L 3071 1812 L 2987 1812 L 2987 1778 L 2433 1778 L 2433 1845 L 3071 1846 Z" />
-                                                <path id="sector33" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M1915.73 1546.23 L3200.797 1546.23 L3200.797 1582.633 L1915.73 1582.633 Z" />
-                                                <path id="sector3" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M 669 1761 L 669 1550 L 835 1550 L 835 1579 L 702 1579 L 701 1761 L 669 1761 Z"
-                                                    style="stroke-width: 3.071;" />
-                                                <path id="sector34" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M817.239 1630.293 L843.903 1630.293 L843.903 1767.113 L817.239 1767.113 Z"
-                                                    style="stroke-width: 3.071;" />
-                                            </g>
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
-                                                font-family="MS Shell Dlg 2" />
+                                            stroke-linejoin="bevel" stroke-linecap="square" id="Karta1_building"></g>
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="#000000" stroke="none" fill-opacity="0" font-style="normal"
+                                            font-weight="400" font-size="34.5833"
+                                            transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="#f3a6b2" stroke-width="3.07087" stroke="#232323"
+                                            stroke-linejoin="bevel" fill-opacity="1" stroke-linecap="square"
+                                            font-style="normal" font-weight="400" font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2">
+                                            <path id="sector1" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M884.444 1548.9 L1000.249 1548.9 L1000.249 1616.492 L884.444 1616.492 Z" />
+                                            <path id="sector2" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M 670 1905 L 670 1770 L 700 1770 L 700 1875 L 728 1875 L 728 1905 L 671 1905 Z" />
+                                            <path id="sector4" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M 795 1905 L 795 1875 L 1245 1875 L 1245 1890 L 1290 1890 L 1290 1925 L 1230 1925 L 1230 1905 Z" />
+                                            <path id="sector5" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M771.343 1808.07 L1302.202 1808.07 L1302.202 1839.116 L771.343 1839.116 Z" />
+                                            <path id="sector6" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M1381.52 1862.62 L2170.68 1862.62 L2170.68 1900.473 L1381.52 1900.473 Z" />
+                                            <path id="sector7" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M3194.36,1898.27 L3172.18,1838.41 L3196.5,1828.06 L3219.19,1888.69 L3194.36,1898.27" />
+                                            <path id="sector8" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M3080.879 1700.423 L3134.196 1700.423 L3134.196 1827.744 L3080.879 1827.744 Z" />
+                                            <path id="sector9" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M3081.17 1600.398 L3134.377 1600.398 L3134.377 1686.717 L3081.17 1686.717 Z" />
+                                            <path id="sector10" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M3006.315 1600.398 L3061.203 1600.398 L3061.203 1686.86 L3006.315 1686.86 Z" />
+                                            <path id="sector11" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M2867.636 1600.398 L2991.12 1600.398 L2991.12 1659.068 L2867.636 1659.068 Z" />
+                                            <path id="sector12" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M2452.15 1600.398 L2852.631 1600.398 L2852.631 1659.568 L2452.15 1659.568 Z" />
+                                            <path id="sector13" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M2200.24 1600.398 L2412.51 1600.398 L2412.51 1662.114 L2200.24 1662.114 Z" />
+                                            <path id="sector14" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M1976.048 1600.398 L2165.03 1600.398 L2165.03 1658.28 L1976.048 1658.28 Z" />
+                                            <path id="sector15" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M1675.395 1629.452 L1950.58 1629.452 L1950.58 1657.0 L1675.395 1657.0 Z" />
+                                            <path id="sector16" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M1500.374 1716.221 L1700.367 1716.221 L1700.367 1745.354 L1500.374 1745.354 Z" />
+                                            <path id="sector17" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M 1718.02 1715.35 L 1953.13 1715.35 L 1953.13 1744.99 L 1718.02 1744.99 L 1718.02 1715.35 Z" />
+                                            <path id="sector18" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M1972.34 1692.526 L2170.207 1692.526 L2170.207 1750.404 L1972.34 1750.404 Z" />
+                                            <path id="sector19" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M2194.77 1693.82 L2426.79 1693.82 L2426.79 1751.885 L2194.77 1751.885 Z" />
+                                            <path id="sector20" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M2446.97 1693.666 L2654.7 1693.666 L2654.7 1749.06 L2446.97 1749.06 Z" />
+                                            <path id="sector21" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M2665.46 1693.987 L2852.651 1693.987 L2852.651 1748.424 L2665.46 1748.424 Z" />
+                                            <path id="sector22" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M2865.4 1693.27 L2988.97 1693.27 L2988.97 1748.918 L2865.4 1748.918 Z" />
+                                            <path id="sector23" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M3005.748 1700.423 L3062.061 1700.423 L3062.061 1790.981 L3005.748 1790.981 Z" />
+                                            <path id="sector24" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M3155.11 1600.398 L3200.797 1600.398 L3200.797 1782.64 L3155.11 1782.64 Z" />
+                                            <path id="sector25" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M 3224.26 1544.27 L 3253.78 1544.27 L 3253.78 1891.47 L 3224.26 1891.47 L 3224.26 1544.27 Z" />
+                                            <path id="sector26" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M3213,1918.85 L3209.03,1904.37 L3227.77,1900.23 L3231.61,1914.84 L3213,1918.85" />
+                                            <path id="sector27" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M 1403 1846 L 1403 1811 L 1466 1811 L 1466 1783 L 1704 1783 L 1704 1847 L 1405 1847 Z" />
+                                            <path id="sector28" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M1718.19 1782.441 L2175.24 1782.441 L2175.24 1846.054 L1718.19 1846.054 Z" />
+                                            <path id="sector29" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M2191.91 1777.16 L2420.96 1777.16 L2420.96 1849.28 L2191.91 1849.28 Z" />
+                                            <path id="sector30" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M2187.139 1862.683 L2400.598 1862.683 L2400.598 1900.473 L2187.139 1900.473 Z" />
+                                            <path id="sector31" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M2418.78 1862.744 L3157.57 1862.744 L3157.57 1899.17 L2418.78 1899.17 Z" />
+                                            <path id="sector32" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M 3071 1846 L 3071 1812 L 2987 1812 L 2987 1778 L 2433 1778 L 2433 1845 L 3071 1846 Z" />
+                                            <path id="sector33" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M1915.73 1546.23 L3200.797 1546.23 L3200.797 1582.633 L1915.73 1582.633 Z" />
+                                            <path id="sector3" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M 669 1761 L 669 1550 L 835 1550 L 835 1579 L 702 1579 L 701 1761 L 669 1761 Z"
+                                                style="stroke-width: 3.071;" />
+                                            <path id="sector34" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M817.239 1630.293 L843.903 1630.293 L843.903 1767.113 L817.239 1767.113 Z"
+                                                style="stroke-width: 3.071;" />
+                                        </g>
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
+                                            font-family="MS Shell Dlg 2" />
                                         </g>
                                         <g fill="none" stroke-width="1" stroke="black" fill-rule="evenodd"
-                                            stroke-linejoin="bevel" stroke-linecap="square" id="Карта 1: parks">
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="#000000" stroke="none" fill-opacity="0" font-style="normal"
-                                                font-weight="400" font-size="34.5833"
-                                                transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="#377eb8" stroke-width="3.07087" stroke="#265980"
-                                                stroke-linejoin="bevel" fill-opacity="1" stroke-linecap="square"
-                                                font-style="normal" font-weight="400" font-size="34.5833"
-                                                stroke-opacity="1"
-                                                transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2">
-                                                <path id="sector-park1" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M 849 1625 L 848.518 1799.62 L 1300 1800 L 1300 1546 L 1006 1546 L 1006 1625 L 849 1625 Z" />
-                                                <path id="sector-park2" class="sector" vector-effect="none"
-                                                    fill-rule="evenodd"
-                                                    d="M 1345.23 1771.28 L 1350.71 1710.61 L 1332.597 1707.95 L 1338.479 1619.11 L 1360.55 1620.16 L 1367.75 1549.2 L 1438.52 1548.41 L 1828.26 1546.15 L 1829.36 1571.92 L 1605.481 1573.475 L 1602.112 1616.086 L 1541.235 1617.453 L 1538.45 1656.14 L 1485.7 1657.92 L 1433.619 1666.506 L 1385.56 1674.56 L 1373.21 1772.31 L 1345.23 1771.28" />
-                                            </g>
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
-                                                font-family="MS Shell Dlg 2" />
+                                            stroke-linejoin="bevel" stroke-linecap="square" id="Karta1_parks"></g>
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="#000000" stroke="none" fill-opacity="0" font-style="normal"
+                                            font-weight="400" font-size="34.5833"
+                                            transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="#377eb8" stroke-width="3.07087" stroke="#265980"
+                                            stroke-linejoin="bevel" fill-opacity="1" stroke-linecap="square"
+                                            font-style="normal" font-weight="400" font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2">
+                                            <path id="sector-park1" class="sector" vector-effect="none"
+                                                fill-rule="evenodd"
+                                                d="M 849 1625 L 848.518 1799.62 L 1300 1800 L 1300 1546 L 1006 1546 L 1006 1625 L 849 1625 Z" />
+                                            <path id="sector-park2" class="sector" vector-effect="none"
+                                                fill-rule="evenodd"
+                                                d="M 1345.23 1771.28 L 1350.71 1710.61 L 1332.597 1707.95 L 1338.479 1619.11 L 1360.55 1620.16 L 1367.75 1549.2 L 1438.52 1548.41 L 1828.26 1546.15 L 1829.36 1571.92 L 1605.481 1573.475 L 1602.112 1616.086 L 1541.235 1617.453 L 1538.45 1656.14 L 1485.7 1657.92 L 1433.619 1666.506 L 1385.56 1674.56 L 1373.21 1772.31 L 1345.23 1771.28" />
+                                        </g>
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
+                                            font-family="MS Shell Dlg 2" />
                                         </g>
                                         <g fill="none" stroke-width="1" stroke="black" fill-rule="evenodd"
-                                            stroke-linejoin="bevel" stroke-linecap="square" id="Карта 1: road">
+                                            stroke-linejoin="bevel" stroke-linecap="square" id="Karta1_road">
                                             <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
                                                 stroke-linecap="square" font-style="normal" font-weight="400"
                                                 font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
@@ -530,79 +528,79 @@
                                         <rect x="1298.62" y="1916.86" width="88.857" height="30.281"
                                             style="fill: rgb(216, 216, 216);" />
                                         <g fill="none" stroke-width="1" stroke="black" fill-rule="evenodd"
-                                            stroke-linejoin="bevel" stroke-linecap="square" id="Карта 1: Аннотации">
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="#000000" stroke="none" fill-opacity="0" font-style="normal"
-                                                font-weight="400" font-size="34.5833"
-                                                transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1"
-                                                transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
-                                                font-family="MS Shell Dlg 2" />
-                                            <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
-                                                stroke-linecap="square" font-style="normal" font-weight="400"
-                                                font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
-                                                font-family="MS Shell Dlg 2" />
+                                            stroke-linejoin="bevel" stroke-linecap="square" id="Karta1_Annotation"></g>
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="#000000" stroke="none" fill-opacity="0" font-style="normal"
+                                            font-weight="400" font-size="34.5833"
+                                            transform="matrix(0.999751,0,0,0.999751,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1"
+                                            transform="matrix(11.8081,0,0,11.8081,1.21175e-14,0)"
+                                            font-family="MS Shell Dlg 2" />
+                                        <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
+                                            stroke-linecap="square" font-style="normal" font-weight="400"
+                                            font-size="34.5833" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)"
+                                            font-family="MS Shell Dlg 2" />
                                         </g>
                                         <rect x="713.375" y="1914.88" width="88.857" height="30.281"
                                             style="fill: rgb(216, 216, 216);" />
                                         <text
                                             style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; user-select: none;"
                                             transform="matrix(1, 0, 0, 1, 34.404582, 4.285195)">
-                                            <textPath href="#path-6">вулиця Семена Палія</textPath>
+                                            <textPath href="#path-6">улица Семена Палия</textPath>
                                         </text>
                                         <text
                                             style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; user-select: none;"
                                             transform="matrix(1, 0, 0, 1, 5.413233, 0.318425)">
-                                            <textPath href="#path-7">в'їзд</textPath>
+                                            <textPath href="#path-7">въезд</textPath>
                                         </text>
                                         <text
                                             style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; user-select: none;"
                                             transform="matrix(1, 0, 0, 1, -0.474741, -0.318425)">
-                                            <textPath href="#path-8">в'їзд</textPath>
+                                            <textPath href="#path-8">въезд</textPath>
                                         </text>
                                     </svg>
 
@@ -614,8 +612,9 @@
                                         <a id="tooltip-link"
                                             class="pochatok-im-button pochatok-im-button--default pochatok-im-tooltip__link"
                                             target="_blank" rel="noreferrer" href="#">
-                                            <span>Детальна інформація</span>
-                                            <img src="assets/svg_icons/right.svg" class="icon-back-arrow" alt="">
+                                            <span>Подробная информация</span>
+                                            <img src="../assets/svg_icons/right.svg" class="icon-back-arrow"
+                                                alt="Стрелка">
                                         </a>
                                     </div>
 
@@ -623,11 +622,11 @@
 
                                 </div>
                                 <div class="legend-wrapper">
-                                    <h3 class="legend-title">Умовні позначення</h3>
+                                    <h3 class="legend-title">Условные обозначения</h3>
                                     <ul class="legend-list">
                                         <li class="legend-item">
                                             <span class="legend-marker" style="background-color: #c70926;"></span>
-                                            <span>Адміністрація</span>
+                                            <span>Администрация</span>
                                         </li>
                                         <li class="legend-item">
                                             <span class="legend-marker" style="background-color: #837e7f;"></span>
@@ -635,45 +634,45 @@
                                         </li>
                                         <li class="legend-item">
                                             <span class="legend-marker" style="background-color: #CADCC6;"></span>
-                                            <span>Областя</span>
+                                            <span>Областная</span>
                                         </li>
                                         <li class="legend-item">
                                             <span class="legend-marker" style="background-color: #8FC9CA;"></span>
-                                            <span>Павільон "Стріла"</span>
+                                            <span>Павильон "Стрела"</span>
                                         </li>
                                         <li class="legend-item">
                                             <span class="legend-marker" style="background-color: #f3a6b2;"></span>
-                                            <span>Павільон "Київ"</span>
+                                            <span>Павильон "Киев"</span>
                                         </li>
                                         <li class="legend-item">
                                             <span class="legend-marker" style="background-color: #B7CFB7;"></span>
-                                            <span>Павільон "Одеса"</span>
+                                            <span>Павильон "Одесса"</span>
                                         </li>
                                         <li class="legend-item">
                                             <span class="legend-marker" style="background-color: #F9E0CC;"></span>
-                                            <span>Павільон "Марс"</span>
+                                            <span>Павильон "Марс"</span>
                                         </li>
                                         <li class="legend-item">
                                             <span class="legend-marker" style="background-color: #E2D9EB;"></span>
-                                            <span>Павільон "Зміїний"</span>
+                                            <span>Павильон "Змеиный"</span>
                                         </li>
                                         <li class="legend-item">
                                             <span class="legend-marker" style="background-color: #BDD2E0;"></span>
-                                            <span>Павільон "Дорожня"</span>
+                                            <span>Павильон "Дорожная"</span>
                                         </li>
                                         <li class="legend-item">
                                             <span class="legend-marker" style="background-color: #FFFEBD;"></span>
-                                            <span>Павільон "Дім"</span>
+                                            <span>Павильон "Дом"</span>
                                         </li>
                                         <li class="legend-item">
-                                            <img src="assets/svg_icons/car.svg" loading="lazy" alt=""
+                                            <img src="../assets/svg_icons/car.svg" loading="lazy" alt="Машина"
                                                 class="icon-wrapper">
                                             <span>СТО</span>
                                         </li>
                                         <li class="legend-item">
-                                            <img src="assets/svg_icons/wc.svg" loading="lazy" alt=""
+                                            <img src="../assets/svg_icons/wc.svg" loading="lazy" alt="Туалет"
                                                 class="icon-wrapper">
-                                            <span>Туалети</span>
+                                            <span>Туалеты</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -683,7 +682,7 @@
                         <!-- Right Column: Filters Sidebar (Static) -->
                         <aside class="filters-sidebar-static">
                             <div class="optovyi-filter__header">
-                                <h4 class="optovyi-filter__title optovyi-h4">Фільтри товарів</h4>
+                                <h4 class="optovyi-filter__title optovyi-h4">Фильтры товаров</h4>
                                 <span class="optovyi-filter__counter optovyi-caption">0</span>
                             </div>
                             <div class="optovyi-filter__search">
@@ -698,7 +697,9 @@
                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         </path>
                                     </svg>
-                                    <input class="optovyi-search__input" placeholder="Пошук" type="text" value="">
+                                    <input class="optovyi-search__input" placeholder="Поиск" type="text" value="">
+
+
                                 </label>
                             </div>
                             <div class="optovyi-filter__body">
@@ -707,428 +708,367 @@
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Фрукти</span>
+                                                <span>Фрукты</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Овочі</span>
+                                                <span>Овощи</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
                                                 <span>Зелень</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>М’ясо</span>
+                                                <span>Мясо</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Риба</span>
+                                                <span>Рыба</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Морепродукти</span>
+                                                <span>Морепродукты</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Копчено-ковбасні вироби</span>
+                                                <span>Копчено-колбасные изделия</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Молочна продукція</span>
+                                                <span>Молочная продукция</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Хлібобулочні вироби</span>
+                                                <span>Хлебобулочные изделия</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Напої алкогольні</span>
+                                                <span>Напитки алкогольные</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Напої безалкогольні</span>
+                                                <span>Напитки безалкогольные</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Соління</span>
+                                                <span>Соленья</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Горіхи</span>
+                                                <span>Орехи</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Сухофрукти</span>
+                                                <span>Сухофрукты</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Турецькі солодощі</span>
+                                                <span>Турецкие сладости</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Солодощі</span>
+                                                <span>Сладости</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Макаронні вироби</span>
+                                                <span>Макаронные изделия</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Крупи</span>
+                                                <span>Крупы</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Консервація</span>
+                                                <span>Консервация</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Рослинна олія</span>
+                                                <span>Растительное масло</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Спеції</span>
+                                                <span>Специи</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Тютюнові вироби</span>
+                                                <span>Табачные изделия</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Зоотовари</span>
+                                                <span>Зоотовары</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Кондитерські вироби</span>
+                                                <span>Кондитерские изделия</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Гарячі напої</span>
+                                                <span>Горячие напитки</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
                                                 <span>Снеки</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Соуси</span>
+                                                <span>Соусы</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Гриби</span>
+                                                <span>Грибы</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Заморожені продукти та напівфабрикати</span>
+                                                <span>Замороженные продукты и полуфабрикаты</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Десерти</span>
+                                                <span>Десерты</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Кулінарія</span>
+                                                <span>Кулинария</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Дитяче харчування</span>
+                                                <span>Детское питание</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Побутова хімія</span>
+                                                <span>Бытовая химия</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Особиста гігієна</span>
+                                                <span>Личная гигиена</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Косметика та догляд</span>
+                                                <span>Косметика и уход</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Господарські товари</span>
+                                                <span>Хозяйственные товары</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
                                                 <span>Кухня</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Хобі та відпочинок</span>
+                                                <span>Хобби и отдых</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Інтер’єр та текстиль</span>
+                                                <span>Интерьер и текстиль</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Канцелярія</span>
+                                                <span>Канцелярия</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Товари для ремонту</span>
+                                                <span>Товары для ремонта</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Побутова техніка</span>
+                                                <span>Бытовая техника</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Товари для свята</span>
+                                                <span>Товары для праздника</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Товари для саду та городу</span>
+                                                <span>Товары для сада и огорода</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Велосипеди</span>
+                                                <span>Велосипеды</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Товари для будівництва</span>
+                                                <span>Товары для строительства</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Меблі</span>
+                                                <span>Мебель</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Посуд</span>
+                                                <span>Посуда</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Освітлення</span>
+                                                <span>Освещение</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Сантехніка</span>
+                                                <span>Сантехника</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Інструменти</span>
+                                                <span>Инструменты</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Канцтовари</span>
+                                                <span>Канцтовары</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Двері</span>
+                                                <span>Двери</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Вікна</span>
+                                                <span>Окна</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Електроніка</span>
+                                                <span>Электроника</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Краса та здоров’я</span>
+                                                <span>Красота и здоровье</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
                                                 <span>Аптека</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Пошта</span>
+                                                <span>Почта</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Одяг</span>
+                                                <span>Одежда</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Взуття</span>
+                                                <span>Обувь</span>
                                             </label>
                                         </li>
                                         <li class="optovyi-options__item">
                                             <label class="optovyi-options__label">
                                                 <input class="visible-hidden optovyi-options__checkbox" type="checkbox">
-                                                <span class="optovyi-options__indicator"></span>
-                                                <span>Експертний пункт</span>
+                                                <span>Экспертный пункт</span>
                                             </label>
                                         </li>
                                     </ul>
@@ -1136,7 +1076,7 @@
                             </div>
                             <div class="optovyi-filter__footer">
                                 <div class="optovyi-filter__footer-buttons">
-                                    <button class="optovyi-button">Очистити Фільтр</button>
+                                    <button class="optovyi-button">Очистить Фильтр</button>
                                 </div>
                             </div>
                         </aside>
@@ -1144,7 +1084,6 @@
                 </div>
             </div>
         </div>
-
     </main>
 
     <!-- Footer -->
@@ -1153,14 +1092,14 @@
             <!-- Перша колонка: Навігація -->
             <div class="footer-column">
                 <div class="footer-section">
-                    <h3 class="footer-title">Навігація сайту</h3>
+                    <h3 class="footer-title">Навигация сайта</h3>
                     <ul class="footer-nav">
-                        <li><a href="index.html">Головна</a></li>
-                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="ruMain.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
                         <li><a href="map.html">Карта</a></li>
-                        <li><a href="services.html">Послуги</a></li>
-                        <li><a href="news.html">Новини</a></li>
-                        <li><a href="contact.html">Контакти</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -1169,14 +1108,14 @@
             <div class="footer-column">
                 <div class="footer-section">
                     <div class="contact-item">
-                        <span class="footer-title">Адреса</span>
-                        <p class="contact-phone">вул. Семена Палія, 125a</p>
-                        <p class="contact-phone">Одеса, Одеська область, Україна, 65000</p>
+                        <span class="footer-title">Адрес</span>
+                        <p class="contact-phone">ул. Семена Палия, 125a</p>
+                        <p class="contact-phone">Одесса, Одесская область, Украина, 65000</p>
                     </div>
                     <div class="contact-item">
-                        <span class="footer-title">Приймальня</span>
+                        <span class="footer-title">Приемная</span>
                         <p class="contact-phone">+380 970 365 447</p>
-                        <p class="contact-phone">Вт – ВС з 8:00 до 17:00</p>
+                        <p class="contact-phone">Вт – ВС с 8:00 до 17:00</p>
                     </div>
                 </div>
             </div>
@@ -1184,15 +1123,15 @@
             <!-- Третя колонка: Email, соцмережі -->
             <div class="footer-column">
                 <div class="footer-section">
-                    <h3 class="footer-title">Контакти</h3>
+                    <h3 class="footer-title">Контакты</h3>
                     <div class="contact-item">
-                        <span class="contact-label">ЕЛЕКТРОННА ПОШТА</span>
+                        <span class="contact-label">ЭЛЕКТРОННАЯ ПОЧТА</span>
                         <p class="contact-email">optovyymarket@gmail.com</p>
-                        <span class="contact-label">ПОШТА АДМІНІСТРАТОРА САЙТУ</span>
+                        <span class="contact-label">ПОЧТА АДМИНИСТРАТОРА САЙТА</span>
                         <p class="contact-email">yaroslavppi27@gmail.com</p>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-label">СОЦІАЛЬНІ МЕРЕЖІ</span>
+                        <span class="contact-label">СОЦИАЛЬНЫЕ СЕТИ</span>
                         <div class="social-icons">
                             <a href="https://www.instagram.com/rinokopt/?igsh=MWVybWp3aDE4Y2J5MQ%3D%3D#"
                                 class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
@@ -1214,7 +1153,7 @@
                     </div>
                 </div>
             </div>
-            <p class="small-text">© 2025-2026 Ринок «Оптовий». Всі права захищені.</p>
+            <p class="small-text">© 2025-2026 Рынок «Оптовий». Все права защищены.</p>
         </div>
     </footer>
 
@@ -1222,14 +1161,14 @@
     <div class="modal" id="feedback-modal" aria-hidden="true" role="dialog" aria-modal="true">
         <div class="modal-overlay" data-modal-close=""></div>
         <div class="modal-dialog" role="document">
-            <button class="modal-close" type="button" aria-label="Закрити" title="Закрити"
+            <button class="modal-close" type="button" aria-label="Закрыть" title="Закрыть"
                 data-modal-close="">×</button>
-            <h3 class="modal-title">Зворотний зв'язок</h3>
+            <h3 class="modal-title">Обратная связь</h3>
             <div class="modal-content">
-                <p>Якщо у Вас виникли питання, на які не знаходяться відповіді, наберіть на нашу гарячу лінію зв'язку.
+                <p>Если у Вас возникли вопросы, на которые не находятся ответы, наберите нашу горячую линию.
                 </p>
                 <p class="modal-phone">+380 970 365 447</p>
-                <p>Вт - Вс з 8:00 до 17:00</p>
+                <p>Вт - Вс с 8:00 до 17:00</p>
             </div>
         </div>
     </div>
@@ -1238,7 +1177,7 @@
     <div class="mobile-menu-overlay"></div>
     <div class="mobile-menu">
         <!-- Close Button -->
-        <button class="mobile-menu-close" aria-label="Закрити меню">
+        <button class="mobile-menu-close" aria-label="Закрыть меню">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -1247,12 +1186,12 @@
         </button>
 
         <ul class="mobile-nav-menu">
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="about.html">Про нас</a></li>
+            <li><a href="ruMain.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
             <li><a href="map.html">Карта</a></li>
-            <li><a href="services.html">Послуги</a></li>
-            <li><a href="news.html">Новини</a></li>
-            <li><a href="contact.html">Контакти</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="contact.html">Контакты</a></li>
         </ul>
 
         <!-- Social Icons -->
@@ -1276,12 +1215,12 @@
         </div>
 
         <!-- Feedback Button -->
-        <button class="mobile-feedback-btn" type="button">Зворотний зв'язок</button>
+        <button class="mobile-feedback-btn" type="button">Обратная связь</button>
 
         <!-- Language Menu -->
         <ul class="mobile-language-menu">
-            <li><a href="../index.html" class="lang-active">UA</a></li>
-            <li><a href="../RU/ruMain.html">RU</a></li>
+            <li><a href="../map.html">UA</a></li>
+            <li><a href="map.html" class="lang-active">RU</a></li>
         </ul>
     </div>
 

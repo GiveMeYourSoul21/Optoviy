@@ -4,27 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <title>Ринок "Оптовий"</title>
+
+    <title>Оптовый рынок Одесса — свежие продукты и товары оптом</title>
     <link rel="stylesheet" href="../css/index.css?v=6.0.3">
     <link rel="stylesheet" href="../css/news.css">
     <link rel="stylesheet" href="../css/mobile-menu.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
-    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Оптовий ринок">
-    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" crossorigin="use-credentials">
 
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/web-app-manifest-192x192.png">
+    <!-- SEO -->
+    <meta name="description"
+        content="Оптовый рынок в Одессе: свежие овощи, фрукты, продукты питания и товары оптом. Актуальные цены, новости и контакты поставщиков.">
+    <link rel="canonical" href="https://optovoy.vercel.app/">
+    <!-- robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Оптовий ринок">
+    <meta property="og:title" content="Оптовий ринок Одеса — Свіжі продукти та товари оптом">
+    content="Оптовый рынок в Одессе: свежие овощи, фрукты, продукты питания и товары оптом. Актуальные цены, новости и
+    контакты поставщиков.">
+    <meta property="og:url" content="https://optovoy.vercel.app">
+    <meta property="og:image" content="https://optovoy.vercel.app/assets/img/OP.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
-
+    <!-- Twitter -->
+    <meta name="twitter:card" content="https://optovoy.vercel.app/assets/img/OP.png">
+    <meta name="twitter:title" content="Оптовий ринок Одеса — Свіжі продукти та товари оптом">
+    content="Оптовый рынок в Одессе: свежие овощи, фрукты, продукты питания и товары оптом. Актуальные цены, новости и
+    контакты поставщиков.">
+    <meta name="twitter:image" content="https://optovoy.vercel.app/assets/img/OP.png">
 
 </head>
-
 
 <body>
 
@@ -34,7 +55,7 @@
             <!-- Logo -->
             <div class="logo">
                 <div class="logo-icon">
-                    <a href="../index.html"><img src="../assets/img/OP.png" alt="Оптовий ринок"></a>
+                    <a href="ruMain.html"><img src="../assets/img/OP.png" alt="Оптовий ринок"></a>
                 </div>
             </div>
 
@@ -46,11 +67,11 @@
             <!-- Navigation -->
             <nav class="main-nav">
                 <ul class="nav-menu">
-                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="about.html">О нас</a></li>
                     <li><a href="map.html">Карта</a></li>
-                    <li><a href="services.html">Послуги</a></li>
-                    <li><a href="news.html">Новини</a></li>
-                    <li><a href="contact.html">Контакти</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
                 </ul>
 
                 <!-- Social Icons -->
@@ -75,14 +96,12 @@
 
                 <!-- Feedback Button -->
 
-                <button class="feedback-btn" type="button">Зворотний зв'язок</button>
-
-
+                <button class="feedback-btn" type="button">Обратная связь</button>
 
 
                 <ul class="menu-language">
-                    <li><a href="index.html" class="lang-active">UA</a></li>
-                    <li><a href="RU/ruMain.html">RU</a></li>
+                    <li><a href="../index.html">UA</a></li>
+                    <li><a href="ruMain.html" class="lang-active">RU</a></li>
                 </ul>
             </nav>
         </div>
@@ -94,61 +113,80 @@
         <!-- Section 1: Banner + About -->
         <div class="section-white">
             <div class="container">
-                <div class="banner">
-                    <img src="../assets/img/panel.png" alt="panel" class="back">
-                    <p class="p">Вибір якісної продукції, який вражає! Свіжі фермерські продукти, промислові товари та
-                        якісні послуги в одному торговельному просторі.</p>
-                    <a href="map.html">
-                        <button>Дивитися карту ринку</button>
-                    </a>
+                <div class="banner fade-up">
+                    <img src="../assets/img/panel.png" alt="Панель" class="back">
+                    <p class="p">Выбор качественной продукции, который впечатляет! Свежие фермерские продукты,
+                        промышленные товары и
+                        качественные услуги в одном торговом пространстве.</p>
+                    <div class="map-button-wrapper">
+                        <a href="map.html"><button>Смотреть карту рынка</button></a>
+                    </div>
                 </div>
             </div>
 
             <section class="market-section" style="background-color: transparent;">
-                <div class="container w-container">
+                <div class="container w-container ">
                     <div class="w-layout-grid about__grid-2col">
                         <div class="content-header margin-60">
-                            <p class="overline">Про нас</p>
-                            <h2 class="h2">Ринок «Оптовий»</h2>
-                            <p class="p-normal">Ринок «Оптовий» - це торговий комплекс, що займає площу 4 га та має 1100
-                                торгівих місць та 200 місць для авто. Ринок пропонує широкий асортимент товарів та
-                                послуг,
-                                включаючи свіжі фермерські продукти, промислові товари та якісні послуги.</p>
+                            <p class="overline">О нас</p>
+                            <h1 class="h2">Рынок «Оптовый»</h1>
+                            <p class="p-normal">Рынок «Оптовый» - это торговый комплекс, занимающий площадь 4 га и
+                                имеющий 1100
+                                торговых мест и 200 мест для авто. Рынок предлагает широкий ассортимент товаров и
+                                услуг,
+                                включая свежие фермерские продукты, промышленные товары и качественные услуги.</p>
                             <br>
-                            <p class="p-normal">Ринок «Оптовий» пропонує широкий асортимент товарів та послуг, включаючи
-                                свіжі фермерські продукти, промислові товари та якісні послуги.</p>
+                            <p class="p-normal">Рынок «Оптовый» предлагает широкий ассортимент товаров и услуг, включая
+                                свежие фермерские продукты, промышленные товары и качественные услуги.</p>
                             <br>
-                            <p class="p-normal">Ринок «Оптовий» пропонує широкий асортимент товарів та послуг, включаючи
-                                свіжі фермерські продукти, промислові товари та якісні послуги.</p>
+                            <p class="p-normal">Рынок «Оптовый» предлагает широкий ассортимент товаров и услуг, включая
+                                свежие фермерские продукты, промышленные товары и качественные услуги.</p>
                         </div>
 
                         <div class="w-layout-grid cards--2rows">
-                            <div class="card--about">
-                                <img src="assets/svg_icons/medal.svg" loading="lazy" alt="" class="icon-wrapper">
-                                <h5 class="card-heading">Тільки безпечна продукція</h5>
-                                <p class="p-normal no-margin">Вся продукція на ринку «Оптовий» відповідає високому рівню
-                                    перевірки на безпечність для здоров'я людей.</p>
+                            <div class="fade-up">
+                                <div class="card--about">
+                                    <img src="../assets/svg_icons/medal.svg" loading="lazy" alt="Награда"
+                                        class="icon-wrapper">
+                                    <h5 class="card-heading">Только безопасная продукция</h5>
+                                    <p class="p-normal no-margin">Вся продукция на рынке «Оптовый» соответствует
+                                        высокому
+                                        уровню
+                                        проверки на безопасность для здоровья людей.</p>
+                                </div>
                             </div>
-                            <div class="card--about">
-                                <img src="assets/svg_icons/market.svg" loading="lazy" alt="" class="icon-wrapper">
-                                <h5 class="card-heading">Комфортні умови для абсолютної зручності</h5>
-                                <p class="p-normal no-margin">Сучасні, просторі, чисті та нові торгівельні площі. Ціни,
-                                    що
-                                    приємно дивують.</p>
+                            <div class="fade-up">
+                                <div class="card--about">
+                                    <img src="../assets/svg_icons/market.svg" loading="lazy" alt="Маркет"
+                                        class="icon-wrapper">
+                                    <h5 class="card-heading">Комфортные условия для абсолютного удобства</h5>
+                                    <p class="p-normal no-margin">Современные, просторные, чистые и новые торговые
+                                        площади.
+                                        Цены,
+                                        которые
+                                        приятно удивляют.</p>
+                                </div>
                             </div>
-                            <div class="card--about">
-                                <img src="assets/svg_icons/money-wallet.svg" loading="lazy" alt="" class="icon-wrapper">
-                                <h5 class="card-heading">Чесна торгівля за розумними цінами</h5>
-                                <p class="p-normal no-margin">Сукупність вигідних відносин купівлі-продажу товарів і
-                                    послуг.
-                                    Свіжа та якісна продукція за ринковими цінами.</p>
+                            <div class="fade-up">
+                                <div class="card--about">
+                                    <img src="../assets/svg_icons/money-wallet.svg" loading="lazy" alt="Кошелек"
+                                        class="icon-wrapper">
+                                    <h5 class="card-heading">Честная торговля по разумным ценам</h5>
+                                    <p class="p-normal no-margin">Совокупность выгодных отношений купли-продажи товаров
+                                        и
+                                        услуг.
+                                        Свежая и качественная продукция по рыночным ценам.</p>
+                                </div>
                             </div>
-                            <div class="card--about">
-                                <img src="assets/svg_icons/graph-line.svg" loading="lazy" alt="" class="icon-wrapper">
-                                <h5 class="card-heading">Стрімкий розвиток вашого бізнесу</h5>
-                                <p class="p-normal no-margin">Комфортне місце зустрічі попиту та пропозиції з
-                                    налаштованим
-                                    постійним потоком клієнтів.</p>
+                            <div class="fade-up">
+                                <div class="card--about">
+                                    <img src="../assets/svg_icons/graph-line.svg" loading="lazy" alt="График"
+                                        class="icon-wrapper">
+                                    <h5 class="card-heading">Стремительное развитие вашего бизнеса</h5>
+                                    <p class="p-normal no-margin">Комфортное место встречи спроса и предложения с
+                                        настроенным
+                                        постоянным потоком клиентов.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,24 +197,24 @@
         <!-- Section 2: Map Stats + Map + Advantages -->
         <div class="section-light">
             <section class="market-section" style="background-color: transparent; padding-top: 60px;">
-                <div class="container">
+                <div class="container ">
                     <h5 class="section-subtitle">Карта</h5>
-                    <h2 class="h2">Карта ринку «Оптовий»</h2>
+                    <h2 class="h2">Карта рынка «Оптовый»</h2>
 
-                    <div class="grid-3col">
+                    <div class="grid-3col fade-up">
                         <div class="card--numbers">
-                            <h2 class="card-number">4 га</h2>
-                            <p class="card-label">площа ринку</p>
+                            <h2 class="card-number" data-target="4">4 га</h2>
+                            <p class="card-label">площадь рынка</p>
                         </div>
 
                         <div class="card--numbers">
-                            <h2 class="card-number">1100</h2>
-                            <p class="card-label">торгових місць</p>
+                            <h2 class="card-number" data-target="1100">1100</h2>
+                            <p class="card-label">торговых мест</p>
                         </div>
 
                         <div class="card--numbers">
-                            <h2 class="card-number">200</h2>
-                            <p class="card-label">місць для авто</p>
+                            <h2 class="card-number" data-target="200">200</h2>
+                            <p class="card-label">мест для авто</p>
                         </div>
                     </div>
                 </div>
@@ -184,20 +222,20 @@
             <br>
             <br>
             <div class="container">
-                <div class="map-card">
+                <div class="map-card fade-up">
                     <div class="map-layout">
                         <div class="map-wrapper">
-                            <img src="assets/img/op_map_horizontal.png" alt="Карта ринку Оптовий"
+                            <img src="../assets/img/new-map.png" alt="Карта ринку Оптовий"
                                 class="map-image map-horizontal">
-                            <img src="assets/img/op_map_vertical.png" alt="Карта ринку Оптовий"
+                            <img src="../assets/img/op_map_vertical.png" alt="Карта ринку Оптовий"
                                 class="map-image map-vertical">
                         </div>
                         <div class="legend-wrapper">
-                            <h3 class="legend-title">Умовні позначення</h3>
+                            <h3 class="legend-title">Условные обозначения</h3>
                             <ul class="legend-list">
                                 <li class="legend-item">
                                     <span class="legend-marker" style="background-color: #c70926;"></span>
-                                    <span>Адміністрація</span>
+                                    <span>Администрация</span>
                                 </li>
                                 <li class="legend-item">
                                     <span class="legend-marker" style="background-color: #837e7f;"></span>
@@ -209,95 +247,112 @@
                                 </li>
                                 <li class="legend-item">
                                     <span class="legend-marker" style="background-color: #8FC9CA;"></span>
-                                    <span>Павільон "Стріла"</span>
+                                    <span>Павильон "Стрела"</span>
                                 </li>
                                 <li class="legend-item">
                                     <span class="legend-marker" style="background-color: #f3a6b2;"></span>
-                                    <span>Павільон "Київ"</span>
+                                    <span>Павильон "Киев"</span>
                                 </li>
                                 <li class="legend-item">
                                     <span class="legend-marker" style="background-color: #B7CFB7;"></span>
-                                    <span>Павільон "Одеса"</span>
+                                    <span>Павильон "Одесса"</span>
                                 </li>
                                 <li class="legend-item">
                                     <span class="legend-marker" style="background-color: #F9E0CC;"></span>
-                                    <span>Павільон "Марс"</span>
+                                    <span>Павильон "Марс"</span>
                                 </li>
                                 <li class="legend-item">
                                     <span class="legend-marker" style="background-color: #E2D9EB;"></span>
-                                    <span>Павільон "Зміїний"</span>
+                                    <span>Павильон "Змеиный"</span>
                                 </li>
                                 <li class="legend-item">
                                     <span class="legend-marker" style="background-color: #BDD2E0;"></span>
-                                    <span>Павільон "Дорожня"</span>
+                                    <span>Павильон "Дорожная"</span>
                                 </li>
                                 <li class="legend-item">
                                     <span class="legend-marker" style="background-color: #FFFEBD;"></span>
-                                    <span>Павільон "Дім"</span>
+                                    <span>Павильон "Дом"</span>
                                 </li>
                                 <li class="legend-item">
-                                    <img src="assets/svg_icons/car.svg" loading="lazy" alt="" class="icon-wrapper">
+                                    <img src="../assets/svg_icons/car.svg" loading="lazy" alt="Авто"
+                                        class="icon-wrapper">
                                     <span>СТО</span>
                                 </li>
                                 <li class="legend-item">
-                                    <img src="assets/svg_icons/wc.svg" loading="lazy" alt="" class="icon-wrapper">
-                                    <span>Туалети</span>
+                                    <img src="../assets/svg_icons/wc.svg" loading="lazy" alt="Туалет"
+                                        class="icon-wrapper">
+                                    <span>Туалеты</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="map-button-wrapper">
-                    <a href="map.html"><button>Дивитися карту ринку</button></a>
+                    <button onclick="location.href='map.html'">Смотреть карту рынка</button>
                 </div>
             </div>
 
             <section class="market-section"
                 style="background-color: transparent; margin-top: 60px; padding-bottom: 60px;">
                 <div class="container">
-                    <h5 class="section-subtitle">переваги</h5>
-                    <h2 class="h2">Наші переваги</h2>
-                    <p class="p-normal">Вибираючи нас, ви отримуєте:</p>
+                    <h5 class="section-subtitle">преимущества</h5>
+                    <h2 class="h2">Наши преимущества</h2>
+                    <p class="p-normal">Выбирая нас, вы получаете:</p>
 
                     <div class="w-layout-grid cards--2rows">
-                        <div class="card--about">
-                            <img src="assets/svg_icons/basket.svg" loading="lazy" alt="" class="icon-wrapper">
-                            <div class="feature-text">
-                                <h5 class="card__heading--feature"><strong>Тільки якісна продукція</strong></h5>
-                                <p class="p-normal no-margin">Свіжа, відбірна, отримана на пряму від виробників
-                                    продукція за
-                                    найкращими цінами.</p>
+
+                        <div class="fade-up-wrapper fade-up">
+                            <div class="card--about">
+                                <img src="../assets/svg_icons/basket.svg" loading="lazy" alt="Корзина"
+                                    class="icon-wrapper">
+                                <div class="feature-text">
+                                    <h5 class="card__heading--feature"><strong>Только качественная продукция</strong>
+                                    </h5>
+                                    <p class="p-normal no-margin">Свежая, отборная, полученная напрямую от
+                                        производителей
+                                        продукция по лучшим ценам.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card--about">
-                            <img src="assets/svg_icons/spatula1.svg" loading="lazy" alt="" class="icon-wrapper">
-                            <div class="feature-text">
-                                <h5 class="card__heading--feature"><strong>Фермерські товари</strong></h5>
-                                <p class="p-normal no-margin">Можливість купувати продукцію, яка максимально вирощена у
-                                    природніх умовах, що збільшує її користь для споживання.</p>
+
+                        <div class="fade-up-wrapper fade-up">
+                            <div class="card--about">
+                                <img src="../assets/svg_icons/spatula1.svg" loading="lazy" alt="Лопатка"
+                                    class="icon-wrapper">
+                                <div class="feature-text">
+                                    <h5 class="card__heading--feature"><strong>Фермерские товары</strong></h5>
+                                    <p class="p-normal no-margin">Возможность покупать продукцию, которая максимально
+                                        выращена в естественных условиях.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card--about">
-                            <img src="assets/svg_icons/market.svg" loading="lazy" alt="" class="icon-wrapper">
-                            <div class="feature-text">
-                                <h5 class="card__heading--feature"><strong>Комфортні умови для абсолютної
-                                        зручності</strong>
-                                </h5>
-                                <p class="p-normal no-margin">Сучасні, просторі, чисті та нові торгівельні площі. Ціни,
-                                    що
-                                    приємно дивують.
-                                </p>
+
+                        <div class="fade-up-wrapper fade-up">
+                            <div class="card--about">
+                                <img src="../assets/svg_icons/market.svg" loading="lazy" alt="Маркет"
+                                    class="icon-wrapper">
+                                <div class="feature-text">
+                                    <h5 class="card__heading--feature"><strong>Комфортные условия</strong></h5>
+                                    <p class="p-normal no-margin">Современные, просторные, чистые и новые торговые
+                                        площади.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card--about">
-                            <img src="assets/svg_icons/wallet.svg" loading="lazy" alt="" class="icon-wrapper">
-                            <div class="feature-text">
-                                <h5 class="card__heading--feature"><strong>Приємні ціни</strong></h5>
-                                <p class="p-normal no-margin">Взаємодія виробників і споживачів, заснована на
-                                    комплексному
-                                    підході у співвідношеннях ціни та якості.</p>
+
+                        <div class="fade-up-wrapper fade-up">
+                            <div class="card--about">
+                                <img src="../assets/svg_icons/wallet.svg" loading="lazy" alt="Кошелек"
+                                    class="icon-wrapper">
+                                <div class="feature-text">
+                                    <h5 class="card__heading--feature"><strong>Приятные цены</strong></h5>
+                                    <p class="p-normal no-margin">Взаимодействие производителей и потребителей,
+                                        основанное на
+                                        комплексном подходе.</p>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -307,15 +362,15 @@
         <div class="section-white">
             <section class="market-section" style="background-color: transparent; padding: 60px 0;">
                 <div class="container">
-                    <h5 class="section-subtitle">Новини</h5>
-                    <h2 class="h2">Новини ринку та бізнесу</h2>
+                    <h5 class="section-subtitle">Новости</h5>
+                    <h2 class="h2">Новости рынка и бизнеса</h2>
 
                     <div id="news-container" class="news-grid">
                         <!-- News items will be loaded here -->
                     </div>
 
                     <div class="news-actions" style="text-align: center; margin-top: 40px;">
-                        <a href="news.html" class="btn-primary">Дивитися всі новини</a>
+                        <a href="news.html" class="btn-primary">Смотреть все новости</a>
                     </div>
                 </div>
             </section>
@@ -329,14 +384,14 @@
             <!-- Перша колонка: Навігація -->
             <div class="footer-column">
                 <div class="footer-section">
-                    <h3 class="footer-title">Навігація сайту</h3>
+                    <h3 class="footer-title">Навигация сайта</h3>
                     <ul class="footer-nav">
-                        <li><a href="index.html">Головна</a></li>
-                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="ruMain.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
                         <li><a href="map.html">Карта</a></li>
-                        <li><a href="services.html">Послуги</a></li>
-                        <li><a href="news.html">Новини</a></li>
-                        <li><a href="contact.html">Контакти</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -345,14 +400,14 @@
             <div class="footer-column">
                 <div class="footer-section">
                     <div class="contact-item">
-                        <span class="footer-title">Адреса</span>
-                        <p class="contact-phone">вул. Семена Палія, 125a</p>
-                        <p class="contact-phone">Одеса, Одеська область, Україна, 65000</p>
+                        <span class="footer-title">Адрес</span>
+                        <p class="contact-phone">ул. Семена Палия, 125a</p>
+                        <p class="contact-phone">Одесса, Одесская область, Украина, 65000</p>
                     </div>
                     <div class="contact-item">
-                        <span class="footer-title">Приймальня</span>
+                        <span class="footer-title">Приемная</span>
                         <p class="contact-phone">+380 970 365 447</p>
-                        <p class="contact-phone">Вт – ВС з 8:00 до 17:00</p>
+                        <p class="contact-phone">Вт – ВС с 8:00 до 17:00</p>
                     </div>
                 </div>
             </div>
@@ -360,15 +415,15 @@
             <!-- Третя колонка: Email, соцмережі -->
             <div class="footer-column">
                 <div class="footer-section">
-                    <h3 class="footer-title">Контакти</h3>
+                    <h3 class="footer-title">Контакты</h3>
                     <div class="contact-item">
-                        <span class="contact-label">ЕЛЕКТРОННА ПОШТА</span>
+                        <span class="contact-label">ЭЛЕКТРОННАЯ ПОЧТА</span>
                         <p class="contact-email">optovyymarket@gmail.com</p>
-                        <span class="contact-label">ПОШТА АДМІНІСТРАТОРА САЙТУ</span>
+                        <span class="contact-label">ПОЧТА АДМИНИСТРАТОРА САЙТА</span>
                         <p class="contact-email">yaroslavppi27@gmail.com</p>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-label">СОЦІАЛЬНІ МЕРЕЖІ</span>
+                        <span class="contact-label">СОЦИАЛЬНЫЕ СЕТИ</span>
                         <div class="social-icons">
                             <a href="https://www.instagram.com/rinokopt/?igsh=MWVybWp3aDE4Y2J5MQ%3D%3D#"
                                 class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
@@ -390,7 +445,7 @@
                     </div>
                 </div>
             </div>
-            <p class="small-text">© 2025-2026 Ринок «Оптовий». Всі права захищені.</p>
+            <p class="small-text">© 2025-2026 Рынок «Оптовый». Все права защищены.</p>
         </div>
     </footer>
 
@@ -398,14 +453,14 @@
     <div class="modal" id="feedback-modal" aria-hidden="true" role="dialog" aria-modal="true">
         <div class="modal-overlay" data-modal-close=""></div>
         <div class="modal-dialog" role="document">
-            <button class="modal-close" type="button" aria-label="Закрити" title="Закрити"
+            <button class="modal-close" type="button" aria-label="Закрыть" title="Закрыть"
                 data-modal-close="">×</button>
-            <h3 class="modal-title">Зворотний зв'язок</h3>
+            <h3 class="modal-title">Обратная связь</h3>
             <div class="modal-content">
-                <p>Якщо у Вас виникли питання, на які не знаходяться відповіді, наберіть на нашу гарячу лінію зв'язку.
+                <p>Если у Вас возникли вопросы, на которые не находятся ответы, наберите нашу горячую линию.
                 </p>
                 <p class="modal-phone">+380 970 365 447</p>
-                <p>Вт - Вс з 8:00 до 17:00</p>
+                <p>Вт - Вс с 8:00 до 17:00</p>
             </div>
         </div>
     </div>
@@ -414,7 +469,7 @@
     <div class="mobile-menu-overlay"></div>
     <div class="mobile-menu">
         <!-- Close Button -->
-        <button class="mobile-menu-close" aria-label="Закрити меню">
+        <button class="mobile-menu-close" aria-label="Закрыть меню">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -423,12 +478,12 @@
         </button>
 
         <ul class="mobile-nav-menu">
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="about.html">Про нас</a></li>
+            <li><a href="ruMain.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
             <li><a href="map.html">Карта</a></li>
-            <li><a href="services.html">Послуги</a></li>
-            <li><a href="news.html">Новини</a></li>
-            <li><a href="contact.html">Контакти</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="contact.html">Контакты</a></li>
         </ul>
 
         <!-- Social Icons -->
@@ -452,12 +507,12 @@
         </div>
 
         <!-- Feedback Button -->
-        <button class="mobile-feedback-btn" type="button">Зворотний зв'язок</button>
+        <button class="mobile-feedback-btn" type="button">Обратная связь</button>
 
         <!-- Language Menu -->
         <ul class="mobile-language-menu">
-            <li><a href="../index.html" class="lang-active">UA</a></li>
-            <li><a href="../RU/ruMain.html">RU</a></li>
+            <li><a href="../index.html">UA</a></li>
+            <li><a href="ruMain.html" class="lang-active">RU</a></li>
         </ul>
     </div>
 
@@ -466,12 +521,18 @@
     <script src="../js/mobile-menu.js"></script>
 
 
-
-    <!-- Vercel Speed Insights -->
     <script>
         window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/speed-insights/script.js"></script>
+    <!-- DEVELOPMENT BADGE START - DELETE THIS BLOCK BEFORE PRODUCTION -->
+    <div id="dev-badge"
+        style="position: fixed; bottom: 20px; right: 20px; background: #ffc107; color: #000; padding: 10px 15px; border-radius: 8px; font-family: sans-serif; font-weight: bold; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 9999; display: flex; align-items: center; gap: 8px; border: 2px solid #000; pointer-events: none; opacity: 0.9;">
+        <span style="font-size: 18px;">🛠️</span>
+        Сайт находится в разработке*
+    </div>
+    <!-- DEVELOPMENT BADGE END -->
+
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>

@@ -10,7 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const newsId = urlParams.get('news_id');
 
     // Configuration
-    const NEWS_JSON_PATH = 'js/news.json';
+    const isRu = document.documentElement.lang === 'ru-UA' || window.location.pathname.includes('/RU/');
+    const NEWS_JSON_PATH = isRu ? '../js/news_ru.json' : 'js/news.json';
+
+    const strings = {
+        notFound: isRu ? 'Новость не найдена' : 'Новину не знайдено',
+        loading: isRu ? 'Загрузка...' : 'Завантаження...',
+        unavailable: isRu ? 'Контент недоступен' : 'Контент недоступний',
+        fileNotFound: isRu ? 'Файл не найден' : 'Файл не знайдено',
+        loadError: isRu ? 'Ошибка загрузки контента' : 'Помилка завантаження контенту',
+        failedLoad: isRu ? 'Не удалось загрузить контент новости' : 'Не вдалося завантажити контент новини'
+    };
     const ITEMS_PER_PAGE = 9;
     let currentPage = 1;
     let allNews = [];
@@ -56,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const newsItem = allNews.find(item => item.id === id);
 
         if (!newsItem) {
-            newsContainer.innerHTML = '<p>Новину не знайдено</p>';
+            newsContainer.innerHTML = `<p>${strings.notFound}</p>`;
             return;
         }
 
@@ -91,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 
                 <div class="news-detail-content" id="news-content-area">
-                    <p>Завантаження...</p>
+                    <p>${strings.loading}</p>
                 </div>
                 
             </article>
@@ -104,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Або використати fullContent з JSON
             document.getElementById('news-content-area').innerHTML = `<p>${newsItem.fullContent}</p>`;
         } else {
-            document.getElementById('news-content-area').innerHTML = '<p>Контент недоступний</p>';
+            document.getElementById('news-content-area').innerHTML = `<p>${strings.unavailable}</p>`;
         }
     }
 
@@ -115,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch(filePath)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Файл не знайдено');
+                    throw new Error(strings.fileNotFound);
                 }
                 return response.text();
             })
@@ -123,8 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 contentArea.innerHTML = html;
             })
             .catch(error => {
-                console.error('Помилка завантаження контенту:', error);
-                contentArea.innerHTML = '<p>Не вдалося завантажити контент новини</p>';
+                console.error(strings.loadError, error);
+                contentArea.innerHTML = `<p>${strings.failedLoad}</p>`;
             });
     }
 
@@ -160,7 +170,8 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.cursor = 'pointer';
         card.onclick = () => {
             // Перенаправити на news.html з параметром news_id
-            window.location.href = `news.html?news_id=${item.id}`;
+            const targetPage = isRu ? 'news.html' : 'news.html';
+            window.location.href = `${targetPage}?news_id=${item.id}`;
         };
 
         const imageUrl = item.image || '';

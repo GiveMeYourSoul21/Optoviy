@@ -4,21 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <title>Новини ринку "Оптовий"</title>
-    <link rel="stylesheet" href="../css/index.css?v=6.0.0">
+
+    <title>Новости и События — Оптовий рынок Одесса</title>
+    <link rel="stylesheet" href="../css/index.css?v=6.0.3">
     <link rel="stylesheet" href="../css/news.css">
     <link rel="stylesheet" href="../css/mobile-menu.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Оптовий" />
-    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Оптовый рынок">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" crossorigin="use-credentials">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/web-app-manifest-192x192.png">
+    <!-- SEO -->
+    <meta name="description"
+        content="Последние новости, события и обновления Оптового рынка в Одессе. Будьте в курсе изменений и актуальных предложений.">
+    <link rel="canonical" href="https://optovoy.vercel.app/RU/news.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_UA">
+    <meta property="og:site_name" content="Оптовый рынок">
+    <meta property="og:title" content="Новости и События — Оптовий рынок Одесса">
+    <meta property="og:description"
+        content="Последние новости, события и обновления Оптового рынка в Одессе. Будьте в курсе изменений и актуальных предложений.">
+    <meta property="og:url" content="https://optovoy.vercel.app/RU/news.html">
+    <meta property="og:image" content="https://optovoy.vercel.app/assets/img/OP.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="https://optovoy.vercel.app/assets/img/OP.png">
+    <meta name="twitter:title" content="Новости и События — Оптовий рынок Одесса">
+    <meta name="twitter:description"
+        content="Последние новости, события и обновления Оптового рынка в Одессе. Будьте в курсе изменений и актуальных предложений.">
+    <meta name="twitter:image" content="https://optovoy.vercel.app/assets/img/OP.png">
+
 </head>
 
 <body>
@@ -28,22 +53,22 @@
             <!-- Logo -->
             <div class="logo">
                 <div class="logo-icon">
-                    <a href="index.html"><img src="assets/img/OP.png" alt="Оптовий ринок"></a>
+                    <a href="ruMain.html"><img src="../assets/img/OP.png" alt="Оптовий рынок"></a>
                 </div>
             </div>
             <!-- Burger Menu Button (Mobile) -->
-            <button class="burger-menu-btn" aria-label="Відкрити меню">
-                <img src="assets/img/horizontal_menu_burger.svg" alt="Меню" class="burger-icon">
+            <button class="burger-menu-btn" aria-label="Открыть меню">
+                <img src="../assets/img/horizontal_menu_burger.svg" alt="Меню" class="burger-icon">
             </button>
 
             <!-- Navigation -->
             <nav class="main-nav">
                 <ul class="nav-menu">
-                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="about.html">О нас</a></li>
                     <li><a href="map.html">Карта</a></li>
-                    <li><a href="services.html">Послуги</a></li>
-                    <li><a href="news.html">Новини</a></li>
-                    <li><a href="contact.html">Контакти</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
                 </ul>
 
                 <!-- Social Icons -->
@@ -66,13 +91,13 @@
 
                 <!-- Feedback Button -->
 
-                <button class="feedback-btn" type="button">Зворотний зв'язок</button>
+                <button class="feedback-btn" type="button">Обратная связь</button>
 
 
 
                 <ul class="menu-language">
-                    <li><a href="news.html" class="lang-active">UA</a></li>
-                    <li><a href="RU/news.html">RU</a></li>
+                    <li><a href="../news.html">UA</a></li>
+                    <li><a href="news.html" class="lang-active">RU</a></li>
                 </ul>
             </nav>
         </div>
@@ -82,14 +107,16 @@
     <main style="flex: 1; display: flex; flex-direction: column;">
         <div class="section-light">
             <div class="container">
-                <h2 class="h2">Новини</h2>
+                <h1 class="h2">Новости</h1>
                 <hr>
                 <br>
                 <a href="news.html" class="button--back" id="back-to-news-btn" style="display: none;">
-                    <img src="assets/svg_icons/left.svg" class="icon-back-arrow" alt="Назад">
-                    <div class="button">Назад до новин</div>
+                    <img src="../assets/svg_icons/left.svg" class="icon-back-arrow" alt="Назад">
+                    <div class="button">Назад к новостям</div>
                 </a>
                 <article id="News">
+                    <h2 class="visually-hidden">Список новостей</h2> <!-- h for SEO -->
+
                     <div id="news-container" class="news-grid-page">
                         <!-- News items will be loaded here -->
                     </div>
@@ -98,6 +125,7 @@
                         <!-- Pagination will be loaded here -->
                     </div>
                 </article>
+
             </div>
         </div>
     </main>
@@ -108,14 +136,14 @@
             <!-- Перша колонка: Навігація -->
             <div class="footer-column">
                 <div class="footer-section">
-                    <h3 class="footer-title">Навігація сайту</h3>
+                    <h3 class="footer-title">Навигация сайта</h3>
                     <ul class="footer-nav">
-                        <li><a href="index.html">Головна</a></li>
-                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="ruMain.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
                         <li><a href="map.html">Карта</a></li>
-                        <li><a href="services.html">Послуги</a></li>
-                        <li><a href="news.html">Новини</a></li>
-                        <li><a href="contact.html">Контакти</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -124,14 +152,14 @@
             <div class="footer-column">
                 <div class="footer-section">
                     <div class="contact-item">
-                        <span class="footer-title">Адреса</span>
-                        <p class="contact-phone">вул. Семена Палія, 125a</p>
-                        <p class="contact-phone">Одеса, Одеська область, Україна, 65000</p>
+                        <span class="footer-title">Адрес</span>
+                        <p class="contact-phone">ул. Семена Палия, 125a</p>
+                        <p class="contact-phone">Одесса, Одесская область, Украина, 65000</p>
                     </div>
                     <div class="contact-item">
-                        <span class="footer-title">Приймальня</span>
+                        <span class="footer-title">Приемная</span>
                         <p class="contact-phone">+380 970 365 447</p>
-                        <p class="contact-phone">Вт – ВС з 8:00 до 17:00</p>
+                        <p class="contact-phone">Вт – ВС с 8:00 до 17:00</p>
                     </div>
                 </div>
             </div>
@@ -139,15 +167,15 @@
             <!-- Третя колонка: Email, соцмережі -->
             <div class="footer-column">
                 <div class="footer-section">
-                    <h3 class="footer-title">Контакти</h3>
+                    <h3 class="footer-title">Контакты</h3>
                     <div class="contact-item">
-                        <span class="contact-label">ЕЛЕКТРОННА ПОШТА</span>
+                        <span class="contact-label">ЭЛЕКТРОННАЯ ПОЧТА</span>
                         <p class="contact-email">optovyymarket@gmail.com</p>
-                        <span class="contact-label">ПОШТА АДМІНІСТРАТОРА САЙТУ</span>
+                        <span class="contact-label">ПОЧТА АДМИНИСТРАТОРА САЙТА</span>
                         <p class="contact-email">yaroslavppi27@gmail.com</p>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-label">СОЦІАЛЬНІ МЕРЕЖІ</span>
+                        <span class="contact-label">СОЦИАЛЬНЫЕ СЕТИ</span>
                         <div class="social-icons">
                             <a href="https://www.instagram.com/rinokopt/?igsh=MWVybWp3aDE4Y2J5MQ%3D%3D#"
                                 class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
@@ -169,21 +197,21 @@
                     </div>
                 </div>
             </div>
-            <p class="small-text">© 2025-2026 Ринок «Оптовий». Всі права захищені.</p>
+            <p class="small-text">© 2025-2026 Рынок «Оптовый». Все права защищены.</p>
         </div>
     </footer>
 
     <div class="modal" id="feedback-modal" aria-hidden="true" role="dialog" aria-modal="true">
         <div class="modal-overlay" data-modal-close=""></div>
         <div class="modal-dialog" role="document">
-            <button class="modal-close" type="button" aria-label="Закрити" title="Закрити"
+            <button class="modal-close" type="button" aria-label="Закрыть" title="Закрыть"
                 data-modal-close="">×</button>
-            <h3 class="modal-title">Зворотний зв'язок</h3>
+            <h3 class="modal-title">Обратная связь</h3>
             <div class="modal-content">
-                <p>Якщо у Вас виникли питання, на які не знаходяться відповіді, наберіть на нашу гарячу лінію зв'язку.
+                <p>Если у Вас возникли вопросы, на которые не находятся ответы, наберите нашу горячую линию.
                 </p>
                 <p class="modal-phone">+380 970 365 447</p>
-                <p>Вт - Вс з 8:00 до 17:00</p>
+                <p>Вт - Вс с 8:00 до 17:00</p>
             </div>
         </div>
     </div>
@@ -193,7 +221,7 @@
     <div class="mobile-menu-overlay"></div>
     <div class="mobile-menu">
         <!-- Close Button -->
-        <button class="mobile-menu-close" aria-label="Закрити меню">
+        <button class="mobile-menu-close" aria-label="Закрыть меню">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -202,12 +230,12 @@
         </button>
 
         <ul class="mobile-nav-menu">
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="about.html">Про нас</a></li>
+            <li><a href="ruMain.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
             <li><a href="map.html">Карта</a></li>
-            <li><a href="services.html">Послуги</a></li>
-            <li><a href="news.html">Новини</a></li>
-            <li><a href="contact.html">Контакти</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="contact.html">Контакты</a></li>
         </ul>
 
         <!-- Social Icons -->
@@ -231,12 +259,12 @@
         </div>
 
         <!-- Feedback Button -->
-        <button class="mobile-feedback-btn" type="button">Зворотний зв'язок</button>
+        <button class="mobile-feedback-btn" type="button">Обратная связь</button>
 
         <!-- Language Menu -->
         <ul class="mobile-language-menu">
-            <li><a href="../index.html" class="lang-active">UA</a></li>
-            <li><a href="../RU/ruMain.html">RU</a></li>
+            <li><a href="../news.html">UA</a></li>
+            <li><a href="news.html" class="lang-active">RU</a></li>
         </ul>
     </div>
 
