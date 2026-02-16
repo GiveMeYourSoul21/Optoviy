@@ -1,9 +1,15 @@
 
 // Mapping of sectors to their detailed SVG maps
 const sectorMaps = {
+    'sector4': 'assets/img/Sector5-4.svg',
+    'sector5': 'assets/img/Sector5-4.svg',
+    'sector13': 'assets/img/Sector13.svg',
+    'sector14': 'assets/img/Sector14.svg',
     'sector15': 'assets/img/Sector15.svg',
     'sector16': 'assets/img/Sector16.svg',
     'sector17': 'assets/img/Sector17.svg',
+    'sector18': 'assets/img/Sector18.svg',
+    'sector19': 'assets/img/Sector19.svg',
     'sector27': 'assets/img/Sector27.svg',
     'sector28': 'assets/img/Sector28.svg',
     'sector34': 'assets/img/Sector34-3-2.svg'
@@ -12,7 +18,7 @@ const sectorMaps = {
 // Sector Data Configuration (for tooltip fallback)
 const sectorData = {
     'sector1': { title: 'Адміністрація', link: 'pages/administration.html' },
-    'sector2': { title: 'Сектор 2: М\'ясо та ковбаси', link: '/map?shop_id=1' },
+    'sector2': { title: 'Сектор 2: М\'ясо та ковбаси', link: '#' },
     'sector3': { title: 'Сектор 3: Молочна продукція', link: '#' },
     'sector4': { title: 'Сектор 4: Риба та морепродукти', link: '#' },
     'sector5': { title: 'Сектор 5: Бакалія', link: '#' },
@@ -50,6 +56,18 @@ const sectorData = {
 
 // Legend configurations for detailed maps
 const detailedLegends = {
+    'sector4': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector5': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector13': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector14': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
     'sector15': [
         { color: '#FAE9C8', label: 'Павільйон "Марс"' }
     ],
@@ -57,6 +75,12 @@ const detailedLegends = {
         { color: '#FAE9C8', label: 'Павільйон "Марс"' }
     ],
     'sector17': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector18': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector19': [
         { color: '#FAE9C8', label: 'Павільйон "Марс"' }
     ],
     'sector27': [

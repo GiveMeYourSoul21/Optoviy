@@ -1,0 +1,116 @@
+<svg width="865" height="260" viewBox="0 0 865 260" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!--
+    1 кл = 25px
+    4кл = 100px, 2кл = 50px
+    Ряды h = 4кл = 100px
+    Горизонтальные (П-293, П-294, П-351, П-352): w=100px, h=50px (пары по 2кл высота)
+    Вертикальные (П-292..П-282, П-359, П-358, П-353): w=50px, h=100px
+    Широкие (П-281, П-361, П-360, П-357, П-356, П-355, П-354): w=100px, h=100px
+
+    Верхний ряд: y=20, h=100
+    Нижний ряд:  y=140, h=100
+  -->
+
+  <rect width="865" height="260" fill="#DAE5DF"/>
+
+  <!-- ══════════════════════════════
+       ВЕРХНИЙ РЯД  y=20, h=100
+  ══════════════════════════════ -->
+
+  <!-- П-293: горизонтальный, 4кл×2кл = 100×50 (верх) -->
+  <rect x="5"   y="20" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="55"  y="45" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-293</text>
+
+  <!-- П-294: горизонтальный, 4кл×2кл = 100×50 (низ, под П-293) -->
+  <rect x="5"   y="70" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="55"  y="95" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-294</text>
+
+  <!-- П-292..П-282: вертикальные 2кл×4кл = 50×100 -->
+  <rect x="105" y="20" width="50" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="130" y="70" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 130 70)">П-292</text>
+
+  <rect x="155" y="20" width="50" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="180" y="70" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 180 70)">П-291</text>
+
+  <rect x="205" y="20" width="50" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="230" y="70" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 230 70)">П-290</text>
+
+  <rect x="255" y="20" width="50" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="280" y="70" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 280 70)">П-289</text>
+
+  <rect x="305" y="20" width="50" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="330" y="70" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 330 70)">П-288</text>
+
+  <rect x="355" y="20" width="50" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="380" y="70" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 380 70)">П-287</text>
+
+  <rect x="405" y="20" width="50" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="430" y="70" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 430 70)">П-286</text>
+
+  <rect x="455" y="20" width="50" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="480" y="70" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 480 70)">П-285</text>
+
+  <rect x="505" y="20" width="50" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="530" y="70" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 530 70)">П-284</text>
+
+  <rect x="555" y="20" width="50" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="580" y="70" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 580 70)">П-283</text>
+
+  <rect x="605" y="20" width="50" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="630" y="70" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 630 70)">П-282</text>
+
+  <!-- П-281: широкий 4кл×4кл = 100×100 -->
+  <rect x="655" y="20" width="100" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="705" y="70" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-281</text>
+
+  <!-- П-351: горизонтальный 4кл×2кл = 100×50 (верх) -->
+  <rect x="755" y="20" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="805" y="45" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-351</text>
+
+  <!-- П-352: горизонтальный 4кл×2кл = 100×50 (низ) -->
+  <rect x="755" y="70" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="805" y="95" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-352</text>
+
+
+  <!-- ══════════════════════════════
+       НИЖНИЙ РЯД  y=140, h=100
+  ══════════════════════════════ -->
+
+  <!-- П-361: 4кл×4кл = 100×100 -->
+  <rect x="5"   y="140" width="100" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="55"  y="190" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-361</text>
+
+  <!-- П-360: 4кл×4кл = 100×100 -->
+  <rect x="105" y="140" width="100" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="155" y="190" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-360</text>
+
+  <!-- П-359: вертикальный 2кл×4кл = 50×100 -->
+  <rect x="205" y="140" width="50"  height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="230" y="190" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 230 190)">П-359</text>
+
+  <!-- П-358: вертикальный 2кл×4кл = 50×100 -->
+  <rect x="255" y="140" width="50"  height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="280" y="190" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 280 190)">П-358</text>
+
+  <!-- П-357: 4кл×4кл = 100×100 -->
+  <rect x="305" y="140" width="100" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="355" y="190" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-357</text>
+
+  <!-- П-356: 4кл×4кл = 100×100 -->
+  <rect x="405" y="140" width="100" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="455" y="190" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-356</text>
+
+  <!-- П-355: 4кл×4кл = 100×100 -->
+  <rect x="505" y="140" width="100" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="555" y="190" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-355</text>
+
+  <!-- П-354: 5кл×4кл = 125×100 ИСПРАВЛЕНО -->
+  <rect x="605" y="140" width="125" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="667" y="190" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-354</text>
+
+  <!-- П-353: 4кл×4кл = 100×100 ИСПРАВЛЕНО -->
+  <rect x="730" y="140" width="100" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="780" y="190" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-353</text>
+
+</svg>

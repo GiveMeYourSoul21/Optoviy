@@ -1,0 +1,143 @@
+<svg width="970" height="290" viewBox="0 0 970 290" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!--
+    1 кл = 25px
+    Вертикальная: 2кл×5кл = 50×125
+    Квадратная (4кл×5кл): 100×125  ← полная высота ряда
+    Горизонтальная пара: 100×62 + 100×63
+    Верхний ряд: y=20, h=125
+    Нижний ряд:  y=165, h=125
+  -->
+
+  <rect width="970" height="290" fill="#DAE5DF"/>
+
+  <!-- ══════════════════════════════
+       ВЕРХНИЙ РЯД  y=20, h=125
+  ══════════════════════════════ -->
+
+  <!-- П-493: 100×125 -->
+  <rect x="5"   y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="55"  y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-493</text>
+
+  <!-- П-492: 100×125 -->
+  <rect x="105" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="155" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-492</text>
+
+  <!-- П-491: 100×125 -->
+  <rect x="205" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="255" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-491</text>
+
+  <!-- П-490: 100×125 -->
+  <rect x="305" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="355" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-490</text>
+
+  <!-- П-182: 100×125 -->
+  <rect x="405" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="455" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-182</text>
+
+  <!-- П-181: вертикальный 50×125 -->
+  <rect x="505" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="530" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 530 82)">П-181</text>
+
+  <!-- П-180 -->
+  <rect x="555" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="580" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 580 82)">П-180</text>
+
+  <!-- П-179 -->
+  <rect x="605" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="630" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 630 82)">П-179</text>
+
+  <!-- П-178 -->
+  <rect x="655" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="680" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 680 82)">П-178</text>
+
+  <!-- П-177 -->
+  <rect x="705" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="730" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 730 82)">П-177</text>
+
+  <!-- П-176 -->
+  <rect x="755" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="780" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 780 82)">П-176</text>
+
+  <!-- П-263 -->
+  <rect x="805" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="830" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 830 82)">П-263</text>
+
+  <!-- П-332: горизонтальный верх -->
+  <rect x="855" y="20"  width="100" height="62" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="905" y="51"  font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-332</text>
+
+  <!-- П-333: горизонтальный низ -->
+  <rect x="855" y="82"  width="100" height="63" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="905" y="113" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-333</text>
+
+
+  <!-- ══════════════════════════════
+       НИЖНИЙ РЯД  y=165, h=125
+  ══════════════════════════════ -->
+
+  <!-- П-350: 100×125 -->
+  <rect x="5"   y="165" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="55"  y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-350</text>
+
+  <!-- П-349: вертикальный 50×125 -->
+  <rect x="105" y="165" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="130" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 130 227)">П-349</text>
+
+  <!-- П-348 -->
+  <rect x="155" y="165" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="180" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 180 227)">П-348</text>
+
+  <!-- П-347 -->
+  <rect x="205" y="165" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="230" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 230 227)">П-347</text>
+
+  <!-- П-346 -->
+  <rect x="255" y="165" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="280" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 280 227)">П-346</text>
+
+  <!-- П-345 -->
+  <rect x="305" y="165" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="330" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 330 227)">П-345</text>
+
+  <!-- П-343: 100×125 -->
+  <rect x="355" y="165" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="405" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-343</text>
+
+  <!-- П-342 -->
+  <rect x="455" y="165" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="480" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 480 227)">П-342</text>
+
+  <!-- П-341 -->
+  <rect x="505" y="165" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="530" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 530 227)">П-341</text>
+
+  <!-- П-340 -->
+  <rect x="555" y="165" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="580" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 580 227)">П-340</text>
+
+  <!-- П-339 -->
+  <rect x="605" y="165" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="630" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 630 227)">П-339</text>
+
+  <!-- П-338 -->
+  <rect x="655" y="165" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="680" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 680 227)">П-338</text>
+
+  <!-- П-337 -->
+  <rect x="705" y="165" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="730" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 730 227)">П-337</text>
+
+  <!-- П-336: 100×125 -->
+  <rect x="755" y="165" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="805" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-336</text>
+
+  <!-- П-334: горизонтальный верх -->
+  <rect x="855" y="165" width="100" height="62" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="905" y="196" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-334</text>
+
+  <!-- П-335: горизонтальный низ -->
+  <rect x="855" y="227" width="100" height="63" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="905" y="258" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-335</text>
+
+</svg>
