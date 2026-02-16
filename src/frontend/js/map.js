@@ -182,10 +182,28 @@ const detailedLegends = {
         { color: '#FAE9C8', label: 'Павільйони"' },
         { color: '#FAE9C8', label: 'Контейнери' }
     ],
-    'sector34': [
+    'sector29': [
         { color: '#FAE9C8', label: 'Павільйони"' },
         { color: '#FAE9C8', label: 'Контейнери' }
-    ]
+    ],
+    'sector30': [
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
+    ],
+    'sector31': [
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
+    ],
+    'sector32': [
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
+    ],
+    'sector33': [
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
+    ],
+    'sector-park1': { title: 'Автостоянка "Космос"', link: 'pages/parking.html' },
+    'sector-park2': { title: 'Дворники', link: '#' }
 };
 
 // State management
@@ -214,6 +232,49 @@ document.addEventListener('DOMContentLoaded', () => {
         backButton.addEventListener('click', (e) => {
             e.preventDefault();
             loadMainMap();
+        });
+    }
+
+    // Map Mode Toggle (Scheme vs Photo)
+    const btnScheme = document.getElementById('btn-scheme');
+    const btnPhoto = document.getElementById('btn-photo');
+    // mapPhotoImage is dynamic, so we shouldn't cache it here
+
+    if (btnScheme && btnPhoto) {
+        btnScheme.addEventListener('click', () => {
+            // Set active state
+            btnScheme.classList.add('selected');
+            btnPhoto.classList.remove('selected');
+
+            // Find current image
+            const currentMapPhotoImage = document.getElementById('map-photo-image');
+            if (currentMapPhotoImage) {
+                currentMapPhotoImage.style.display = 'none';
+            }
+
+            // Show all SVGs in the wrapper
+            // Note: SVG elements might be different if detailed sector is loaded
+            const svgs = mapWrapper.querySelectorAll('svg');
+            svgs.forEach(svg => svg.style.display = 'block');
+        });
+
+        btnPhoto.addEventListener('click', () => {
+            // Set active state
+            btnPhoto.classList.add('selected');
+            btnScheme.classList.remove('selected');
+
+            // Find current image
+            const currentMapPhotoImage = document.getElementById('map-photo-image');
+            if (currentMapPhotoImage) {
+                currentMapPhotoImage.style.display = 'block';
+            }
+
+            // Hide all SVGs in the wrapper
+            const svgs = mapWrapper.querySelectorAll('svg');
+            svgs.forEach(svg => svg.style.display = 'none');
+
+            // Also hide tooltip just in case
+            hideTooltip();
         });
     }
 
@@ -316,6 +377,29 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.text())
             .then(svgContent => {
                 mapWrapper.innerHTML = svgContent;
+
+                // Re-insert the photo image if it's missing (since innerHTML rewrite removes it)
+                const newImage = document.createElement('img');
+                newImage.src = 'assets/img/map-3D.png';
+                newImage.id = 'map-photo-image';
+                newImage.style.width = '100%';
+                newImage.style.height = 'auto';
+                newImage.alt = 'Фото ринку';
+
+                // Check current mode to set initial display
+                const btnPhoto = document.getElementById('btn-photo');
+                if (btnPhoto && btnPhoto.classList.contains('selected')) {
+                    newImage.style.display = 'block';
+                    // Hide the newly loaded SVG
+                    const svg = mapWrapper.querySelector('svg');
+                    if (svg) svg.style.display = 'none';
+                } else {
+                    newImage.style.display = 'none';
+                }
+
+                mapWrapper.prepend(newImage);
+                // No need to update mapPhotoImage variable since we use getElementById in toggle handlers
+
                 updateLegend(sectorId);
             })
             .catch(error => {
@@ -485,4 +569,3 @@ document.addEventListener('DOMContentLoaded', () => {
         updateFilterCounter();
     }
 });
-

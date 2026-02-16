@@ -123,7 +123,7 @@
                                     <div class="button">Карта ринку</div>
                                 </a>
                                 <div class="map-tabs-top">
-                                    <button class="optovyi-button selected">
+                                    <button class="optovyi-button selected" id="btn-scheme">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1 6V22L8 18L16 22L23 18V2L16 6L8 2L1 6Z" stroke="#47594F"
@@ -135,7 +135,7 @@
                                         </svg>
                                         <span>Схема</span>
                                     </button>
-                                    <button class="optovyi-button">
+                                    <button class="optovyi-button" id="btn-photo">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -177,6 +177,8 @@
                             <!-- Map and Legend -->
                             <div class="map-layout">
                                 <div class="map-wrapper">
+                                    <img src="assets/img/map-3D.png" id="map-photo-image"
+                                        style="display: none; width: 100%; height: auto;" alt="Фото ринку">
                                     <svg baseProfile="tiny" width="2773.984px" height="626.986px"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="564 1408 2774 627" version="1.2">
                                         <defs>
