@@ -76,82 +76,115 @@ const sectorData = {
 // Legend configurations for detailed maps
 const detailedLegends = {
     'sector4': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони' },
+        { color: '#FAE9C8', label: 'Контейнери' },
+        {
+            icon: 'assets/svg_icons/wc.svg',
+            label: 'Туалети'
+        }
     ],
     'sector5': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони' },
+        { color: '#FAE9C8', label: 'Контейнери' },
+        {
+            icon: 'assets/svg_icons/wc.svg',
+            label: 'Туалети'
+        }
     ],
     'sector6': [
         { color: '#FAE9C8', label: 'Павільйон "Марс"' }
     ],
     'sector7': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector8': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector9': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector10': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector11': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector12': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector13': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector14': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector15': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector16': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector17': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector18': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector19': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector20': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector21': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector22': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector23': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector24': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector25': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector26': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector27': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector28': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ],
     'sector34': [
-        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+        { color: '#FAE9C8', label: 'Павільйони"' },
+        { color: '#FAE9C8', label: 'Контейнери' }
     ]
 };
 
@@ -323,12 +356,21 @@ document.addEventListener('DOMContentLoaded', () => {
             let html = '';
 
             legend.forEach(item => {
-                html += `
-                    <li class="legend-item">
-                        <span class="legend-marker" style="background-color: ${item.color};"></span>
-                        <span>${item.label}</span>
-                    </li>
-                `;
+                if (item.icon) {
+                    html += `
+                        <li class="legend-item">
+                            <img src="${item.icon}" loading="lazy" alt="${item.label}" class="icon-wrapper">
+                            <span>${item.label}</span>
+                        </li>
+                    `;
+                } else {
+                    html += `
+                        <li class="legend-item">
+                            <span class="legend-marker" style="background-color: ${item.color};"></span>
+                            <span>${item.label}</span>
+                        </li>
+                    `;
+                }
             });
 
             legendList.innerHTML = html;
