@@ -1,0 +1,106 @@
+<svg width="280" height="510" viewBox="0 0 280 510" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!--
+    1 кл = 25px
+    Ячейка стандарт: 4кл×2кл = 100×50
+    Широкий блок: 8кл×2кл = 200×50
+
+    СТРУКТУРА (сверху вниз):
+
+    Блок A (x=55, w=200): две колонки по 100px
+      y=20:  П-395(L) | П-401(R)  h=50
+      y=70:  П-396(L) | П-402(R)  h=50
+
+    Блок B (x=55, w=200): смещённый блок
+      y=120: [пусто левая 100px] | П-403(R h=50)
+      y=120: П-248(L h=100)      | П-404(R h=50, y=170)
+
+    Блок C (x=5, w=250): широкий П-397
+      y=220: П-397  w=250  h=50
+
+    Блок D (x=5, w=250): две колонки по 125px
+      y=270: П-398(L) | П-405(R)  h=50
+      y=320: П-399(L) | П-406(R)  h=50
+      y=370: П-400(L) | П-407(R)  h=50
+
+    Итого высота: 20 + 50+50 + 100 + 50 + 50×3 = 420 + 20 + 50 = 490
+  -->
+
+  <rect width="280" height="490" fill="#DAE5DF"/>
+
+  <!-- ══════════════════════════════
+       БЛОК A: y=20, x=55, w=200
+  ══════════════════════════════ -->
+
+  <!-- П-395 -->
+  <rect x="55"  y="20" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="105" y="45" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-395</text>
+
+  <!-- П-401 -->
+  <rect x="155" y="20" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="205" y="45" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-401</text>
+
+  <!-- П-396 -->
+  <rect x="55"  y="70" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="105" y="95" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-396</text>
+
+  <!-- П-402 -->
+  <rect x="155" y="70" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="205" y="95" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-402</text>
+
+
+  <!-- ══════════════════════════════
+       БЛОК B: y=120, смещённый
+       Левая часть: П-248 (x=55, w=100, h=100) — двойная высота
+       Правая часть: П-403 (x=155, h=50) + П-404 (x=155, h=50)
+  ══════════════════════════════ -->
+
+  <!-- П-248: h=100 (двойная) -->
+  <rect x="55"  y="120" width="100" height="100" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="105" y="170" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-248</text>
+
+  <!-- П-403 -->
+  <rect x="155" y="120" width="100" height="50"  fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="205" y="145" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-403</text>
+
+  <!-- П-404 -->
+  <rect x="155" y="170" width="100" height="50"  fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="205" y="195" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-404</text>
+
+
+  <!-- ══════════════════════════════
+       БЛОК C: П-397 широкий
+       x=5, w=250, h=50
+  ══════════════════════════════ -->
+
+  <rect x="5"   y="220" width="250" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="130" y="245" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-397</text>
+
+
+  <!-- ══════════════════════════════
+       БЛОК D: y=270, x=5, w=250
+       Две колонки по 125px
+  ══════════════════════════════ -->
+
+  <!-- П-398 | П-405 -->
+  <rect x="5"   y="270" width="125" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="67"  y="295" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-398</text>
+
+  <rect x="130" y="270" width="125" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="192" y="295" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-405</text>
+
+  <!-- П-399 | П-406 -->
+  <rect x="5"   y="320" width="125" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="67"  y="345" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-399</text>
+
+  <rect x="130" y="320" width="125" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="192" y="345" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-406</text>
+
+  <!-- П-400 | П-407 -->
+  <rect x="5"   y="370" width="125" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="67"  y="395" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-400</text>
+
+  <rect x="130" y="370" width="125" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="192" y="395" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-407</text>
+
+</svg>

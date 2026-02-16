@@ -1,0 +1,77 @@
+<svg width="510" height="290" viewBox="0 0 510 290" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <!-- Фоновый слой -->
+  <rect width="510" height="290" fill="#DAE5DF"/>
+
+  <!--
+    Верхний ряд (y = 20, высота 125px)
+    Ячейки шириной 50px, начиная с x = 5
+  -->
+  <g stroke="#c8b898" stroke-width="1.5">
+    <!-- Γ-323 -->
+    <rect x="5" y="20" width="50" height="125" fill="#FAE9C8"/>
+    <text x="30" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-323</text>
+    <!-- Γ-324 -->
+    <rect x="55" y="20" width="50" height="125" fill="#FAE9C8"/>
+    <text x="80" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-324</text>
+    <!-- Γ-325 -->
+    <rect x="105" y="20" width="50" height="125" fill="#FAE9C8"/>
+    <text x="130" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-325</text>
+    <!-- Γ-326 -->
+    <rect x="155" y="20" width="50" height="125" fill="#FAE9C8"/>
+    <text x="180" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-326</text>
+    <!-- Γ-327 -->
+    <rect x="205" y="20" width="50" height="125" fill="#FAE9C8"/>
+    <text x="230" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-327</text>
+    <!-- Γ-328 -->
+    <rect x="255" y="20" width="50" height="125" fill="#FAE9C8"/>
+    <text x="280" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-328</text>
+    <!-- Γ-329 -->
+    <rect x="305" y="20" width="50" height="125" fill="#FAE9C8"/>
+    <text x="330" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-329</text>
+    <!-- Γ-330 -->
+    <rect x="355" y="20" width="50" height="125" fill="#FAE9C8"/>
+    <text x="380" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-330</text>
+    <!-- Γ-331 -->
+    <rect x="405" y="20" width="50" height="125" fill="#FAE9C8"/>
+    <text x="430" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-331</text>
+    <!-- K-160 -->
+    <rect x="455" y="20" width="50" height="125" fill="#FAE9C8"/>
+    <text x="480" y="82" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">K-160</text>
+  </g>
+
+  <!--
+    Нижний ряд (y = 165, высота 125px)
+  -->
+  <g stroke="#c8b898" stroke-width="1.5">
+    <!-- Γ-220 -->
+    <rect x="5" y="165" width="50" height="125" fill="#FAE9C8"/>
+    <text x="30" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-220</text>
+    <!-- Γ-219 -->
+    <rect x="55" y="165" width="50" height="125" fill="#FAE9C8"/>
+    <text x="80" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-219</text>
+    <!-- Γ-218 -->
+    <rect x="105" y="165" width="50" height="125" fill="#FAE9C8"/>
+    <text x="130" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-218</text>
+    <!-- Γ-217 -->
+    <rect x="155" y="165" width="50" height="125" fill="#FAE9C8"/>
+    <text x="180" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-217</text>
+    <!-- Γ-216 -->
+    <rect x="205" y="165" width="50" height="125" fill="#FAE9C8"/>
+    <text x="230" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-216</text>
+    <!-- Γ-215 -->
+    <rect x="255" y="165" width="50" height="125" fill="#FAE9C8"/>
+    <text x="280" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-215</text>
+    <!-- Γ-214 -->
+    <rect x="305" y="165" width="50" height="125" fill="#FAE9C8"/>
+    <text x="330" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-214</text>
+    <!-- Γ-213 -->
+    <rect x="355" y="165" width="50" height="125" fill="#FAE9C8"/>
+    <text x="380" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-213</text>
+    <!-- Γ-212 -->
+    <rect x="405" y="165" width="50" height="125" fill="#FAE9C8"/>
+    <text x="430" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Γ-212</text>
+    <!-- K-34 -->
+    <rect x="455" y="165" width="50" height="125" fill="#FAE9C8"/>
+    <text x="480" y="227" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle">K-34</text>
+  </g>
+</svg>

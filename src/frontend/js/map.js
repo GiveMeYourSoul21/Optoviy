@@ -3,6 +3,13 @@
 const sectorMaps = {
     'sector4': 'assets/img/Sector5-4.svg',
     'sector5': 'assets/img/Sector5-4.svg',
+    'sector6': 'assets/img/Sector6.svg',
+    'sector7': 'assets/img/Sector7.svg',
+    'sector8': 'assets/img/Sector8.svg',
+    'sector9': 'assets/img/Sector9.svg',
+    'sector10': 'assets/img/Sector10.svg',
+    'sector11': 'assets/img/Sector11.svg',
+    'sector12': 'assets/img/Sector12.svg',
     'sector13': 'assets/img/Sector13.svg',
     'sector14': 'assets/img/Sector14.svg',
     'sector15': 'assets/img/Sector15.svg',
@@ -10,8 +17,20 @@ const sectorMaps = {
     'sector17': 'assets/img/Sector17.svg',
     'sector18': 'assets/img/Sector18.svg',
     'sector19': 'assets/img/Sector19.svg',
+    'sector20': 'assets/img/Sector20.svg',
+    'sector21': 'assets/img/Sector21.svg',
+    'sector22': 'assets/img/Sector22.svg',
+    'sector23': 'assets/img/Sector23.svg',
+    'sector24': 'assets/img/Sector24.svg',
+    'sector25': 'assets/img/Sector25.svg',
+    'sector26': 'assets/img/Sector26.svg',
     'sector27': 'assets/img/Sector27.svg',
     'sector28': 'assets/img/Sector28.svg',
+    'sector29': 'assets/img/Sector29.svg',
+    'sector30': 'assets/img/Sector30.svg',
+    'sector31': 'assets/img/Sector31.svg',
+    'sector32': 'assets/img/Sector32.svg',
+    'sector33': 'assets/img/Sector33.svg',
     'sector34': 'assets/img/Sector34-3-2.svg'
 };
 
@@ -62,6 +81,27 @@ const detailedLegends = {
     'sector5': [
         { color: '#FAE9C8', label: 'Павільйон "Марс"' }
     ],
+    'sector6': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector7': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector8': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector9': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector10': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector11': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector12': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
     'sector13': [
         { color: '#FAE9C8', label: 'Павільйон "Марс"' }
     ],
@@ -81,6 +121,27 @@ const detailedLegends = {
         { color: '#FAE9C8', label: 'Павільйон "Марс"' }
     ],
     'sector19': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector20': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector21': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector22': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector23': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector24': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector25': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector26': [
         { color: '#FAE9C8', label: 'Павільйон "Марс"' }
     ],
     'sector27': [
