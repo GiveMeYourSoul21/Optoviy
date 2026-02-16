@@ -1,5 +1,15 @@
 
-// Sector Data Configuration
+// Mapping of sectors to their detailed SVG maps
+const sectorMaps = {
+    'sector15': 'assets/img/Sector15.svg',
+    'sector16': 'assets/img/Sector16.svg',
+    'sector17': 'assets/img/Sector17.svg',
+    'sector27': 'assets/img/Sector27.svg',
+    'sector28': 'assets/img/Sector28.svg',
+    'sector34': 'assets/img/Sector34-3-2.svg'
+};
+
+// Sector Data Configuration (for tooltip fallback)
 const sectorData = {
     'sector1': { title: 'Адміністрація', link: 'pages/administration.html' },
     'sector2': { title: 'Сектор 2: М\'ясо та ковбаси', link: '/map?shop_id=1' },
@@ -34,84 +44,318 @@ const sectorData = {
     'sector31': { title: 'Сектор 31: Овочі та фрукти', link: '#' },
     'sector32': { title: 'Сектор 32: М\'ясо та ковбаси', link: '#' },
     'sector33': { title: 'Сектор 33: Молочна продукція', link: '#' },
-
     'sector-park1': { title: 'Автостоянка "Космос"', link: 'pages/parking.html' },
     'sector-park2': { title: 'Дворники', link: '#' }
-
 };
 
+// Legend configurations for detailed maps
+const detailedLegends = {
+    'sector15': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector16': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector17': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector27': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector28': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ],
+    'sector34': [
+        { color: '#FAE9C8', label: 'Павільйон "Марс"' }
+    ]
+};
+
+// State management
+let currentView = 'main'; // 'main' or 'detail'
+let currentSector = null;
+let mainMapHTML = null; // Store original map HTML
+
 document.addEventListener('DOMContentLoaded', () => {
-    const sectors = document.querySelectorAll('.sector'); // SVG paths should have class="sector"
+    const mapWrapper = document.querySelector('.map-wrapper');
+    const legendWrapper = document.querySelector('.legend-wrapper');
+    const backButton = document.getElementById('back-to-main');
     const tooltip = document.getElementById('map-tooltip');
     const tooltipTitle = document.getElementById('tooltip-title');
     const tooltipLink = document.getElementById('tooltip-link');
 
-    if (!tooltip || !sectors.length) return;
+    if (!mapWrapper || !legendWrapper) return;
+
+    // Save the original main map HTML
+    mainMapHTML = mapWrapper.innerHTML;
+
+    // Initialize sector click handlers
+    initializeSectorHandlers();
+
+    // Back button handler
+    if (backButton) {
+        backButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            loadMainMap();
+        });
+    }
 
     // Helper to hide tooltip
-    const hideTooltip = () => {
-        tooltip.style.display = 'none';
-        tooltip.style.opacity = '0';
-    };
+    function hideTooltip() {
+        if (tooltip) {
+            tooltip.style.display = 'none';
+            tooltip.style.opacity = '0';
+        }
+    }
 
     // Helper to show tooltip
-    const showTooltip = (x, y, data) => {
+    function showTooltip(x, y, data) {
+        if (!tooltip) return;
+
         tooltipTitle.textContent = data.title || 'Сектор ринку';
         tooltipLink.href = data.link || '#';
 
         tooltip.style.display = 'block';
-        // Small delay to allow display:block to apply before opacity transition
         requestAnimationFrame(() => {
             tooltip.style.opacity = '1';
         });
 
-        // Position tooltip
-        // Adjust coordinates to center above the click or element
         const tooltipRect = tooltip.getBoundingClientRect();
         let top = y - tooltipRect.height - 10;
         let left = x - (tooltipRect.width / 2);
 
-        // Boundary checks (keep within viewport)
         if (left < 10) left = 10;
         if (left + tooltipRect.width > window.innerWidth - 10) {
             left = window.innerWidth - tooltipRect.width - 10;
         }
         if (top < 10) {
-            top = y + 20; // Show below if not enough space above
+            top = y + 20;
         }
 
         tooltip.style.top = `${top + window.scrollY}px`;
         tooltip.style.left = `${left + window.scrollX}px`;
-    };
+    }
 
-    sectors.forEach(sector => {
-        sector.style.cursor = 'pointer'; // Ensure cursor indicates interactivity
+    // Initialize sector click handlers
+    function initializeSectorHandlers() {
+        const sectors = document.querySelectorAll('.sector');
 
-        sector.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation(); // Prevent document click from closing immediately
+        sectors.forEach(sector => {
+            sector.style.cursor = 'pointer';
 
-            const sectorId = sector.id;
-            const data = sectorData[sectorId] || { title: `Сектор ${sectorId.replace('sector', '')}`, link: '#' };
+            sector.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
 
-            // Get click coordinates relative to the viewport
-            const clickX = e.clientX;
-            const clickY = e.clientY;
+                const sectorId = sector.id;
 
-            showTooltip(clickX, clickY, data);
+                // Check if this sector has a detailed map
+                if (sectorMaps[sectorId]) {
+                    loadSectorMap(sectorId);
+                } else {
+                    // Show tooltip for sectors without detailed maps
+                    const data = sectorData[sectorId] || {
+                        title: `Сектор ${sectorId.replace('sector', '')}`,
+                        link: '#'
+                    };
+
+                    const clickX = e.clientX;
+                    const clickY = e.clientY;
+                    showTooltip(clickX, clickY, data);
+                }
+            });
         });
-    });
 
-    // Close tooltip when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!tooltip.contains(e.target) && !e.target.classList.contains('sector')) {
+        // Close tooltip when clicking outside
+        document.addEventListener('click', (e) => {
+            if (tooltip && !tooltip.contains(e.target) && !e.target.classList.contains('sector')) {
+                hideTooltip();
+            }
+        });
+
+        // Close on scroll
+        window.addEventListener('scroll', () => {
             hideTooltip();
-        }
-    });
+        }, { passive: true });
+    }
 
-    // Close on scroll to prevent floating tooltip
-    window.addEventListener('scroll', () => {
+    // Load detailed sector map
+    function loadSectorMap(sectorId) {
         hideTooltip();
-    }, { passive: true });
+        const svgPath = sectorMaps[sectorId];
+
+        if (!svgPath) return;
+
+        currentView = 'detail';
+        currentSector = sectorId;
+
+        // Show back button
+        if (backButton) {
+            backButton.style.display = 'inline-flex';
+        }
+
+        // Load SVG
+        fetch(svgPath)
+            .then(response => response.text())
+            .then(svgContent => {
+                mapWrapper.innerHTML = svgContent;
+                updateLegend(sectorId);
+            })
+            .catch(error => {
+                console.error('Error loading sector map:', error);
+                loadMainMap(); // Fallback to main map
+            });
+    }
+
+    // Load main map
+    function loadMainMap() {
+        hideTooltip();
+        currentView = 'main';
+        currentSector = null;
+
+        // Hide back button
+        if (backButton) {
+            backButton.style.display = 'none';
+        }
+
+        // Restore main map
+        mapWrapper.innerHTML = mainMapHTML;
+
+        // Restore main legend
+        updateLegend(null);
+
+        // Re-initialize sector handlers
+        initializeSectorHandlers();
+    }
+
+    // Update legend based on current view
+    function updateLegend(sectorId) {
+        const legendList = legendWrapper.querySelector('.legend-list');
+        if (!legendList) return;
+
+        if (sectorId && detailedLegends[sectorId]) {
+            // Show detailed legend
+            const legend = detailedLegends[sectorId];
+            let html = '';
+
+            legend.forEach(item => {
+                html += `
+                    <li class="legend-item">
+                        <span class="legend-marker" style="background-color: ${item.color};"></span>
+                        <span>${item.label}</span>
+                    </li>
+                `;
+            });
+
+            legendList.innerHTML = html;
+        } else {
+            // Restore main legend
+            legendList.innerHTML = `
+                <li class="legend-item">
+                    <span class="legend-marker" style="background-color: #c70926;"></span>
+                    <span>Адміністрація</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-marker" style="background-color: #837e7f;"></span>
+                    <span>Автостоянка "Космос"</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-marker" style="background-color: #CADCC6;"></span>
+                    <span>Областя</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-marker" style="background-color: #8FC9CA;"></span>
+                    <span>Павільон "Стріла"</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-marker" style="background-color: #f3a6b2;"></span>
+                    <span>Павільон "Київ"</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-marker" style="background-color: #B7CFB7;"></span>
+                    <span>Павільон "Одеса"</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-marker" style="background-color: #F9E0CC;"></span>
+                    <span>Павільон "Марс"</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-marker" style="background-color: #E2D9EB;"></span>
+                    <span>Павільон "Зміїний"</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-marker" style="background-color: #BDD2E0;"></span>
+                    <span>Павільон "Дорожня"</span>
+                </li>
+                <li class="legend-item">
+                    <span class="legend-marker" style="background-color: #FFFEBD;"></span>
+                    <span>Павільон "Дім"</span>
+                </li>
+                <li class="legend-item">
+                    <img src="assets/svg_icons/car.svg" loading="lazy" alt="Машина" class="icon-wrapper">
+                    <span>СТО</span>
+                </li>
+                <li class="legend-item">
+                    <img src="assets/svg_icons/wc.svg" loading="lazy" alt="Туалет" class="icon-wrapper">
+                    <span>Туалети</span>
+                </li>
+            `;
+        }
+    }
+
+    // Product filters functionality
+    initializeProductFilters();
+
+    function initializeProductFilters() {
+        const filterCheckboxes = document.querySelectorAll('.optovyi-options__checkbox');
+        const filterCounter = document.querySelector('.optovyi-filter__counter');
+        const clearButton = document.querySelector('.optovyi-filter__footer .optovyi-button');
+        const searchInput = document.querySelector('.optovyi-search__input');
+
+        // Update counter
+        function updateFilterCounter() {
+            const checkedCount = document.querySelectorAll('.optovyi-options__checkbox:checked').length;
+            if (filterCounter) {
+                filterCounter.textContent = checkedCount;
+            }
+        }
+
+        // Add event listeners to all checkboxes
+        filterCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateFilterCounter);
+        });
+
+        // Clear all filters
+        if (clearButton) {
+            clearButton.addEventListener('click', () => {
+                filterCheckboxes.forEach(checkbox => {
+                    checkbox.checked = false;
+                });
+                updateFilterCounter();
+            });
+        }
+
+        // Search functionality for filters
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const filterItems = document.querySelectorAll('.optovyi-options__item');
+
+                filterItems.forEach(item => {
+                    const label = item.querySelector('span:last-child');
+                    if (label) {
+                        const text = label.textContent.toLowerCase();
+                        if (text.includes(searchTerm)) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        }
+
+        // Initialize counter
+        updateFilterCounter();
+    }
 });
 
