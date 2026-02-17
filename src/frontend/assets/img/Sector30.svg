@@ -1,0 +1,110 @@
+<svg width="760" height="180" viewBox="0 0 760 180" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!--
+    1 кл = 25px
+    Стандарт: 4кл×5кл = 100×125
+    Высота ряда: 5кл = 125px
+    
+    Структура (слева направо):
+    Левые метки (вертикальная стопка): 93/3/2/1 (x=5, w=25)
+    П-29  x=30  w=100 h=125
+    П-28  x=130 w=50  h=125
+    П-27  x=180 w=100 h=125
+    П-26  x=280 w=100 h=125
+    П-25  x=380 w=100 h=125
+    П-24  x=480 w=100 h=125
+    П-23  x=580 w=50  h=125
+    П-22  x=630 w=100 h=125
+    Правые метки (вертикальная стопка): 4/5/6/95 (x=730, w=25)
+    
+    Нижний блок:
+    П-486 x=630 y=145 w=100 h=25
+    
+    Метки вертикальные делят высоту 125:
+    93: h=31 (y=20)
+    3:  h=31 (y=51)
+    2:  h=31 (y=82)
+    1:  h=32 (y=113)
+  -->
+
+  <rect width="760" height="180" fill="#DAE5DF"/>
+
+  <!-- ══════════════════════════════
+       ЛЕВЫЕ МЕТКИ (стопка 4шт)
+       x=5, w=25, общая h=125
+  ══════════════════════════════ -->
+  
+  <rect x="5" y="20" width="25" height="31" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="17" y="35" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">93</text>
+
+  <rect x="5" y="51" width="25" height="31" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="17" y="66" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">3</text>
+
+  <rect x="5" y="82" width="25" height="31" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="17" y="97" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">2</text>
+
+  <rect x="5" y="113" width="25" height="32" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="17" y="129" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">1</text>
+
+  <!-- ══════════════════════════════
+       ОСНОВНОЙ РЯД y=20, h=125
+  ══════════════════════════════ -->
+
+  <!-- П-29: 4кл=100 -->
+  <rect x="30"  y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="80"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-29</text>
+
+  <!-- П-28: 2кл=50 -->
+  <rect x="130" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="155" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 155 82)">П-28</text>
+
+  <!-- П-27: 4кл=100 -->
+  <rect x="180" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="230" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-27</text>
+
+  <!-- П-26: 4кл=100 -->
+  <rect x="280" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="330" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-26</text>
+
+  <!-- П-25: 4кл=100 -->
+  <rect x="380" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="430" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-25</text>
+
+  <!-- П-24: 4кл=100 -->
+  <rect x="480" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="530" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-24</text>
+
+  <!-- П-23: 2кл=50 -->
+  <rect x="580" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="605" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 605 82)">П-23</text>
+
+  <!-- П-22: 4кл=100 -->
+  <rect x="630" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="680" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-22</text>
+
+  <!-- ══════════════════════════════
+       ПРАВЫЕ МЕТКИ (стопка 4шт)
+       x=730, w=25, общая h=125
+  ══════════════════════════════ -->
+  
+  <rect x="730" y="20" width="25" height="31" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="742" y="35" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">4</text>
+
+  <rect x="730" y="51" width="25" height="31" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="742" y="66" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">5</text>
+
+  <rect x="730" y="82" width="25" height="31" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="742" y="97" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">6</text>
+
+  <rect x="730" y="113" width="25" height="32" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="742" y="129" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">95</text>
+
+  <!-- ══════════════════════════════
+       НИЖНИЙ БЛОК: П-486
+       x=630, y=145, w=100, h=25
+  ══════════════════════════════ -->
+
+  <rect x="630" y="145" width="100" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="680" y="157" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-486</text>
+
+</svg>

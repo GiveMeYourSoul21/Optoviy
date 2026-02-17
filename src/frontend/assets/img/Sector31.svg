@@ -1,0 +1,149 @@
+<svg width="3800" height="200" viewBox="0 0 3800 200" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="3800" height="200" fill="#DAE5DF"/>
+  
+  <!-- Левые метки: 56 (маленький) + 50,51,52 (стопка) -->
+  <rect x="5" y="20" width="15" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="12" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle">56</text>
+  
+  <rect x="20" y="20" width="25" height="42" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="32" y="41" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">50</text>
+  <rect x="20" y="62" width="25" height="41" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="32" y="82" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">51</text>
+  <rect x="20" y="103" width="25" height="42" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="32" y="124" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">52</text>
+  
+  <rect x="45" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="70" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 70 82)">К-296</text>
+  <rect x="95" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="120" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 120 82)">К-682</text>
+  <rect x="145" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="170" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 170 82)">К-18</text>
+  <rect x="195" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="220" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 220 82)">К-11</text>
+  <rect x="245" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="270" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 270 82)">К-752</text>
+  <rect x="295" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="320" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 320 82)">К-806</text>
+  <rect x="345" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="370" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 370 82)">К-659</text>
+  <rect x="395" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="420" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 420 82)">К-739</text>
+  <rect x="445" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="470" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 470 82)">К-754</text>
+  <rect x="495" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="520" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 520 82)">К-784</text>
+  <rect x="545" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="570" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 570 82)">К-788</text>
+  <rect x="595" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="645" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-479</text>
+  <rect x="695" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="745" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-489</text>
+  <rect x="795" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="845" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-488</text>
+  <rect x="895" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="920" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 920 82)">К-735</text>
+  <rect x="945" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="970" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 970 82)">К-733</text>
+  <rect x="995" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1020" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1020 82)">К-943</text>
+  <rect x="1045" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1070" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1070 82)">К-942</text>
+  <rect x="1095" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1120" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1120 82)">К-941</text>
+  <rect x="1145" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1170" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1170 82)">К-940</text>
+  <rect x="1195" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1220" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1220 82)">К-939</text>
+  <rect x="1245" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1270" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1270 82)">К-938</text>
+  <rect x="1295" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1320" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1320 82)">К-937</text>
+  <rect x="1345" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1370" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1370 82)">К-936</text>
+  <rect x="1395" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1420" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1420 82)">К-935</text>
+  <rect x="1445" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1470" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1470 82)">К-934</text>
+  <rect x="1495" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1520" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1520 82)">К-933</text>
+  <rect x="1545" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1570" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1570 82)">К-932</text>
+  <rect x="1595" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1620" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1620 82)">К-931</text>
+  <rect x="1645" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1670" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1670 82)">К-930</text>
+  <rect x="1695" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1720" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1720 82)">К-929</text>
+  <rect x="1745" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1770" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1770 82)">К-928</text>
+  <rect x="1795" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1820" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1820 82)">К-927</text>
+  <rect x="1845" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1870" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1870 82)">К-926</text>
+  <rect x="1895" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1920" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1920 82)">К-925</text>
+  <rect x="1945" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="1970" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1970 82)">К-924</text>
+  <rect x="1995" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2020" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2020 82)">К-923</text>
+  <rect x="2045" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2070" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2070 82)">К-922</text>
+  <rect x="2095" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2120" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2120 82)">К-921</text>
+  <rect x="2145" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2170" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2170 82)">К-920</text>
+  <rect x="2195" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2220" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2220 82)">К-919</text>
+  <rect x="2245" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2270" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2270 82)">К-918</text>
+  <rect x="2295" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2320" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2320 82)">К-917</text>
+  <rect x="2345" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2370" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2370 82)">К-916</text>
+  <rect x="2395" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2420" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2420 82)">К-915</text>
+  <rect x="2445" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2470" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2470 82)">К-914</text>
+  <rect x="2495" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2520" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2520 82)">К-913</text>
+  <rect x="2545" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2570" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2570 82)">К-912</text>
+  <rect x="2595" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2620" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2620 82)">К-911</text>
+  <rect x="2645" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2670" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2670 82)">К-910</text>
+  <rect x="2695" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2720" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2720 82)">К-909</text>
+  <rect x="2745" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2770" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2770 82)">К-908</text>
+  <rect x="2795" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2820" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2820 82)">К-907</text>
+  <rect x="2845" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2870" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2870 82)">К-906</text>
+  <rect x="2895" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2920" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2920 82)">К-905</text>
+  <rect x="2945" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="2970" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2970 82)">К-904</text>
+  <rect x="2995" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="3020" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 3020 82)">К-903</text>
+  <rect x="3045" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="3070" y="82" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 3070 82)">К-902</text>
+  <rect x="3095" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="3145" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-117</text>
+  <rect x="3395" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="3445" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-116</text>
+  <rect x="3495" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="3545" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-115</text>
+  <rect x="3595" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="3645" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-114</text>
+  <rect x="3695" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="3745" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-113</text>
+  <rect x="3795" y="20" width="25" height="42" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="3807" y="41" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle">12</text>
+  <rect x="3795" y="62" width="25" height="18" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="3807" y="71" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle">71</text>
+  <rect x="3795" y="80" width="25" height="18" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="3807" y="89" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle">КП</text>
+  <rect x="3795" y="98" width="25" height="45" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <text x="3807" y="120" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle">51</text>
+</svg>
