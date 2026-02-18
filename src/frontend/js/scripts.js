@@ -72,7 +72,15 @@ const observer2 = new IntersectionObserver((entries, obs) => {
             // Запуск счетчика для чисел внутри блока
             const numbers = entry.target.querySelectorAll('.card-number');
             numbers.forEach(num => {
-                const target = +num.getAttribute('data-target');
+                const targetStr = num.getAttribute('data-target');
+                const target = +targetStr;
+                const originalText = num.textContent;
+
+                // Визначаємо суфікс (текст після числа)
+                const suffix = originalText.includes(targetStr)
+                    ? originalText.split(targetStr)[1]
+                    : '';
+
                 let count = 0;
                 const duration = 1900; // миллисекунд до достижения числа
                 const stepTime = Math.max(10, duration / target);
@@ -81,10 +89,10 @@ const observer2 = new IntersectionObserver((entries, obs) => {
                 const timer = setInterval(() => {
                     count += increment;
                     if (count >= target) {
-                        num.textContent = target; // точное число в конце
+                        num.textContent = target + suffix; // точное число + суффикс в конце
                         clearInterval(timer);
                     } else {
-                        num.textContent = Math.floor(count);
+                        num.textContent = Math.floor(count) + suffix;
                     }
                 }, stepTime);
             });
