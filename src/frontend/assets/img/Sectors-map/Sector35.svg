@@ -1,0 +1,363 @@
+<svg width="5600" height="230" viewBox="0 0 5600 230" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!-- ══ ВЕРХНЯЯ СТЕНА (тёмная полоса) ══ -->
+  <rect x="0" y="0" width="4800" height="15" fill="#2C2C2C"/>
+
+  <!-- ══ МТС — ~2 клетки = 50px ══ -->
+  <rect x="0" y="15" width="50" height="100" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="25" y="65" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,25,65)">МТС</text>
+
+  <!-- ══ Туалет — 4 клетки = 100px ══ -->
+  <rect x="50" y="15" width="100" height="100" fill="rgb(230,240,235)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="100" y="65" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle">Туалет</text>
+
+  <!-- ══ К-137 — 2 клетки = 50px ══ -->
+  <rect x="150" y="15" width="50" height="100" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="175" y="65" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-137</text>
+
+  <!-- ══ К-141 — 2 клетки = 50px ══ -->
+  <rect x="200" y="15" width="50" height="100" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="225" y="65" font-size="9" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-141</text>
+
+  <!-- ══ П-295 .. П-311 ══ -->
+  <rect x="250" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="275" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,275,90)">П-295</text>
+
+  <rect x="300" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="325" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,325,90)">П-296</text>
+
+  <rect x="350" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="375" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,375,90)">П-297</text>
+
+  <rect x="400" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="425" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,425,90)">П-298</text>
+
+  <rect x="450" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="475" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,475,90)">П-299</text>
+
+  <rect x="500" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="525" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,525,90)">П-300</text>
+
+  <rect x="550" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="575" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,575,90)">П-301</text>
+
+  <rect x="600" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="625" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,625,90)">П-302</text>
+
+  <rect x="650" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="675" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,675,90)">П-303</text>
+
+  <rect x="700" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="725" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,725,90)">П-304</text>
+
+  <rect x="750" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="775" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,775,90)">П-305</text>
+
+  <rect x="800" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="825" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,825,90)">П-306</text>
+
+  <rect x="850" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="875" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,875,90)">П-307</text>
+
+  <rect x="900" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="925" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,925,90)">П-308</text>
+
+  <rect x="950" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="975" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,975,90)">П-309</text>
+
+  <rect x="1000" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1025" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1025,90)">П-310</text>
+
+  <rect x="1050" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1075" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1075,90)">П-311</text>
+
+  <!-- ══ П-143..П-146 ══ -->
+  <rect x="1100" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1125" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1125,90)">П-143</text>
+
+  <rect x="1150" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1175" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1175,90)">П-144</text>
+
+  <rect x="1200" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1225" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1225,90)">П-145</text>
+
+  <rect x="1250" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1275" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1275,90)">П-146</text>
+
+  <!-- ══ Разрыв/проход ══ -->
+  <rect x="1300" y="15" width="25" height="150" fill="rgb(200,200,200)" stroke="#aaa" stroke-width="1"/>
+
+  <!-- ══ П-147..П-151 ══ -->
+  <rect x="1325" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1350" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1350,90)">П-147</text>
+
+  <rect x="1375" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1400" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1400,90)">П-148</text>
+
+  <rect x="1425" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1450" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1450,90)">П-149</text>
+
+  <rect x="1475" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1500" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1500,90)">П-150</text>
+
+  <rect x="1525" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1550" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1550,90)">П-151</text>
+
+  <!-- ══ Разрыв ══ -->
+  <rect x="1575" y="15" width="25" height="150" fill="rgb(200,200,200)" stroke="#aaa" stroke-width="1"/>
+
+  <!-- ══ П-558, П-557 ══ -->
+  <rect x="1600" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1625" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1625,90)">П-558</text>
+
+  <rect x="1650" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1675" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1675,90)">П-557</text>
+
+  <!-- ══ Трансформатор ══ -->
+  <rect x="1700" y="15" width="75" height="150" fill="rgb(255,240,200)" stroke="#C8A800" stroke-width="1.5"/>
+  <text x="1737" y="75" font-size="8" fill="#5a4000" text-anchor="middle" dominant-baseline="middle">Транс-</text>
+  <text x="1737" y="88" font-size="8" fill="#5a4000" text-anchor="middle" dominant-baseline="middle">фор-</text>
+  <text x="1737" y="101" font-size="8" fill="#5a4000" text-anchor="middle" dominant-baseline="middle">матор</text>
+
+  <!-- ══ Разрыв ══ -->
+  <rect x="1775" y="15" width="25" height="150" fill="rgb(200,200,200)" stroke="#aaa" stroke-width="1"/>
+
+  <!-- ══ П-Д.Г. ══ -->
+  <rect x="1800" y="15" width="50" height="150" fill="rgb(255,240,200)" stroke="#C8A800" stroke-width="1.5"/>
+  <text x="1825" y="90" font-size="8" fill="#5a4000" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1825,90)">П-Д.Г.</text>
+
+  <!-- ══ П-153..П-188, П-157..П-167 ══ -->
+  <rect x="1850" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1875" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1875,90)">П-153</text>
+
+  <rect x="1900" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1925" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1925,90)">П-154</text>
+
+  <rect x="1950" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1975" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,1975,90)">П-155</text>
+
+  <rect x="2000" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2025" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2025,90)">П-156</text>
+
+  <rect x="2050" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2075" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2075,90)">П-195</text>
+
+  <rect x="2100" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2125" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2125,90)">П-184</text>
+
+  <rect x="2150" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2175" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2175,90)">П-185</text>
+
+  <rect x="2200" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2225" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2225,90)">П-186</text>
+
+  <rect x="2250" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2275" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2275,90)">П-187</text>
+
+  <rect x="2300" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2325" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2325,90)">П-188</text>
+
+  <rect x="2350" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2375" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2375,90)">П-157</text>
+
+  <rect x="2400" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2425" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2425,90)">П-183</text>
+
+  <rect x="2450" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2475" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2475,90)">П-158</text>
+
+  <rect x="2500" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2525" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2525,90)">П-159</text>
+
+  <rect x="2550" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2575" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2575,90)">П-160</text>
+
+  <rect x="2600" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2625" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2625,90)">П-161</text>
+
+  <rect x="2650" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2675" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2675,90)">П-162</text>
+
+  <rect x="2700" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2725" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2725,90)">П-163</text>
+
+  <rect x="2750" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2775" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2775,90)">П-164</text>
+
+  <rect x="2800" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2825" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2825,90)">П-167</text>
+
+  <!-- ══ П-253..П-280 ══ -->
+  <rect x="2850" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2875" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2875,90)">П-253</text>
+
+  <rect x="2900" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2925" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2925,90)">П-254</text>
+
+  <rect x="2950" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="2975" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,2975,90)">П-255</text>
+
+  <rect x="3000" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3025" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3025,90)">П-256</text>
+
+  <rect x="3050" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3075" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3075,90)">П-257</text>
+
+  <rect x="3100" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3125" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3125,90)">П-198</text>
+
+  <rect x="3150" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3175" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3175,90)">П-259</text>
+
+  <rect x="3200" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3225" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3225,90)">П-260</text>
+
+  <rect x="3250" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3275" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3275,90)">П-261</text>
+
+  <rect x="3300" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3325" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3325,90)">П-262</text>
+
+  <rect x="3350" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3375" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3375,90)">П-280</text>
+
+  <rect x="3400" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3425" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3425,90)">П-264</text>
+
+  <rect x="3450" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3475" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3475,90)">П-265</text>
+
+  <!-- ══ Разрыв ══ -->
+  <rect x="3500" y="15" width="25" height="150" fill="rgb(200,200,200)" stroke="#aaa" stroke-width="1"/>
+
+  <rect x="3525" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3550" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3550,90)">П-266</text>
+
+  <rect x="3575" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3600" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3600,90)">П-267</text>
+
+  <!-- ══ Разрыв ══ -->
+  <rect x="3625" y="15" width="25" height="150" fill="rgb(200,200,200)" stroke="#aaa" stroke-width="1"/>
+
+  <rect x="3650" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3675" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3675,90)">П-268</text>
+
+  <rect x="3700" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3725" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3725,90)">П-269</text>
+
+  <rect x="3750" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3775" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3775,90)">П-270</text>
+
+  <rect x="3800" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3825" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3825,90)">П-271</text>
+
+  <rect x="3850" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3875" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3875,90)">П-272</text>
+
+  <rect x="3900" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="3925" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,3925,90)">П-273</text>
+
+  <!-- ══ Разрыв ══ -->
+  <rect x="3950" y="15" width="25" height="150" fill="rgb(200,200,200)" stroke="#aaa" stroke-width="1"/>
+
+  <rect x="3975" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4000" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4000,90)">П-274</text>
+
+  <rect x="4025" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4050" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4050,90)">П-275</text>
+
+  <rect x="4075" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4100" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4100,90)">П-276</text>
+
+  <rect x="4125" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4150" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4150,90)">П-277</text>
+
+  <rect x="4175" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4200" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4200,90)">П-278</text>
+
+  <rect x="4225" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4250" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4250,90)">П-279</text>
+
+  <rect x="4275" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4300" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4300,90)">П-363</text>
+
+  <!-- ══ Разрыв ══ -->
+  <rect x="4325" y="15" width="25" height="150" fill="rgb(200,200,200)" stroke="#aaa" stroke-width="1"/>
+
+  <rect x="4350" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4375" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4375,90)">П-364</text>
+
+  <rect x="4400" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4425" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4425,90)">П-365</text>
+
+  <rect x="4450" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4475" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4475,90)">П-366</text>
+
+  <rect x="4500" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4525" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4525,90)">П-367</text>
+
+  <!-- ══ Разрыв ══ -->
+  <rect x="4550" y="15" width="25" height="150" fill="rgb(200,200,200)" stroke="#aaa" stroke-width="1"/>
+
+  <rect x="4575" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4600" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4600,90)">П-368</text>
+
+  <rect x="4625" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4650" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4650,90)">П-369</text>
+
+  <rect x="4675" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4700" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4700,90)">П-370</text>
+
+  <rect x="4725" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4750" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4750,90)">П-371</text>
+
+  <!-- ══ П-372..П-383 ══ -->
+  <rect x="4775" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4800" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4800,90)">П-372</text>
+
+  <rect x="4825" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4850" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4850,90)">П-373</text>
+
+  <rect x="4875" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4900" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4900,90)">П-374</text>
+
+  <rect x="4925" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="4950" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,4950,90)">П-375</text>
+
+  <rect x="4975" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="5000" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,5000,90)">П-376</text>
+
+  <rect x="5025" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="5050" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,5050,90)">П-377</text>
+
+  <rect x="5075" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="5100" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,5100,90)">П-378</text>
+
+  <rect x="5125" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="5150" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,5150,90)">П-379</text>
+
+  <!-- ══ Разрыв ══ -->
+  <rect x="5175" y="15" width="25" height="150" fill="rgb(200,200,200)" stroke="#aaa" stroke-width="1"/>
+
+  <rect x="5200" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="5225" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,5225,90)">П-380</text>
+
+  <rect x="5250" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="5275" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,5275,90)">П-381</text>
+
+  <!-- ══ Разрыв ══ -->
+  <rect x="5300" y="15" width="25" height="150" fill="rgb(200,200,200)" stroke="#aaa" stroke-width="1"/>
+
+  <rect x="5325" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="5350" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,5350,90)">П-382</text>
+
+  <!-- ══ Разрыв ══ -->
+  <rect x="5375" y="15" width="25" height="150" fill="rgb(200,200,200)" stroke="#aaa" stroke-width="1"/>
+
+  <rect x="5400" y="15" width="50" height="150" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="5425" y="90" font-size="9" fill="#1a2a4a" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90,5425,90)">П-383</text>
+
+  <!-- ══ КП внизу слева ══ -->
+  <text x="30" y="185" font-size="10" fill="#29332D" text-anchor="middle" font-weight="bold">КП</text>
+
+</svg>

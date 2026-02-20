@@ -31,7 +31,8 @@ const sectorMaps = {
     'sector31': 'assets/img/Sectors-map/Sector31.svg',
     'sector32': 'assets/img/Sectors-map/Sector32.svg',
     'sector33': 'assets/img/Sectors-map/Sector33.svg',
-    'sector34': 'assets/img/Sectors-map/Sector34-3-2.svg'
+    'sector34': 'assets/img/Sectors-map/Sector34-3-2.svg',
+    'sector35': 'assets/img/Sectors-map/Sector35.svg'
 };
 
 // Sector Data Configuration (for tooltip fallback)
