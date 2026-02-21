@@ -210,6 +210,7 @@ const detailedLegends = {
 // State management
 let currentView = 'main'; // 'main' or 'detail'
 let currentSector = null;
+let isVerticalView = false;
 let mainMapHTML = null; // Store original map HTML
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -236,25 +237,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Map Mode Toggle (Scheme vs Photo)
+    // Map Mode Toggle (Scheme vs Photo vs Vertical)
     const btnScheme = document.getElementById('btn-scheme');
     const btnPhoto = document.getElementById('btn-photo');
-    // mapPhotoImage is dynamic, so we shouldn't cache it here
+    const btnVertical = document.getElementById('btn-vertical');
 
-    if (btnScheme && btnPhoto) {
+    if (btnScheme && btnPhoto && btnVertical) {
         btnScheme.addEventListener('click', () => {
             // Set active state
             btnScheme.classList.add('selected');
             btnPhoto.classList.remove('selected');
+            // We don't remove selected from btnVertical here as it can be combined with scheme view
+            // though usually they might be exclusive. Let's make it work nicely.
 
-            // Find current image
             const currentMapPhotoImage = document.getElementById('map-photo-image');
             if (currentMapPhotoImage) {
                 currentMapPhotoImage.style.display = 'none';
             }
 
-            // Show all SVGs in the wrapper
-            // Note: SVG elements might be different if detailed sector is loaded
             const svgs = mapWrapper.querySelectorAll('svg');
             svgs.forEach(svg => svg.style.display = 'block');
         });
@@ -263,19 +263,32 @@ document.addEventListener('DOMContentLoaded', () => {
             // Set active state
             btnPhoto.classList.add('selected');
             btnScheme.classList.remove('selected');
+            // If in photo mode, vertical might not apply easily, but let's keep it simple
 
-            // Find current image
             const currentMapPhotoImage = document.getElementById('map-photo-image');
             if (currentMapPhotoImage) {
                 currentMapPhotoImage.style.display = 'block';
             }
 
-            // Hide all SVGs in the wrapper
             const svgs = mapWrapper.querySelectorAll('svg');
             svgs.forEach(svg => svg.style.display = 'none');
 
-            // Also hide tooltip just in case
             hideTooltip();
+        });
+
+        btnVertical.addEventListener('click', () => {
+            isVerticalView = !isVerticalView;
+
+            if (isVerticalView) {
+                btnVertical.classList.add('selected');
+            } else {
+                btnVertical.classList.remove('selected');
+            }
+
+            // If we're already in a sector view, reload it with the vertical version
+            if (currentView === 'detail' && currentSector) {
+                loadSectorMap(currentSector);
+            }
         });
     }
 
@@ -361,9 +374,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load detailed sector map
     function loadSectorMap(sectorId) {
         hideTooltip();
-        const svgPath = sectorMaps[sectorId];
+        let svgPath = sectorMaps[sectorId];
 
         if (!svgPath) return;
+
+        // If vertical view is enabled, try to load the vertical version
+        if (isVerticalView) {
+            svgPath = svgPath.replace('.svg', '-v.svg');
+        }
 
         currentView = 'detail';
         currentSector = sectorId;
@@ -414,6 +432,13 @@ document.addEventListener('DOMContentLoaded', () => {
         hideTooltip();
         currentView = 'main';
         currentSector = null;
+        isVerticalView = false;
+
+        // Reset button state
+        const btnVertical = document.getElementById('btn-vertical');
+        if (btnVertical) {
+            btnVertical.classList.remove('selected');
+        }
 
         // Hide back button
         if (backButton) {
@@ -568,5 +593,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Initialize counter
         updateFilterCounter();
+
+        // Mobile Filter Modal Logic
+        const mobileFilterBtn = document.getElementById('mobile-filter-btn');
+        const filtersSidebar = document.getElementById('filters-sidebar');
+        const closeFiltersBtn = document.getElementById('close-filters');
+
+        if (mobileFilterBtn && filtersSidebar && closeFiltersBtn) {
+            mobileFilterBtn.addEventListener('click', () => {
+                filtersSidebar.classList.add('is-open');
+                document.body.classList.add('filters-open');
+            });
+
+            closeFiltersBtn.addEventListener('click', () => {
+                filtersSidebar.classList.remove('is-open');
+                document.body.classList.remove('filters-open');
+            });
+
+            // Close modal on escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && filtersSidebar.classList.contains('is-open')) {
+                    filtersSidebar.classList.remove('is-open');
+                    document.body.classList.remove('filters-open');
+                }
+            });
+        }
     }
 });

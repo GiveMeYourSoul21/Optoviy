@@ -107,6 +107,29 @@
         <div class="section-light">
             <div class="container-for-map">
                 <h1 class="h2">Карта ринку</h1>
+                <button id="mobile-filter-btn" class="mobile-filter-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 21V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 10V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12 21V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12 8V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M20 21V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M20 12V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1 14H7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M9 8H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M17 16H23" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span>Фільтри товарів</span>
+                </button>
                 <br>
 
                 <div class="container-for-map">
@@ -153,7 +176,7 @@
                                         </svg>
                                         <span>Фото</span>
                                     </button>
-                                    <button class="optovyi-button">
+                                    <button class="optovyi-button" id="btn-vertical">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -336,9 +359,6 @@
                                             <path id="sector25" class="sector" vector-effect="none" fill-rule="evenodd"
                                                 d="M 3224.26 1544.27 L 3253.78 1544.27 L 3253.78 1795.92 L 3224.26 1795.92 L 3224.26 1544.27 Z"
                                                 style="stroke-width: 3.071;"></path>
-                                            <path id="sector26" class="sector" vector-effect="none" fill-rule="evenodd"
-                                                d="M3213,1918.85 L3209.03,1904.37 L3227.77,1900.23 L3231.61,1914.84 L3213,1918.85"
-                                                style="stroke-width: 3.071;"></path>
                                             <path id="sector27" class="sector" vector-effect="none" fill-rule="evenodd"
                                                 d="M 1403 1846 L 1403 1811 L 1466 1811 L 1466 1783 L 1704 1783 L 1704 1847 L 1405 1847 Z"
                                                 style="stroke-width: 3.071;">
@@ -359,7 +379,7 @@
                                                 d="M 3071 1846 L 3071 1812 L 2987 1812 L 2987 1778 L 2433 1778 L 2433 1845 L 3071 1846 Z">
                                             </path>
                                             <path id="sector35" class="sector" vector-effect="none" fill-rule="evenodd"
-                                                d="M1915.73 1546.23 L3200.797 1546.23 L3200.797 1582.633 L1915.73 1582.633 Z">
+                                                d="M 2349.33 1546.23 L 3200.8 1546.23 L 3200.8 1582.63 L 2349.33 1582.63 L 2349.33 1546.23 Z">
                                             </path>
                                             <path id="sector3" class="sector" vector-effect="none" fill-rule="evenodd"
                                                 d="M 669 1761 L 669 1550 L 835 1550 L 835 1579 L 702 1579 L 701 1761 L 669 1761 Z"
@@ -370,8 +390,11 @@
                                             <path id="sector33" class="sector" vector-effect="none" fill-rule="evenodd"
                                                 d="M 1720.89 1862.38 L 2173.25 1862.38 L 2173.25 1900.23 L 1720.89 1900.23 L 1720.89 1862.38 Z"
                                                 style="stroke-width: 3.071;"></path>
-                                            <path id="path-2" class="sector" vector-effect="none" fill-rule="evenodd"
+                                            <path id="sector7" class="sector" vector-effect="none" fill-rule="evenodd"
                                                 d="M 3223.81 1804.03 L 3253.33 1804.03 L 3253.33 1890.22 L 3223.81 1890.22 L 3223.81 1804.03 Z"
+                                                style="stroke-width: 3.071;"></path>
+                                            <path id="sector26" class="sector" vector-effect="none" fill-rule="evenodd"
+                                                d="M 1925.33 1546.88 L 2342.81 1546.88 L 2342.81 1583.28 L 1925.33 1583.28 L 1925.33 1546.88 Z"
                                                 style="stroke-width: 3.071;"></path>
                                         </g>
                                         <g fill="none" stroke-width="1" stroke="#000000" stroke-linejoin="bevel"
@@ -728,10 +751,17 @@
                         </div>
 
                         <!-- Right Column: Filters Sidebar (Static) -->
-                        <aside class="filters-sidebar-static">
+                        <aside id="filters-sidebar" class="filters-sidebar-static">
                             <div class="optovyi-filter__header">
                                 <h4 class="optovyi-filter__title optovyi-h4">Фільтри товарів</h4>
                                 <span class="optovyi-filter__counter optovyi-caption">0</span>
+                                <button id="close-filters" class="optovyi-filter__close" aria-label="Закрити фільтри">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
                             </div>
                             <div class="optovyi-filter__search">
                                 <label class="optovyi-search">

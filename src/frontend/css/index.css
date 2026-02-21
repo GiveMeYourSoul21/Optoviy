@@ -624,7 +624,7 @@ body {
 
 .banner a>button {
     position: absolute;
-    top: 74%;
+    top: 76%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
@@ -661,7 +661,7 @@ body {
     }
 
     .banner a>button {
-        top: 68%;
+        top: 78%;
         padding: 12px 24px;
         font-size: 0.95rem;
     }
