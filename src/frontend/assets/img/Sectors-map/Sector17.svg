@@ -1,147 +1,86 @@
 <svg width="1060" height="280" viewBox="0 0 1060 280" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
 
-  <!--
-    Масштаб: 1м = 20px
-    Секция: 2.5м = 50px ширина, 6м = 120px высота
-    Нижний ряд: 21 секция × 50px = 1050px  +  отступы 5px = 1060px
-    Верхние надстройки: те же 50px, высота тоже 120px
-    Верхний ряд начинается y=20, нижний y=140+20=160
-    Итого высота: 20 + 120(верх) + 20(зазор) + 120(низ) + 20 = 300 → но верхние не над всеми
-    SVG height = 20 + 120 + 0 + 120 + 20 = 280px
-  -->
-
-  <!-- ФОН -->
-  <rect width="1060" height="280" fill="#DAE5DF"/>
-
-  <!-- ══════════════════════════════════════════
-       ВЕРХНИЕ НАДСТРОЙКИ (y=20, h=120)
-       Только над позициями: K-702, K-701, 698, K-697, K-695, K-696
-       
-       Позиция K-702 в нижнем ряду = 13-я слева (индекс 13, x = 5+13×50 = 655)
-       Позиция K-701 = 14-я (x=705)
-       Позиция 698   = 17-я (x=855)
-       Позиция K-697 = 18-я (x=905)
-       Позиция K-695 = 19-я (x=955)
-       Позиция K-696 = 20-я (x=1005)
-       
-       Отступ слева = 5px
-       Порядок: K-757(0) K-756(1) 755(2) 740(3) K-744(4) K-745(5)
-                K-709(6) K-708(7) K-707(8) 706(9) 705(10) K-704(11)
-                K-703(12) K-702(13) K-701(14) K-649(15) 699(16)
-                698(17) K-697(18) K-695(19) K-696(20)
-  ══════════════════════════════════════════ -->
-
-  <!-- K-230 над K-702 (x = 5+13×50 = 655) -->
-  <rect x="655" y="20" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <!-- Верхние надстройки -->
+  <rect x="655" y="20" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="680" y="80" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 680 80)">К-230</text>
 
-  <!-- K-226 над K-701 (x=705) -->
-  <rect x="705" y="20" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="705" y="20" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="730" y="80" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 730 80)">К-226</text>
 
-  <!-- K-266 над 698 (x = 5+17×50 = 855) -->
-  <rect x="855" y="20" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="855" y="20" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="880" y="80" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 880 80)">К-266</text>
 
-  <!-- K-803 над K-697 (x=905) -->
-  <rect x="905" y="20" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="905" y="20" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="930" y="80" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 930 80)">К-803</text>
 
-  <!-- 548 над K-695 (x=955) -->
-  <rect x="955" y="20" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="955" y="20" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="980" y="80" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 980 80)">548</text>
 
-  <!-- 547 над K-696 (x=1005) -->
-  <rect x="1005" y="20" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="1005" y="20" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="1030" y="80" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1030 80)">547</text>
 
-  <!-- ══════════════════════════════════════════
-       НИЖНИЙ РЯД (y=140, h=120)
-       21 секция × 50px, x начало = 5
-  ══════════════════════════════════════════ -->
-
-  <!-- K-757  x=5 -->
-  <rect x="5"   y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <!-- Нижний ряд -->
+  <rect x="5"   y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="30"  y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 30 200)">К-757</text>
 
-  <!-- K-756  x=55 -->
-  <rect x="55"  y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="55"  y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="80"  y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 80 200)">К-756</text>
 
-  <!-- 755  x=105 -->
-  <rect x="105" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="105" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="130" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 130 200)">755</text>
 
-  <!-- 740  x=155 -->
-  <rect x="155" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="155" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="180" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 180 200)">740</text>
 
-  <!-- K-744  x=205 -->
-  <rect x="205" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="205" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="230" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 230 200)">К-744</text>
 
-  <!-- K-745  x=255 -->
-  <rect x="255" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="255" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="280" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 280 200)">К-745</text>
 
-  <!-- K-709  x=305 -->
-  <rect x="305" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="305" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="330" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 330 200)">К-709</text>
 
-  <!-- K-708  x=355 -->
-  <rect x="355" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="355" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="380" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 380 200)">К-708</text>
 
-  <!-- K-707  x=405 -->
-  <rect x="405" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="405" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="430" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 430 200)">К-707</text>
 
-  <!-- 706  x=455 -->
-  <rect x="455" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="455" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="480" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 480 200)">706</text>
 
-  <!-- 705  x=505 -->
-  <rect x="505" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="505" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="530" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 530 200)">705</text>
 
-  <!-- K-704  x=555 -->
-  <rect x="555" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="555" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="580" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 580 200)">К-704</text>
 
-  <!-- K-703  x=605 -->
-  <rect x="605" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="605" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="630" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 630 200)">К-703</text>
 
-  <!-- K-702  x=655 (с верхней надстройкой) -->
-  <rect x="655" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="655" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="680" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 680 200)">К-702</text>
 
-  <!-- K-701  x=705 (с верхней надстройкой) -->
-  <rect x="705" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="705" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="730" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 730 200)">К-701</text>
 
-  <!-- K-649  x=755 -->
-  <rect x="755" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="755" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="780" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 780 200)">К-649</text>
 
-  <!-- 699  x=805 -->
-  <rect x="805" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="805" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="830" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 830 200)">699</text>
 
-  <!-- 698  x=855 (с верхней надстройкой) -->
-  <rect x="855" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="855" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="880" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 880 200)">698</text>
 
-  <!-- K-697  x=905 (с верхней надстройкой) -->
-  <rect x="905" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="905" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="930" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 930 200)">К-697</text>
 
-  <!-- K-695  x=955 (с верхней надстройкой) -->
-  <rect x="955" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="955" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="980" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 980 200)">К-695</text>
 
-  <!-- K-696  x=1005 (с верхней надстройкой) -->
-  <rect x="1005" y="140" width="50" height="120" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="1005" y="140" width="50" height="120" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="1030" y="200" font-size="12" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1030 200)">К-696</text>
 
 </svg>

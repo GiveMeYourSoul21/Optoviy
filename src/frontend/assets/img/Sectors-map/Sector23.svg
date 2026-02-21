@@ -1,98 +1,71 @@
 <svg width="280" height="510" viewBox="0 0 280 510" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
 
-  <!--
-    1 кл = 25px
-    Ячейка: 4кл×2кл = 100×50
-    Две колонки по 100px, x=5 и x=105
-    8 строк × 50px = 400px
-    Метки снизу: 6 ячеек × ~50px = 300px в строке 25px высотой
-    
-    Верхний блок: x=5, w=200, 8 строк h=50 каждая
-    y=20..420
-    Метки: y=420, h=25
-  -->
-
-  <rect width="280" height="470" fill="#DAE5DF"/>
-
-  <!-- ══════════════════════════════
-       ОСНОВНОЙ БЛОК: 2 колонки × 8 строк
-       Левая: x=5,  w=100
-       Правая: x=105, w=100
-  ══════════════════════════════ -->
-
   <!-- Строка 1: К-23 | К-78 -->
-  <rect x="5"   y="20" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="5"   y="20" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="55"  y="45" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-23</text>
-  <rect x="105" y="20" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="105" y="20" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="155" y="45" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-78</text>
 
   <!-- Строка 2: К-624 | К-70 -->
-  <rect x="5"   y="70" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="5"   y="70" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="55"  y="95" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-624</text>
-  <rect x="105" y="70" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="105" y="70" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="155" y="95" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-70</text>
 
   <!-- Строка 3: К-473 | К-69 -->
-  <rect x="5"   y="120" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="5"   y="120" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="55"  y="145" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-473</text>
-  <rect x="105" y="120" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="105" y="120" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="155" y="145" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-69</text>
 
   <!-- Строка 4: К-55 | К-68 -->
-  <rect x="5"   y="170" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="5"   y="170" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="55"  y="195" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-55</text>
-  <rect x="105" y="170" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="105" y="170" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="155" y="195" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-68</text>
 
   <!-- Строка 5: К-79 | К-67 -->
-  <rect x="5"   y="220" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="5"   y="220" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="55"  y="245" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-79</text>
-  <rect x="105" y="220" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="105" y="220" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="155" y="245" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-67</text>
 
   <!-- Строка 6: П-459 | К-66 -->
-  <rect x="5"   y="270" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="5"   y="270" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="55"  y="295" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-459</text>
-  <rect x="105" y="270" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="105" y="270" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="155" y="295" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-66</text>
 
   <!-- Строка 7: П-458 | К-65 -->
-  <rect x="5"   y="320" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="5"   y="320" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="55"  y="345" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-458</text>
-  <rect x="105" y="320" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="105" y="320" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="155" y="345" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-65</text>
 
   <!-- Строка 8: П-457 | К-64 -->
-  <rect x="5"   y="370" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="5"   y="370" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="55"  y="395" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-457</text>
-  <rect x="105" y="370" width="100" height="50" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="105" y="370" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="155" y="395" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-64</text>
 
-  <!-- ══════════════════════════════
-       МЕТКИ СНИЗУ: 6 ячеек
-       74 | 65 | 66 | 67 | 68 | 69
-       Левая группа (74,65,66): под левой колонкой x=5, w=100 → 3×33px
-       Правая группа (67,68,69): под правой колонкой x=105, w=100 → 3×33px
-  ══════════════════════════════ -->
-
   <!-- Метки левой колонки: 74 | 65 | 66 -->
-  <rect x="5"   y="420" width="33" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="5"   y="420" width="33" height="25" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="21"  y="432" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">74</text>
 
-  <rect x="38"  y="420" width="33" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="38"  y="420" width="33" height="25" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="54"  y="432" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">65</text>
 
-  <rect x="71"  y="420" width="34" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="71"  y="420" width="34" height="25" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="88"  y="432" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">66</text>
 
   <!-- Метки правой колонки: 67 | 68 | 69 -->
-  <rect x="105" y="420" width="33" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="105" y="420" width="33" height="25" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="121" y="432" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">67</text>
 
-  <rect x="138" y="420" width="33" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="138" y="420" width="33" height="25" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="154" y="432" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">68</text>
 
-  <rect x="171" y="420" width="34" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
+  <rect x="171" y="420" width="34" height="25" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
   <text x="188" y="432" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">69</text>
 
 </svg>
