@@ -1,194 +1,105 @@
-<svg width="1010" height="310" viewBox="0 0 1010 310" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-289.706 240.407 1089.706 343.332">
 
-  <!--
-    1 кл = 25px
-    Стандарт верт: 2кл×5кл = 50×125
-    Широкий 4кл: 100×125
-    Широкий 6кл: 150×125
+  <rect x="-224.26" y="261.243" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-174.23" y="287.581" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-421</text>
 
-    Высота ряда = 5кл = 125px
-    Общая высота = 2 ряда × 125 = 250px + отступы
+  <rect x="-224.3" y="360.931" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
 
-    АНАЛИЗ СКРИНА:
-    Левый блок — 3 горизонтальных ячейки сверху (К-421, К-422, К-423) ш=100, каждая h=125/3≈42
-    Левый блок — 2 горизонтальных снизу (К-424, К-425) ш=100, каждая h=125/2=62-63
-    К-407 — вертикальный, верхний ряд только 50×125
-    К-409 — вертикальный, нижний ряд только 50×125
+  <rect x="-224.28" y="310.759" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-173.99" y="334.567" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-422</text>
+  <text x="-173.51" y="383.976" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-423</text>
 
-    ВЕРХНИЙ РЯД (y=20, h=125):
-      К-421/К-422/К-423 стопка x=5   w=100 (3 части)
-      К-407             x=105  w=50  h=125 вертикальный
-      П-476             x=155  w=100 h=125
-      П-475             x=255  w=150 h=125  (6кл)
-      К-814             x=405  w=50  h=125
-      К-374             x=455  w=50  h=125
-      П-474             x=505  w=100 h=125
-      П-473             x=605  w=100 h=125
-      П-472             x=705  w=100 h=125
-      К-399             x=805  w=50  h=125
-      П-483             x=855  w=100 h=125
+  <rect x="-124.02" y="261.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="130" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -181.017014, 453.154022)">К-407</text>
 
-    НИЖНИЙ РЯД (y=145, h=125):
-      К-424/К-425 стопка x=5   w=100 (2 части)
-      К-409             x=105  w=50  h=125 вертикальный
-      К-492             x=155  w=50  h=125
-      К-412             x=205  w=50  h=125
-      К-394             x=255  w=50  h=125
-      К-395             x=305  w=50  h=125
-      К-396             x=355  w=50  h=125
-      К-398             x=405  w=50  h=125
-      К-354             x=455  w=50  h=125
-      К-355             x=505  w=50  h=125
-      К-351             x=555  w=50  h=125
-      К-352             x=605  w=50  h=125
-      К-353             x=655  w=50  h=125
-      К-337             x=705  w=50  h=125
-      К-349             x=755  w=50  h=125
-      К-347             x=805  w=50  h=125
-      К-369/К-368/К-367 стопка x=855 w=100 (3 части)
-      кп                x=855  w=100 (подпись внизу)
-  -->
+  <rect x="-74.022" y="261.154" width="100" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-24.022" y="323.154" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-476</text>
 
-  <rect width="1010" height="310" fill="#DAE5DF"/>
+  <rect x="25.983" y="261.154" width="150" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="100.983" y="323.154" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-475</text>
 
-  <!-- ══════════════════════════════
-       ВЕРХНИЙ РЯД  y=20, h=125
-  ══════════════════════════════ -->
+  <rect x="175.983" y="261.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="430" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, 118.982986, 753.154053)">К-814</text>
 
-  <!-- К-421 / К-422 / К-423 — стопка из 3, x=5, w=100 -->
-  <rect x="5"   y="20"  width="100" height="42" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="55"  y="41"  font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-421</text>
+  <rect x="225.983" y="261.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="480" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, 168.982986, 803.154053)">К-374</text>
 
-  <rect x="5"   y="62"  width="100" height="41" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="55"  y="82"  font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-422</text>
+  <rect x="275.983" y="261.154" width="100" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="325.983" y="323.154" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-474</text>
 
-  <rect x="5"   y="103" width="100" height="42" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="55"  y="124" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-423</text>
+  <rect x="375.983" y="261.154" width="100" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="425.983" y="323.154" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-473</text>
 
-  <!-- К-407: вертикальный 50×125 -->
-  <rect x="105" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="130" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 130 82)">К-407</text>
+  <rect x="475.983" y="261.154" width="100" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="525.983" y="323.154" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-472</text>
 
-  <!-- П-476: 100×125 -->
-  <rect x="155" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="205" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-476</text>
+  <rect x="575.983" y="261.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="830" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, 518.982971, 1153.154053)">К-399</text>
 
-  <!-- П-475: 150×125 (6кл) -->
-  <rect x="255" y="20" width="150" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="330" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-475</text>
+  <rect x="625.983" y="261.154" width="100" height="101.726" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="678.747" y="313.755" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-483</text>
 
-  <!-- К-814: 50×125 -->
-  <rect x="405" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="430" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 430 82)">К-814</text>
+  <rect x="-224.32" y="411.073" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-173.74" y="436.24" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-424</text>
 
-  <!-- К-374: 50×125 -->
-  <rect x="455" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="480" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 480 82)">К-374</text>
+  <rect x="-224.31" y="461.169" width="100" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-174.54" y="484.975" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-425</text>
 
-  <!-- П-474: 100×125 -->
-  <rect x="505" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="555" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-474</text>
+  <rect x="-124.02" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="130" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -306.017029, 578.154053)">К-409</text>
 
-  <!-- П-473: 100×125 -->
-  <rect x="605" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="655" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-473</text>
+  <rect x="-74.022" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="180" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -256.017029, 628.154053)">К-492</text>
 
-  <!-- П-472: 100×125 -->
-  <rect x="705" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="755" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-472</text>
+  <rect x="-24.022" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="230" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -206.017014, 678.154053)">К-412</text>
 
-  <!-- К-399: 50×125 -->
-  <rect x="805" y="20" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="830" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 830 82)">К-399</text>
+  <rect x="25.983" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="280" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -156.017014, 728.154053)">К-394</text>
 
-  <!-- П-483: 100×125 -->
-  <rect x="855" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="905" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-483</text>
+  <rect x="75.983" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="330" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -106.017021, 778.154053)">К-395</text>
 
+  <rect x="125.983" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="380" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -56.017021, 828.154053)">К-396</text>
 
-  <!-- ══════════════════════════════
-       НИЖНИЙ РЯД  y=145, h=125
-  ══════════════════════════════ -->
+  <rect x="175.983" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="430" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -6.017014, 878.154053)">К-398</text>
 
-  <!-- К-424 / К-425 — стопка из 2, x=5, w=100 -->
-  <rect x="5"   y="145" width="100" height="62" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="55"  y="176" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-424</text>
+  <rect x="225.983" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="480" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, 43.982983, 928.154053)">К-354</text>
 
-  <rect x="5"   y="207" width="100" height="63" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="55"  y="238" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-425</text>
+  <rect x="275.983" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="530" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, 93.982986, 978.154053)">К-355</text>
 
-  <!-- К-409: вертикальный 50×125 -->
-  <rect x="105" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="130" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 130 207)">К-409</text>
+  <rect x="325.983" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="580" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, 143.982986, 1028.154053)">К-351</text>
 
-  <!-- К-492 -->
-  <rect x="155" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="180" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 180 207)">К-492</text>
+  <rect x="375.983" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="630" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, 193.982986, 1078.154053)">К-352</text>
 
-  <!-- К-412 -->
-  <rect x="205" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="230" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 230 207)">К-412</text>
+  <rect x="425.983" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="680" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, 243.982986, 1128.154053)">К-353</text>
 
-  <!-- К-394 -->
-  <rect x="255" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="280" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 280 207)">К-394</text>
+  <rect x="475.983" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="730" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, 293.982971, 1178.154053)">К-337</text>
 
-  <!-- К-395 -->
-  <rect x="305" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="330" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 330 207)">К-395</text>
+  <rect x="525.983" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="780" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, 343.982971, 1228.154053)">К-349</text>
 
-  <!-- К-396 -->
-  <rect x="355" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="380" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 380 207)">К-396</text>
+  <rect x="575.983" y="386.154" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="830" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, 393.982971, 1278.154053)">К-347</text>
 
-  <!-- К-398 -->
-  <rect x="405" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="430" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 430 207)">К-398</text>
+  <rect x="625.969" y="362.991" width="100" height="49" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="679.272" y="389.534" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-369</text>
 
-  <!-- К-354 -->
-  <rect x="455" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="480" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 480 207)">К-354</text>
+  <rect x="625.948" y="412.384" width="100" height="49" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="678.097" y="436.407" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-368</text>
 
-  <!-- К-355 -->
-  <rect x="505" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="530" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 530 207)">К-355</text>
+  <rect x="625.958" y="462.155" width="100" height="49" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="677.693" y="487.153" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-367</text>
 
-  <!-- К-351 -->
-  <rect x="555" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="580" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 580 207)">К-351</text>
-
-  <!-- К-352 -->
-  <rect x="605" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="630" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 630 207)">К-352</text>
-
-  <!-- К-353 -->
-  <rect x="655" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="680" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 680 207)">К-353</text>
-
-  <!-- К-337 -->
-  <rect x="705" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="730" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 730 207)">К-337</text>
-
-  <!-- К-349 -->
-  <rect x="755" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="780" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 780 207)">К-349</text>
-
-  <!-- К-347 -->
-  <rect x="805" y="145" width="50" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="830" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 830 207)">К-347</text>
-
-  <!-- К-369 / К-368 / К-367 — стопка из 3, x=855, w=100 -->
-  <rect x="855" y="145" width="100" height="42" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="905" y="166" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-369</text>
-
-  <rect x="855" y="187" width="100" height="41" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="905" y="207" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-368</text>
-
-  <rect x="855" y="228" width="100" height="42" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="905" y="249" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">К-367</text>
-
-  <!-- кп — подпись снизу справа -->
-  <rect x="855" y="270" width="100" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="905" y="282" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">кп</text>
+  <rect x="667.719" y="511.154" width="58.264" height="25" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="698.332" y="523.154" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">кп</text>
 
 </svg>

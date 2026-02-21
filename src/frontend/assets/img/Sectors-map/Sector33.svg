@@ -1,197 +1,112 @@
-<svg width="2100" height="230" viewBox="0 0 2100 230" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2574.233 -416.82 2113.393 216.82" font-family="Arial, sans-serif">
 
-  <!--
-    1 кл = 25px
-    Стандарт: 2кл×5кл = 50×125
-    Высота: 125px
-    
-    Слева направо (x-позиции, шаг 50px для узких):
-    П-500  x=5    w=50  (узкий)
-    П-197  x=55   w=50
-    П-92   x=105  w=50
-    П-93   x=155  w=50
-    П-94   x=205  w=50
-    П-95   x=255  w=50
-    П-96   x=305  w=50
-    П-211  x=355  w=50
-    П-97   x=405  w=100 (широкий 4кл)
-    П-98   x=505  w=100
-    П-99   x=605  w=100
-    П-100  x=705  w=100
-    П-101  x=805  w=50
-    П-102  x=855  w=100
-    П-103  x=955  w=100
-    П-104  x=1055 w=100
-    П-560  x=1155 w=50
-    П-554  x=1205 w=50
-    П-553  x=1255 w=50
-    П-552  x=1305 w=50
-    П-551  x=1355 w=50
-    П-550  x=1405 w=50
-    П-549  x=1455 w=50
-    П-105  x=1505 w=50
-    П-106  x=1555 w=50
-    П-107  x=1605 w=50
-    П-108  x=1655 w=100
-    П-109  x=1755 w=50
-    П-110  x=1805 w=50
-    П-111  x=1855 w=50
-    П-112  x=1905 w=100
-    
-    Правые метки (стопка): 98/9/8/7/28
-    x=2005, w=25, h varies
-    
-    Итого: до 2030px → viewBox 2050
-  -->
+  <rect x="-2557.1" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="30" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -2614.176758, -288.000061)">П-500</text>
 
-  <rect width="2100" height="230" fill="#DAE5DF"/>
+  <rect x="-2507.1" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="80" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -2564.176758, -238.000046)">П-197</text>
 
-  <!-- ══════════════════════════════
-       ОСНОВНОЙ РЯД y=20, h=125
-  ══════════════════════════════ -->
+  <rect x="-2457.1" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="130" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -2514.176758, -188.000046)">П-92</text>
 
-  <!-- П-500: 2кл=50 -->
-  <rect x="5"    y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="30"   y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 30 82)">П-500</text>
+  <rect x="-2407.1" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="180" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -2464.176758, -138.000046)">П-93</text>
 
-  <!-- П-197: 2кл=50 -->
-  <rect x="55"   y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="80"   y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 80 82)">П-197</text>
+  <rect x="-2357.1" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="230" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -2414.176758, -88.000046)">П-94</text>
 
-  <!-- П-92: 2кл=50 -->
-  <rect x="105"  y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="130"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 130 82)">П-92</text>
+  <rect x="-2307.1" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="280" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -2364.176758, -38.00005)">П-95</text>
 
-  <!-- П-93: 2кл=50 -->
-  <rect x="155"  y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="180"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 180 82)">П-93</text>
+  <rect x="-2257.1" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="330" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -2314.176758, 11.999951)">П-96</text>
 
-  <!-- П-94: 2кл=50 -->
-  <rect x="205"  y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="230"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 230 82)">П-94</text>
+  <rect x="-2207.1" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="380" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -2264.176758, 61.99995)">П-211</text>
 
-  <!-- П-95: 2кл=50 -->
-  <rect x="255"  y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="280"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 280 82)">П-95</text>
+  <rect x="-2157.1" y="-380" width="100" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-2107.1" y="-318" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-97</text>
 
-  <!-- П-96: 2кл=50 -->
-  <rect x="305"  y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="330"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 330 82)">П-96</text>
+  <rect x="-2057.1" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-2031.5" y="-317.2" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-98</text>
 
-  <!-- П-211: 2кл=50 -->
-  <rect x="355"  y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="380"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 380 82)">П-211</text>
+  <rect x="-2006.8" y="-380" width="100" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-1956.8" y="-318" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-99</text>
 
-  <!-- П-97: 4кл=100 -->
-  <rect x="405"  y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="455"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-97</text>
+  <rect x="-1906.8" y="-380" width="100" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-1856.8" y="-318" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-100</text>
 
-  <!-- П-98: 4кл=100 -->
-  <rect x="505"  y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="555"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-98</text>
+  <rect x="-1806.8" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="830" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -1863.87207, 511.999969)">П-101</text>
 
-  <!-- П-99: 4кл=100 -->
-  <rect x="605"  y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="655"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-99</text>
+  <rect x="-1756.8" y="-380" width="100" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-1706.8" y="-318" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-102</text>
 
-  <!-- П-100: 4кл=100 -->
-  <rect x="705"  y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="755"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-100</text>
+  <rect x="-1656.8" y="-380" width="100" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-1606.8" y="-318" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-103</text>
 
-  <!-- П-101: 2кл=50 -->
-  <rect x="805"  y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="830"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 830 82)">П-101</text>
+  <rect x="-1556.8" y="-380" width="100" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-1506.8" y="-318" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-104</text>
 
-  <!-- П-102: 4кл=100 -->
-  <rect x="855"  y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="905"  y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-102</text>
+  <rect x="-1456.8" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1180" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -1513.872192, 861.999939)">П-560</text>
 
-  <!-- П-103: 4кл=100 -->
-  <rect x="955"  y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1005" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-103</text>
+  <rect x="-1406.8" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1230" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -1463.872192, 911.999878)">П-554</text>
 
-  <!-- П-104: 4кл=100 -->
-  <rect x="1055" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1105" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-104</text>
+  <rect x="-1356.8" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1280" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -1413.872192, 961.999878)">П-553</text>
 
-  <!-- П-560: 2кл=50 -->
-  <rect x="1155" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1180" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1180 82)">П-560</text>
+  <rect x="-1306.8" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1330" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -1363.872192, 1011.999878)">П-552</text>
 
-  <!-- П-554: 2кл=50 -->
-  <rect x="1205" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1230" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1230 82)">П-554</text>
+  <rect x="-1256.8" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1380" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -1313.872192, 1061.999878)">П-551</text>
 
-  <!-- П-553: 2кл=50 -->
-  <rect x="1255" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1280" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1280 82)">П-553</text>
+  <rect x="-1206.8" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1430" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -1263.872192, 1111.999878)">П-550</text>
 
-  <!-- П-552: 2кл=50 -->
-  <rect x="1305" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1330" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1330 82)">П-552</text>
+  <rect x="-1156.8" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1480" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -1213.872192, 1161.999878)">П-549</text>
 
-  <!-- П-551: 2кл=50 -->
-  <rect x="1355" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1380" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1380 82)">П-551</text>
+  <rect x="-1106.8" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1530" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -1163.872192, 1211.999878)">П-105</text>
 
-  <!-- П-550: 2кл=50 -->
-  <rect x="1405" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1430" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1430 82)">П-550</text>
+  <rect x="-1056.8" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1580" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -1113.872192, 1261.999878)">П-106</text>
 
-  <!-- П-549: 2кл=50 -->
-  <rect x="1455" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1480" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1480 82)">П-549</text>
+  <rect x="-1006.8" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1630" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -1063.872192, 1311.999878)">П-107</text>
 
-  <!-- П-105: 2кл=50 -->
-  <rect x="1505" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1530" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1530 82)">П-105</text>
+  <rect x="-956.84" y="-380" width="100" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-906.84" y="-318" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-108</text>
 
-  <!-- П-106: 2кл=50 -->
-  <rect x="1555" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1580" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1580 82)">П-106</text>
+  <rect x="-856.84" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1780" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -913.872192, 1461.999878)">П-109</text>
 
-  <!-- П-107: 2кл=50 -->
-  <rect x="1605" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1630" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1630 82)">П-107</text>
+  <rect x="-806.84" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1830" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -863.872192, 1511.999878)">П-110</text>
 
-  <!-- П-108: 4кл=100 -->
-  <rect x="1655" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1705" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-108</text>
+  <rect x="-756.84" y="-380" width="50" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="1880" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="matrix(0, -1, 1, 0, -813.872192, 1561.999878)">П-111</text>
 
-  <!-- П-109: 2кл=50 -->
-  <rect x="1755" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1780" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1780 82)">П-109</text>
+  <rect x="-706.84" y="-380" width="150" height="125" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-630.03" y="-315.46" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-112</text>
 
-  <!-- П-110: 2кл=50 -->
-  <rect x="1805" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1830" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1830 82)">П-110</text>
+  <!-- Малые ячейки -->
+  <rect x="-556.72" y="-404.7" width="50" height="25" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-531.72" y="-392.7" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">98</text>
 
-  <!-- П-111: 2кл=50 -->
-  <rect x="1855" y="20" width="50"  height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1880" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 1880 82)">П-111</text>
+  <rect x="-556.73" y="-380.01" width="50" height="25" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-530.96" y="-366.81" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">9</text>
 
-  <!-- П-112: 4кл=100 -->
-  <rect x="1905" y="20" width="100" height="125" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="1955" y="82" font-size="11" fill="#29332D" text-anchor="middle" dominant-baseline="middle">П-112</text>
+  <rect x="-556.78" y="-355.25" width="50" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-530.61" y="-328.91" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">8</text>
 
-  <!-- ══════════════════════════════
-       ПРАВЫЕ МЕТКИ (стопка 5шт)
-       x=2010, w=50, h=25 каждая
-  ══════════════════════════════ -->
+  <rect x="-556.82" y="-305.38" width="50" height="50" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-531.88" y="-279.28" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">7</text>
 
-  <rect x="2010" y="20"  width="50" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="2035" y="32"  font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">98</text>
-
-  <rect x="2010" y="45"  width="50" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="2035" y="57"  font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">9</text>
-
-  <rect x="2010" y="70"  width="50" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="2035" y="82"  font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">8</text>
-
-  <rect x="2010" y="95"  width="50" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="2035" y="107" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">7</text>
-
-  <rect x="2010" y="120" width="50" height="25" fill="#FAE9C8" stroke="#c8b898" stroke-width="1.5"/>
-  <text x="2035" y="132" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">28</text>
+  <rect x="-665.64" y="-254.68" width="133.934" height="28.042" fill="rgb(240,245,242)" stroke="#DAE5DF" stroke-width="2"/>
+  <text x="-594.44" y="-242.14" font-size="10" fill="#29332D" text-anchor="middle" dominant-baseline="middle">28</text>
 
 </svg>
