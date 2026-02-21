@@ -1,4 +1,4 @@
-#sector1 {
+[data-sector="sector1"] {
     fill: #c70926;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -7,7 +7,7 @@
     cursor: pointer;
 }
 
-#sector2 {
+[data-sector="sector2"] {
     fill: #CADCC6;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -16,7 +16,7 @@
     cursor: pointer;
 }
 
-#sector3 {
+[data-sector="sector3"] {
     fill: #CADCC6;
     /* базовыsdfsdfsdfsdfsdfбя */
     stroke: #232323;
@@ -25,7 +25,7 @@
     cursor: pointer;
 }
 
-#sector4 {
+[data-sector="sector4"] {
     fill: #ecc0c7;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -34,7 +34,7 @@
     cursor: pointer;
 }
 
-#sector5 {
+[data-sector="sector5"] {
     fill: #ecc0c7;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -43,7 +43,7 @@
     cursor: pointer;
 }
 
-#sector6 {
+[data-sector="sector6"] {
     fill: #BDD2E0;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -52,7 +52,7 @@
     cursor: pointer;
 }
 
-#sector7 {
+[data-sector="sector7"] {
     fill: #FFFEBD;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -61,7 +61,7 @@
     cursor: pointer;
 }
 
-#sector8 {
+[data-sector="sector8"] {
     fill: #FFFEBD;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -70,7 +70,7 @@
     cursor: pointer;
 }
 
-#sector9 {
+[data-sector="sector9"] {
     fill: #FFFEBD;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -79,7 +79,7 @@
     cursor: pointer;
 }
 
-#sector10 {
+[data-sector="sector10"] {
     fill: #FFFEBD;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -88,7 +88,7 @@
     cursor: pointer;
 }
 
-#sector11 {
+[data-sector="sector11"] {
     fill: #B7CFB7;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -97,7 +97,7 @@
     cursor: pointer;
 }
 
-#sector12 {
+[data-sector="sector12"] {
     fill: #B7CFB7;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -106,7 +106,7 @@
     cursor: pointer;
 }
 
-#sector13 {
+[data-sector="sector13"] {
     fill: #B7CFB7;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -115,7 +115,7 @@
     cursor: pointer;
 }
 
-#sector14 {
+[data-sector="sector14"] {
     fill: #B7CFB7;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -124,7 +124,7 @@
     cursor: pointer;
 }
 
-#sector15 {
+[data-sector="sector15"] {
     fill: #B7CFB7;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -133,7 +133,7 @@
     cursor: pointer;
 }
 
-#sector16 {
+[data-sector="sector16"] {
     fill: #F9E0CC;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -142,7 +142,7 @@
     cursor: pointer;
 }
 
-#sector17 {
+[data-sector="sector17"] {
     fill: #F9E0CC;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -151,7 +151,7 @@
     cursor: pointer;
 }
 
-#sector18 {
+[data-sector="sector18"] {
     fill: #F9E0CC;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -160,7 +160,7 @@
     cursor: pointer;
 }
 
-#sector19 {
+[data-sector="sector19"] {
     fill: #F9E0CC;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -169,7 +169,7 @@
     cursor: pointer;
 }
 
-#sector20 {
+[data-sector="sector20"] {
     fill: #F9E0CC;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -178,7 +178,7 @@
     cursor: pointer;
 }
 
-#sector21 {
+[data-sector="sector21"] {
     fill: #F9E0CC;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -187,7 +187,7 @@
     cursor: pointer;
 }
 
-#sector22 {
+[data-sector="sector22"] {
     fill: #F9E0CC;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -196,7 +196,7 @@
     cursor: pointer;
 }
 
-#sector23 {
+[data-sector="sector23"] {
     fill: #FFFEBD;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -205,7 +205,7 @@
     cursor: pointer;
 }
 
-#sector24 {
+[data-sector="sector24"] {
     fill: #FFFEBD;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -214,7 +214,7 @@
     cursor: pointer;
 }
 
-#sector25 {
+[data-sector="sector25"] {
     fill: #FFFEBD;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -223,7 +223,7 @@
     cursor: pointer;
 }
 
-#sector26 {
+[data-sector="sector26"] {
     fill: #a7ccc1;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -232,7 +232,7 @@
     cursor: pointer;
 }
 
-#sector27 {
+[data-sector="sector27"] {
     fill: #E2D9EB;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -241,7 +241,7 @@
     cursor: pointer;
 }
 
-#sector28 {
+[data-sector="sector28"] {
     fill: #E2D9EB;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -250,7 +250,7 @@
     cursor: pointer;
 }
 
-#sector29 {
+[data-sector="sector29"] {
     fill: #E2D9EB;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -259,7 +259,7 @@
     cursor: pointer;
 }
 
-#sector30 {
+[data-sector="sector30"] {
     fill: #BDD2E0;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -268,7 +268,7 @@
     cursor: pointer;
 }
 
-#sector31 {
+[data-sector="sector31"] {
     fill: #BDD2E0;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -277,7 +277,7 @@
     cursor: pointer;
 }
 
-#sector32 {
+[data-sector="sector32"] {
     fill: #E2D9EB;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -286,7 +286,7 @@
     cursor: pointer;
 }
 
-#sector33 {
+[data-sector="sector33"] {
     fill: #BDD2E0;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -295,7 +295,7 @@
     cursor: pointer;
 }
 
-#sector34 {
+[data-sector="sector34"] {
     fill: #CADCC6;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -304,7 +304,7 @@
     cursor: pointer;
 }
 
-#sector35 {
+[data-sector="sector35"] {
     fill: #a7ccc1;
     /* базовый цвет — как у тебя */
     stroke: #232323;
@@ -313,7 +313,7 @@
     cursor: pointer;
 }
 
-#sector-park1 {
+[data-sector="sector-park1"] {
     fill: #837e7f;
 
     stroke: #232323;
@@ -322,7 +322,7 @@
     cursor: pointer;
 }
 
-#sector-park2 {
+[data-sector="sector-park2"] {
     fill: #CADCC6;
     /* базовый цвет — как у тебя */
     stroke: #232323;

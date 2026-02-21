@@ -943,16 +943,6 @@ body {
     gap: 30px;
 }
 
-.map-wrapper {
-    width: 100%;
-}
-
-.map-wrapper .map-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 .legend-wrapper {
     width: 100%;
     border-top: 1px solid #eee;
@@ -1467,12 +1457,34 @@ body {
 }
 
 /* Contact Page Map Styles */
+/* Consolidated Map Wrapper Styles */
 .map-wrapper {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #ffffff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.map-wrapper svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.map-vertical {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: #ffffff;
 }
 
 .map-contact {
@@ -1548,23 +1560,13 @@ p {
     margin: 0;
 }
 
-.map-wrapper {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 12px;
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.map-wrapper .map-image {
+/* Map Image for Photo Mode */
+.map-wrapper #map-photo-image {
     width: 100%;
     height: auto;
-    display: block;
+    display: none;
+    /* Controlled by JS */
     object-fit: contain;
-    /* Чіткість PNG */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
 }
@@ -1581,13 +1583,6 @@ p {
 }
 
 /* Contact Page Map Styles */
-.map-wrapper {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
 
 .map-contact {
     width: 100%;
@@ -2266,11 +2261,41 @@ body {
     border-radius: 12px;
 }
 
+/* Map Orientation Switching */
 .map-horizontal {
-    display: block !important;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .map-vertical {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .map-horizontal {
+        display: none;
+    }
+
+    .map-vertical {
+        display: block;
+    }
+}
+
+/* Manual Overrides for map.js toggle */
+.map-wrapper.force-vertical .map-horizontal {
+    display: none !important;
+}
+
+.map-wrapper.force-vertical .map-vertical {
+    display: block !important;
+}
+
+.map-wrapper.force-horizontal .map-horizontal {
+    display: block !important;
+}
+
+.map-wrapper.force-horizontal .map-vertical {
     display: none !important;
 }
 
@@ -2303,8 +2328,8 @@ body {
 
     .map-vertical {
         display: block !important;
-        max-height: 800px;
-        width: auto;
+        max-height: 80vh;
+        width: 100%;
         margin: 0 auto;
     }
 }

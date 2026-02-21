@@ -294,8 +294,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (isVerticalView) {
                 btnVertical.classList.add('selected');
+                mapWrapper.classList.add('force-vertical');
+                mapWrapper.classList.remove('force-horizontal');
             } else {
                 btnVertical.classList.remove('selected');
+                mapWrapper.classList.remove('force-vertical');
+                mapWrapper.classList.add('force-horizontal');
             }
 
             // If we're already in a sector view, reload it with the vertical version
@@ -352,7 +356,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 e.stopPropagation();
 
-                const sectorId = sector.id;
+                // Use data-sector if available (for vertical map support), otherwise use id
+                const sectorId = sector.getAttribute('data-sector') || sector.id;
+
+                if (!sectorId) return;
 
                 // Check if this sector has a detailed map
                 if (sectorMaps[sectorId]) {
@@ -436,7 +443,10 @@ document.addEventListener('DOMContentLoaded', () => {
         currentSector = null;
         isVerticalView = false;
 
-        // Reset button state
+        // Reset manual orientation overrides
+        mapWrapper.classList.remove('force-vertical');
+        mapWrapper.classList.remove('force-horizontal');
+
         const btnVertical = document.getElementById('btn-vertical');
         if (btnVertical) {
             btnVertical.classList.remove('selected');
