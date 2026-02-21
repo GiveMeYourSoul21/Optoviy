@@ -423,8 +423,20 @@ body {
 }
 
 @media (max-width: 968px) {
-    .map-wrapper .map-image {
-        width: 00%;
+    .map-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        cursor: grab;
+        padding-bottom: 10px;
+        /* Space for scrollbar if it appears */
+    }
+
+    .map-wrapper .map-image,
+    .map-wrapper svg {
+        width: auto !important;
+        min-width: 1000px;
+        /* Allow map to be larger than screen */
+        height: auto;
     }
 }
 
@@ -696,7 +708,8 @@ body {
 }
 
 /* Grid Layout */
-.grid-3col {
+.grid-3col,
+.services-grid-3col {
     grid-column-gap: 50px;
     grid-row-gap: 30px;
     grid-template-rows: auto;
@@ -2092,7 +2105,7 @@ body {
 .filters-sidebar-static {
     display: flex;
     flex-direction: column;
-    max-height: calc(118vh - 200px);
+    max-height: calc(118vh - 320px);
     /* Адаптивна висота: viewport height мінус header та відступи */
     overflow: hidden;
 }
@@ -2194,7 +2207,9 @@ body {
 
 /* Адаптивні стилі для .grid-3col */
 @media screen and (max-width: 900px) {
-    .grid-3col {
+
+    .grid-3col,
+    .services-grid-3col {
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
@@ -2209,6 +2224,12 @@ body {
 @media screen and (max-width: 600px) {
     .grid-3col {
         grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 12px;
+    }
+
+    .services-grid-3col {
+        grid-template-columns: 1fr 1fr;
         grid-column-gap: 10px;
         grid-row-gap: 12px;
     }

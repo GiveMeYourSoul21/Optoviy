@@ -1,8 +1,10 @@
 
 // Mapping of sectors to their detailed SVG maps
 const sectorMaps = {
-    'sector4': 'assets/img/Sectors-map/Sector5-4.svg',
-    'sector5': 'assets/img/Sectors-map/Sector5-4.svg',
+    'sector2': 'assets/img/Sectors-map/Sector5.svg',
+    'sector3': 'assets/img/Sectors-map/Sector5.svg',
+    'sector4': 'assets/img/Sectors-map/Sector5.svg',
+    'sector5': 'assets/img/Sectors-map/Sector5.svg',
     'sector6': 'assets/img/Sectors-map/Sector6.svg',
     'sector7': 'assets/img/Sectors-map/Sector7.svg',
     'sector8': 'assets/img/Sectors-map/Sector8.svg',
@@ -31,7 +33,7 @@ const sectorMaps = {
     'sector31': 'assets/img/Sectors-map/Sector31.svg',
     'sector32': 'assets/img/Sectors-map/Sector32.svg',
     'sector33': 'assets/img/Sectors-map/Sector33.svg',
-    'sector34': 'assets/img/Sectors-map/Sector34-3-2.svg',
+    'sector34': 'assets/img/Sectors-map/Sector34.svg',
     'sector35': 'assets/img/Sectors-map/Sector35.svg'
 };
 
@@ -203,8 +205,7 @@ const detailedLegends = {
         { color: '#FAE9C8', label: 'Павільйони"' },
         { color: '#FAE9C8', label: 'Контейнери' }
     ],
-    'sector-park1': { title: 'Автостоянка "Космос"', link: 'pages/parking.html' },
-    'sector-park2': { title: 'Дворники', link: '#' }
+    'sector-park1': { title: 'Автостоянка "Космос"', link: 'pages/parking.html' }
 };
 
 // State management
@@ -228,6 +229,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize sector click handlers
     initializeSectorHandlers();
+
+    // Close tooltip when clicking outside
+    document.addEventListener('click', (e) => {
+        if (tooltip && !tooltip.contains(e.target) && !e.target.classList.contains('sector')) {
+            hideTooltip();
+        }
+    });
+
+    // Close on scroll
+    window.addEventListener('scroll', () => {
+        hideTooltip();
+    }, { passive: true });
 
     // Back button handler
     if (backButton) {
@@ -358,17 +371,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Close tooltip when clicking outside
-        document.addEventListener('click', (e) => {
-            if (tooltip && !tooltip.contains(e.target) && !e.target.classList.contains('sector')) {
-                hideTooltip();
-            }
-        });
-
-        // Close on scroll
-        window.addEventListener('scroll', () => {
-            hideTooltip();
-        }, { passive: true });
     }
 
     // Load detailed sector map
